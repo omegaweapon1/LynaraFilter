@@ -278,6 +278,20 @@ Show
 # Red Tier
 Show
 	BlightedMap True
+	MapTier = 16
+	Class "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MS.mp3"
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+# Red Tier
+Show
+	BlightedMap True
 	Class "Maps"
 	SetTextColor 184 218 242 255 # Maps
 	SetBorderColor 255 165 0 255 # A Tier
