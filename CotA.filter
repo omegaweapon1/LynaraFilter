@@ -103,6 +103,14 @@ Show
 
 Show
 	Class "Stackable Currency"
+	BaseType "Prismatic Catalyst" "Fertile Catalyst" "Tempering Catalyst"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Class "Stackable Currency"
 	BaseType "Catalyst"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetBorderColor 0 128 0 255 # B Tier
@@ -115,6 +123,69 @@ Show
 	SetTextColor 128 64 64 200 # Challenge League
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Section: 6L
+#-------------------------------------------------------------------------------
+
+# Tier 1 Uniques
+Show
+	LinkedSockets = 6
+	Rarity = Unique
+	SetTextColor 175 96 37 255 # Unique
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "US.mp3"
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown 
+
+Show
+	Corrupted True
+	LinkedSockets = 6
+	Class "Body Armours"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3"
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	LinkedSockets = 6
+	Class "Body Armours"
+	SetTextColor 255 0 0 255 # SS Tier
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GS.mp3"
+	MinimapIcon 0 White Star
+	PlayEffect White 
+
+Show
+	Corrupted True
+	LinkedSockets = 6
+	Class "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves" "Warstaves"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3"
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	LinkedSockets = 6
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3"
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
 
 #-------------------------------------------------------------------------------
 # Section: Uniques
@@ -138,18 +209,6 @@ Show
 	SocketGroup "WWWWWW"
 	Rarity = Unique
 	BaseType "Simple Robe"
-	SetTextColor 175 96 37 255 # Unique
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "UB.mp3"
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown Temp
-
-# Tier 1 Uniques
-Show
-	LinkedSockets = 6
-	Rarity = Unique
 	SetTextColor 175 96 37 255 # Unique
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -216,10 +275,23 @@ Show
 	DisableDropSound
 	#BlockStrictness 2 Hide
 
+# Red Tier
+Show
+	BlightedMap True
+	Class "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MA.mp3"
+	MinimapIcon 1 Blue Hexagon
+	PlayEffect Blue 
+
 # Tier 16
 Show
 	MapTier >= 16
 	Class "Maps"
+	BaseType "Maze of the Minotaur" "Lair of the Hydra" "Forge of the Phoenix" "Pit of the Chimera"
 	SetTextColor 184 218 242 255 # Maps
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -229,10 +301,12 @@ Show
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
-# Corrupted Maps
+# Tier 16
 Show
-	Corrupted True
-	MapTier >= 16
+	Identified True
+	Rarity = Rare
+	Quality >= 10
+	MapTier >= 14
 	Class "Maps"
 	SetTextColor 184 218 242 255 # Maps
 	SetBackgroundColor 255 255 255 255 # S Tier
@@ -245,19 +319,19 @@ Show
 
 # Red Tier
 Show
-	MapTier >= 11
+	MapTier >= 16
 	Class "Maps"
 	SetTextColor 184 218 242 255 # Maps
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "MA.mp3"
-	MinimapIcon 1 Blue Circle
+	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue 
 
 # Yellow Tier
 Show
-	MapTier >= 6
+	MapTier >= 11
 	Class "Maps"
 	SetTextColor 184 218 242 255 # Maps
 	SetBorderColor 0 128 0 255 # B Tier
@@ -266,6 +340,15 @@ Show
 	CustomAlertSound "MB.mp3"
 	MinimapIcon 2 Blue Hexagon
 	PlayEffect Blue Temp
+
+# Tier 4-5
+Show
+	MapTier >= 6
+	Class "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
 
 # Corrupted Maps
 Show
@@ -273,12 +356,8 @@ Show
 	Rarity = Rare
 	Class "Maps"
 	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MB.mp3"
-	MinimapIcon 2 Blue Hexagon
-	PlayEffect Blue Temp
 	#BlockStrictness 3 Hide
 
 # Tier 4-5
@@ -294,8 +373,9 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	BaseType "Timeless Maraketh Emblem" "Chayula's Breachstone" "Timeless Maraketh Emblem"
+	BaseType "Timeless Maraketh Emblem" "Chayula's Breachstone" "Timeless Maraketh Emblem" "Fragment of the Phoenix" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur"
 	SetTextColor 255 165 0 255 # Fragments
+	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
@@ -304,7 +384,7 @@ Show
 	PlayEffect Brown 
 
 Show
-	BaseType "Uul-Netol's Breachstone" "Timeless Vaal Emblem" "Mortal Ignorance" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Fragment of the Phoenix" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Purification" "Fragment of Constriction"
+	BaseType "Uul-Netol's Breachstone" "Timeless Vaal Emblem" "Mortal Ignorance" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Purification" "Fragment of Constriction"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -335,7 +415,7 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Prophecy "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Darktongue's Shriek" "A Dishonourable Death" "The Bowstring's Music"
+	Prophecy "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Song of the Sekhema" "Lost in the Pages" "The Bowstring's Music"
 	SetTextColor 128 0 128 255 # Prophecy
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -345,7 +425,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	Prophecy "Monstrous Treasure" "Lost in the Pages"
+	Prophecy "The Mentor" "The Misunderstood Queen" "Darktongue's Shriek" "A Dishonourable Death"
 	SetTextColor 128 0 128 255 # Prophecy
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -354,7 +434,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	Prophecy "Vaal Winds" "The Great Leader of the North" "The King's Path" "The Misunderstood Queen" "The Mentor" "Possessed Foe" "A Vision of Ice and Fire" "Cleanser of Sins" "The Jeweller's Touch" "A Prodigious Hand" "Twice Enchanted" "The Plaguemaw V" "The Unbreathing Queen V" "Unbearable Whispers V" "The Feral Lord V"
+	Prophecy "The King's Path" "The Jeweller's Touch" "Blind Faith" "A Prodigious Hand"
 	SetTextColor 128 0 128 255 # Prophecy
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -405,7 +485,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType "Sanctified Fossil" "Opalescent Oil" "Divine Orb" "Orb of Annulment" "Time-Lost Incubator" "Essence of Horror" "Thaumaturge's Incubator" "Deafening Essence of Scorn" "Deafening Essence of Rage" "Deafening Essence of Zeal" "Harbinger's Orb" "Gilded Fossil" "Tangled Fossil" "Enchanted Fossil" "Black Oil" "Diviner's Incubator" "Foreboding Incubator" "Eldritch Incubator" "Otherworldly Incubator" "Deafening Essence of Envy" "Perfect Fossil" "Exalted Shard" "Vial of Consequence" "Awakened Sextant"
+	BaseType "Sanctified Fossil" "Opalescent Oil" "Divine Orb" "Orb of Annulment" "Time-Lost Incubator" "Essence of Horror" "Thaumaturge's Incubator" "Deafening Essence of Scorn" "Deafening Essence of Rage" "Deafening Essence of Zeal" "Harbinger's Orb" "Gilded Fossil" "Tangled Fossil" "Enchanted Fossil" "Black Oil" "Diviner's Incubator" "Foreboding Incubator" "Eldritch Incubator" "Otherworldly Incubator" "Deafening Essence of Envy" "Perfect Fossil" "Exalted Shard" "Vial of Consequence"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -416,7 +496,7 @@ Show
 
 # Pick up always
 Show
-	BaseType "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Cartographer's Seal" "Unshaping Orb" "Harbinger's Shard" "Stacked Deck" "Annulment Shard" "Essence of Hysteria" "Essence of Delirium" "Deafening Essence" "Shrieking Essence" "Screaming Essence" "Incubator" "Splinter of Chayula" "Simple Sextant" "Prime Sextant"
+	BaseType "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Cartographer's Seal" "Unshaping Orb" "Harbinger's Shard" "Stacked Deck" "Annulment Shard" "Essence of Hysteria" "Essence of Delirium" "Deafening Essence" "Shrieking Essence" "Screaming Essence" "Incubator" "Splinter of Chayula" "Simple Sextant" "Prime Sextant" "Awakened Sextant"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -424,17 +504,29 @@ Show
 # Pick up always
 Show
 	Class "Currency"
-	BaseType "Silver Coin" "Blessing of" "Breachstone" "Splinter of" "Oil" "Resonator"
+	BaseType "Blessing of" "Breachstone" "Splinter of" "Oil" "Resonator"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
 Show
-	BaseType "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Remnant of Corruption" "Binding Shard" "Horizon Shard" "Engineer's Shard"
+	BaseType "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Remnant of Corruption" "Horizon Shard" "Engineer's Shard" "Silver Coin" "Ancient Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
+
+Show
+	StackSize >= 20
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	StackSize >= 10
+	BaseType "Perandus Coin"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
 
 Show
 	StackSize >= 5
@@ -453,7 +545,7 @@ Show
 	#BlockStrictness 3 Hide
 
 Show
-	BaseType "Chaos Shard" "Alchemy Shard" "Regal Shard"
+	BaseType "Chaos Shard" "Alchemy Shard" "Regal Shard" "Binding Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -467,7 +559,7 @@ Show
 	#BlockStrictness 2 Hide
 
 Show
-	BaseType "Weeping Essence" "Muttering Essence" "Wailing Essence"
+	BaseType "Weeping Essence" "Muttering Essence" "Wailing Essence" "Perandus Coin"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -521,24 +613,15 @@ Hide
 
 Show
 	Class "Divination Card"
-	BaseType "The Wolf's Legacy"
+	BaseType "The Wolf's Legacy" "The Master Artisan"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 45
 	DisableDropSound
-
-# Good Cards
-Show
-	Class "Divination Card"
-	BaseType "The Master Artisan"
-	SetTextColor 30 144 255 255 # Divination Card
-	SetFontSize 45
-	DisableDropSound
-	PlayEffect Blue Temp
 
 # GG Cards
 Show
 	Class "Divination Card"
-	BaseType "House of Mirrors" "The Demon" "Etched in Blood" "The Doctor" "The Fiend" "Succor of the Sinless" "Beauty Through Death" "The Damned" "The Immortal" "Pride of the First Ones" "The Iron Bard" "Alluring Bounty" "Baited Expectations" "Hunter's Reward" "Nook's Crown" "The Spark and the Flame" "Seven Years Bad Luck" "Immortal Resolve" "Void of the Elements" "Squandered Prosperity" "The Nurse" "The Samurai's Eye" "The Price of Loyalty" "The Celestial Stone" "Abandoned Wealth" "The Old Man" "The Eye of Terror"
+	BaseType "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Immortal" "Alluring Bounty" "The Samurai's Eye" "Succor of the Sinless" "The Nurse" "Pride of the First Ones" "Immortal Resolve" "Nook's Crown" "The Dragon's Heart" "The World Eater" "The Spark and the Flame" "The Iron Bard" "Wealth and Power" "The Price of Loyalty" "Abandoned Wealth" "Hunter's Reward"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -551,7 +634,7 @@ Show
 # Good Cards
 Show
 	Class "Divination Card"
-	BaseType "The Vast" "Divine Justice" "The Mayor" "The Queen" "Mawr Blaidd" "The Escape" "The Chosen" "The Life Thief" "Wealth and Power" "The Dragon's Heart" "The Saint's Treasure" "The Wolven King's Bite" "Burning Blood" "Azyran's Reward" "Remembrance" "The Sephirot"
+	BaseType "Seven Years Bad Luck" "The Queen" "The Polymath" "The Damned" "The Craving" "The Eye of Terror" "The Enlightened"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -563,7 +646,7 @@ Show
 # Good Cards
 Show
 	Class "Divination Card"
-	BaseType "The Bargain" "Friendship" "The World Eater" "The Professor" "The Undisputed" "The Artist" "The Hoarder" "The Bones" "The Soul" "Pride Before the Fall" "The Celestial Justicar" "The Landing" "The Polymath" "The Undaunted" "Dark Dreams"
+	BaseType "The Saint's Treasure" "Void of the Elements" "The Offering" "Etched in Blood" "Pride Before the Fall" "The Celestial Justicar" "The Escape" "Burning Blood" "The Celestial Stone" "The Mayor" "The Bargain" "Squandered Prosperity" "The Soul" "Azyran's Reward" "Blessing of God" "The Hoarder" "The Wolven King's Bite" "Dark Dreams" "The Ethereal"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -574,7 +657,7 @@ Show
 
 Hide
 	Class "Divination Card"
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "The Carrion Crow" "Cartographer's Delight" "Death" "Destined to Crumble" "Doedre's Madness" "The Hermit" "The King's Blade" "Lantador's Lost Love" "Light and Truth" "Might is Right" "Turn the Other Cheek" "Prosperity" "Rain of Chaos" "Rain Tempter" "Struck by Lightning" "The Army of Blood" "The Betrayal" "The Coming Storm" "The Conduit" "The Eye of the Dragon" "The Feast" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Surgeon" "The Tower" "The Twins" "The Warden" "The Wolverine" "Thunderous Skies" "Volatile Power" "The Metalsmith's Gift" "The Watcher" "Mitts" "Dark Temptation"
+	BaseType "A Mother's Parting Gift" "Audacity" "Birth of the Three" "The Surgeon" "Dark Temptation" "Death" "Destined to Crumble" "Dying Anguish" "Lantador's Lost Love" "Light and Truth" "Lingering Remnants" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Blazing Fire" "The Carrion Crow" "The Cataclysm" "The Coming Storm" "The Conduit" "The Twins" "The Fathomless Depths" "The Hermit" "The Incantation" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "Thunderous Skies" "Turn the Other Cheek" "Cartographer's Delight" "Tranquillity" "The Calling" "The Deceiver" "Anarchy's Price" "Grave Knowledge" "The Opulent" "Thirst for Knowledge" "Rain of Chaos"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 30
 	DisableDropSound
@@ -588,17 +671,6 @@ Show
 #-------------------------------------------------------------------------------
 # Section: Vendor Recipes
 #-------------------------------------------------------------------------------
-
-Show
-	LinkedSockets = 6
-	SetTextColor 255 0 0 255 # SS Tier
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "GS.mp3"
-	MinimapIcon 0 White Star
-	PlayEffect White 
 
 Show
 	Sockets = 6
@@ -638,6 +710,71 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
+
+#-------------------------------------------------------------------------------
+# Section: Special Rares
+#-------------------------------------------------------------------------------
+
+Show
+	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	HasExplicitMod "Veiled" "Veil"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Over Qualitied
+Show
+	AnyEnchantment True
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Delve Mods
+Show
+	HasExplicitMod "Subterranean" "of the Underground"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Bestiary Mods
+Show
+	HasExplicitMod "of Farrul" "of Fenumus" "of Craiceann" "of Saqawal"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Incursion Mods
+Show
+	HasExplicitMod "Tacati's" "of Tacati" "Citaqualotl's" "of Citaqualotl" "Matatl's" "of Matatl" "Topotante's" "of Puhuarte" "Xopec's" "Guatelitzi's" "of Guatelitzi"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Warband Mods
+Show
+	HasExplicitMod "Redblade" "Brinerot" "Mutewind" "Betrayer's" "Deceiver's" "Turncoat's"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Over Qualitied
+Show
+	Quality > 20
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
 
 #-------------------------------------------------------------------------------
 # Section: Links
@@ -691,9 +828,8 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	GemLevel >= 2
 	Class "Gem"
-	BaseType "Enlighten" "Empower" "Enhance"
+	BaseType "Awakened"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -704,8 +840,9 @@ Show
 	PlayEffect Green 
 
 Show
+	GemLevel >= 2
 	Class "Gem"
-	BaseType "Awakened"
+	BaseType "Enlighten" "Empower" "Enhance"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -794,12 +931,23 @@ Show
 Show
 	Quality >= 15
 	ItemLevel >= 18
-	BaseType "Divine Life Flask" "Quartz Flask" "Diamond Flask" "Quicksilver Flask" "Silver Flask" "Jade Flask" "Granite Flask" "Stibnite Flask"
+	BaseType "Divine Life Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
+	#BlockStrictness 10 Hide
+
+# Craft for Profit
+Show
+	Quality >= 15
+	ItemLevel >= 18
+	BaseType "Divine Life Flask" "Diamond Flask" "Quicksilver Flask" "Granite Flask"
+	SetTextColor 255 192 203 255 # Flasks
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
 
 # Craft for Profit
 Show
@@ -918,71 +1066,13 @@ Show
 	#BlockStrictness 1 Hide
 
 #-------------------------------------------------------------------------------
-# Section: Special Mods
+# Section: Bases
 #-------------------------------------------------------------------------------
 
 Show
-	HasExplicitMod "Veiled" "Veil"
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Over Qualitied
-Show
-	AnyEnchantment True
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Delve Mods
-Show
-	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Bestiary Mods
-Show
-	HasExplicitMod "of Farrul" "of Fenumus" "of Craiceann" "of Saqawal"
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Incursion Mods
-Show
-	HasExplicitMod "Tacati's" "of Tacati" "Citaqualotl's" "of Citaqualotl" "Matatl's" "of Matatl" "Topotante's" "of Puhuarte" "Xopec's" "Guatelitzi's" "of Guatelitzi"
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Warband Mods
-Show
-	HasExplicitMod "Redblade" "Brinerot" "Mutewind" "Betrayer's" "Deceiver's" "Turncoat's"
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Over Qualitied
-Show
-	Quality > 20
-	SetTextColor 100 150 200 200 # Special Rares
-	SetFontSize 45
-	DisableDropSound
-
-#-------------------------------------------------------------------------------
-# Section: Influenced Bases
-#-------------------------------------------------------------------------------
-
-Show
-	ItemLevel >= 86
-	BaseType "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves"
 	HasInfluence "Elder" "Crusader" "Hunter" "Redeemer" "Shaper" "Warlord"
+	ItemLevel >= 86
+	BaseType "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -993,9 +1083,9 @@ Show
 	PlayEffect Red 
 
 Show
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 86
 	BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1006,9 +1096,9 @@ Show
 	PlayEffect Red 
 
 Show
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 84
 	BaseType "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves"
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1018,9 +1108,9 @@ Show
 	PlayEffect Red 
 
 Show
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 84
 	BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1031,9 +1121,9 @@ Show
 
 # 84 T1 Chests
 Show
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 86
 	BaseType "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Assassin's Garb" "Sadist Garb" "Glorious Plate" "Astral Plate"
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1044,9 +1134,9 @@ Show
 
 # 84 T1 Chests
 Show
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 84
 	BaseType "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Assassin's Garb" "Sadist Garb" "Glorious Plate" "Astral Plate"
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1056,9 +1146,9 @@ Show
 	PlayEffect Red Temp
 
 Show
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 84
 	Class "Rings" "Amulets" "Belts"
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1068,9 +1158,9 @@ Show
 	PlayEffect Red Temp
 
 Show
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 80
 	Class "Rings" "Amulets"
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1080,8 +1170,8 @@ Show
 	PlayEffect Red Temp
 
 Show
-	BaseType "Leather Belt"
 	HasInfluence "Shaper"
+	BaseType "Leather Belt"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1089,10 +1179,6 @@ Show
 	CustomAlertSound "BB.wav"
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
-
-#-------------------------------------------------------------------------------
-# Section: Crafting
-#-------------------------------------------------------------------------------
 
 # Tier 1 Chests and Bows
 Show
@@ -1128,12 +1214,8 @@ Show
 	ItemLevel >= 86
 	BaseType "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Deicide Mask" "Royal Burgonet"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav"
-	MinimapIcon 2 Red Triangle
-	PlayEffect Red Temp
 
 # 84 T1 Helmets
 Show
@@ -1182,12 +1264,8 @@ Show
 	ItemLevel >= 84
 	BaseType "Eye Jewel"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav"
-	MinimapIcon 2 Red Triangle
-	PlayEffect Red Temp
 
 Show
 	ItemLevel >= 83
@@ -1195,6 +1273,7 @@ Show
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 4 Hide
 
 Show
 	Rarity = Rare
@@ -1244,6 +1323,7 @@ Show
 	Class "Jewel"
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 4 Hide
 
 Show
 	Rarity = Magic
@@ -1339,6 +1419,7 @@ Show
 	BaseType "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Moonstone Ring" "Diamond Ring" "Coral Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet"
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 4 Hide
 
 # New Bases
 Show
@@ -1369,12 +1450,14 @@ Show
 	Class "Rings" "Amulets"
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 3 Hide
 
 Show
 	Rarity = Rare
 	ItemLevel < 60
 	SetFontSize 30
 	DisableDropSound
+	#BlockStrictness 1 Hide
 
 Show
 	Identified False
@@ -1491,7 +1574,6 @@ Show
 	BaseType "Leather Belt"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
 
 #-------------------------------------------------------------------------------
 # Section: Magics
@@ -1503,12 +1585,14 @@ Show
 	Class "Belts" "Rings" "Amulets"
 	SetFontSize 30
 	DisableDropSound
+	#BlockStrictness 1 Hide
 
 Show
 	Rarity = Magic
 	ItemLevel <= 15
 	SetFontSize 30
 	DisableDropSound
+	#BlockStrictness 1 Hide
 
 Show
 	Rarity = Normal
@@ -1516,12 +1600,14 @@ Show
 	Class "Belts" "Rings" "Amulets"
 	SetFontSize 30
 	DisableDropSound
+	#BlockStrictness 1 Hide
 
 Show
 	Rarity = Normal
 	ItemLevel <= 6
 	SetFontSize 30
 	DisableDropSound
+	#BlockStrictness 1 Hide
 
 Hide
 	SetFontSize 30
