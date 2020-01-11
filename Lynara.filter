@@ -13,7 +13,7 @@
 # Strictness 1:  White Maps
 # Strictness 2:  Yellow Maps
 # Strictness 3:  Red Maps
-# Strictness 4:  T16s we did it bois
+# Strictness 4:  T16s
 #-------------------------------------------------------------------------------
 
 
@@ -459,6 +459,20 @@ Show
 Show
 	Class "Stackable Currency"
 	BaseType "Prophecy"
+	Prophecy "Crushing Squall" "Fire from the Sky" "Ice from Above" "Lightning Falls" "The Undead Storm" "A Master Seeks Help" "Bountiful Traps" "The Dreamer's Dream" "The Feral Lord V" "The Plaguemaw V" "The Unbreathing Queen V" "Unbearable Whispers V" "Thaumaturgical History IV" "The Ambitious Bandit III"
+	SetTextColor 128 0 128 255 # Prophecy
+	SetFontSize 45
+
+Hide
+	Class "Stackable Currency"
+	BaseType "Prophecy"
+	Prophecy "Golden Touch" "Smothering Tendrils" "A Forest of False Idols" "A Rift in Time" "Agony at Dusk" "Black Devotion" "Blind Faith" "Blinding Light" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Dark Instincts" "Dying Cry" "End of the Light" "Faith Exhumed" "Greed's Folly" "Heavy Blows" "Last of the Wildmen" "Mouth of Horrors" "Nature's Resilience" "Power Magnified" "Sun's Punishment" "The Apex Predator" "The Bloody Flowers Redux" "The Fall of an Empire" "The Flow of Energy" "The King and the Brambles" "The Mentor" "The Silverwood" "The Snuffed Flame" "The Storm Spire" "Trapped in the Tower" "Winter's Mournful Melodies" "A Call into the Void" "A Firm Foothold" "A Prodigious Hand" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Baptism by Death" "Blood in the Eyes" "Blood of the Betrayed" "Custodians of Silence" "Fear's Wide Reach" "From Death Springs Life" "Heart of the Fire" "Nemesis of Greed" "Notched Flesh" "Roth's Legacy" "Storm on the Reef" "Strong as a Bull" "Storm on the Horizon" "The Brutal Enforcer" "The Eagle's Cry" "The Flayed Man" "The Hollow Pledge" "The Lady in Black" "The Last Watch" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Prison Guard" "The Prison Key" "The Singular Spirit" "The Sinner's Stone" "The Soulless Beast" "The Sword King's Passion" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "A Regal Death" "The Corrupt" "The God of Misfortune" "The Dream Trial" "The Lost Maps" "The Fortune Teller's Collection" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "The Ambitious Bandit I" "The Ambitious Bandit II"
+	SetTextColor 128 0 128 255 # Prophecy
+	SetFontSize 25
+
+Show
+	Class "Stackable Currency"
+	BaseType "Prophecy"
 	SetTextColor 128 0 128 255 # Prophecy
 	SetFontSize 45
 
@@ -726,7 +740,7 @@ Show
 	#BlockStrictness 1 Hide
 
 #-------------------------------------------------------------------------------
-# Section: Special Rares
+# Section: League Mod Rares
 #-------------------------------------------------------------------------------
 
 Show
@@ -1176,12 +1190,8 @@ Show
 	ItemLevel >= 80
 	Class "Rings" "Amulets"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav"
-	MinimapIcon 2 Red Triangle
-	PlayEffect Red Temp
 
 Show
 	HasInfluence "Shaper"
@@ -1213,15 +1223,6 @@ Show
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
-Show
-	Corrupted False
-	ItemLevel >= 84
-	BaseType "Steel Ring" "Opal Ring" "Crystal Belt" "Two-Toned Boots" "Convoking Wand" "Cerulean Ring" "Vermillion Ring"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 4 Hide
-
 # 84 T1 Helmets
 Show
 	Corrupted False
@@ -1231,16 +1232,6 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# 84 T1 Helmets
-Show
-	Corrupted False
-	ItemLevel >= 84
-	BaseType "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Convoking Wand"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 35
-	DisableDropSound
-	#BlockStrictness 4 Hide
-
 #-------------------------------------------------------------------------------
 # Section: Special Rares
 #-------------------------------------------------------------------------------
@@ -1248,8 +1239,22 @@ Show
 Show
 	Class "Amulets"
 	BaseType "Talisman"
+	HasExplicitMod "Rotund" "Virile" "Athlete's" "Indomitable" "Unassailable" "Incandescent" "Resplendent" "Dazzling"
 	SetFontSize 45
 	DisableDropSound
+
+Show
+	Class "Amulets"
+	BaseType "Spinefuse Talisman" "Fangjaw Talisman"
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Class "Amulets"
+	BaseType "Talisman"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
 
 # Corrupted Rares
 Show
