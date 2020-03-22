@@ -387,7 +387,7 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	BaseType "Timeless Maraketh Emblem" "Chayula's Breachstone" "Timeless Maraketh Emblem" "Fragment of the Phoenix" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur"
+	BaseType "Timeless Maraketh Emblem" "Timeless Maraketh Emblem" "Fragment of the Phoenix" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Chayula's Breachstone"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -918,7 +918,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
+	#BlockStrictness 3 Hide
 
 Show
 	Quality >= 1
@@ -926,7 +926,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 2 Hide
 
 Show
 	Class "Gem"
@@ -1587,7 +1587,7 @@ Show
 #-------------------------------------------------------------------------------
 
 # Headhunter
-Show
+Hide
 	Corrupted False
 	Rarity = Normal
 	BaseType "Leather Belt"
