@@ -102,6 +102,13 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
+	ItemLevel >= 75
+	BaseType "Simulacrum" "Large Cluster Jewel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+
+Show
 	Class "Stackable Currency"
 	BaseType "Delirium Orb"
 	SetTextColor 128 64 64 200 # Challenge League
@@ -117,7 +124,14 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# Over Qualitied
+Show
+	ItemLevel <= 74
+	BaseType "Large Cluster Jewel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
 Show
 	BaseType "Simulacrum" "Cluster Jewel"
 	SetTextColor 128 64 64 200 # Challenge League
