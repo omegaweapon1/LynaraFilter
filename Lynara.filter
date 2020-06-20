@@ -143,15 +143,6 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# Quest Items
-Show
-	Class = "Harvest Infrastructure"
-	SetTextColor 74 230 58 255 # Quest
-	SetBorderColor 74 230 58 255 # Quest
-	SetFontSize 45
-	MinimapIcon 2 Green Circle
-	PlayEffect Green 
-
 #===============================================================================
 # Section: 6L
 #===============================================================================
@@ -729,14 +720,14 @@ Show
 #===============================================================================
 
 Show
-	Sockets = 6
+	Sockets = "6"
 	Height = 3
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
 Show
-	Sockets = 6
+	Sockets = "6"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -878,7 +869,7 @@ Show
 
 # Leveling Sockets
 Show
-	Sockets = 4
+	Sockets = "4"
 	Rarity = Normal
 	Height = 2
 	Width = 2
