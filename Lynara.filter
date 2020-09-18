@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Lynara
-# VERSION:       3.11
+# VERSION:       3.12
 # AUTHOR:        Lynara
 # CONTACT:       mitchoka@gmail.com
 # LINK:          https://grinding.zone/?page=filtershaper&loadfilter=https://raw.githubusercontent.com/omegaweapon1/LynaraFilter/master/Lynara.filter
@@ -105,40 +105,52 @@ Show
 #===============================================================================
 
 Show
-	Class = "Stackable Currency"
-	BaseType = "Infused Engineer's Orb" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+	Replica = True
 	SetTextColor 128 64 64 200 # Challenge League
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
 
 Show
-	Class = "Map Fragments"
-	BaseType = "Tribute to the Goddess" "Dedication to the Goddess" "Gift to the Goddess" "Winged"
+	BaseType = "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodisic Ring"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
 
 Show
-	Class = "Harvest Seed"
-	BaseType = "fruit"
+	BaseType = "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb"
 	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	AlternateQuality = True
+	Class = "Gem"
+	SetTextColor 27 162 155 255 # Gem
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "GemA.mp3"
+	MinimapIcon 1 Green Circle
+	PlayEffect Green 
 
 Show
-	Class = "Harvest Seed"
-	BaseType = "Bulb"
+	Class = "Blueprint"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
 
 Show
-	Class = "Harvest Seed"
-	BaseType = "Grain" "Seed"
+	Class = "Trinket" "Heist"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType = "Rogue's Marker" "Contract"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetFontSize 45
 	DisableDropSound
@@ -485,7 +497,7 @@ Show
 Hide
 	Class = "Stackable Currency"
 	BaseType = "Prophecy"
-	Prophecy = "Golden Touch" "Smothering Tendrils" "A Forest of False Idols" "A Rift in Time" "Agony at Dusk" "Black Devotion" "Blind Faith" "Blinding Light" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Dark Instincts" "Dying Cry" "End of the Light" "Faith Exhumed" "Greed's Folly" "Heavy Blows" "Last of the Wildmen" "Mouth of Horrors" "Nature's Resilience" "Power Magnified" "Sun's Punishment" "The Apex Predator" "The Bloody Flowers Redux" "The Fall of an Empire" "The Flow of Energy" "The King and the Brambles" "The Mentor" "The Silverwood" "The Snuffed Flame" "The Storm Spire" "Trapped in the Tower" "Winter's Mournful Melodies" "A Call into the Void" "A Firm Foothold" "A Prodigious Hand" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Baptism by Death" "Blood in the Eyes" "Blood of the Betrayed" "Custodians of Silence" "Fear's Wide Reach" "From Death Springs Life" "Heart of the Fire" "Nemesis of Greed" "Notched Flesh" "Roth's Legacy" "Storm on the Reef" "Strong as a Bull" "Storm on the Horizon" "The Brutal Enforcer" "The Eagle's Cry" "The Flayed Man" "The Hollow Pledge" "The Lady in Black" "The Last Watch" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Prison Guard" "The Prison Key" "The Singular Spirit" "The Sinner's Stone" "The Soulless Beast" "The Sword King's Passion" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "A Regal Death" "The Corrupt" "The God of Misfortune" "The Dream Trial" "The Lost Maps" "The Fortune Teller's Collection" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "The Ambitious Bandit I" "The Ambitious Bandit II"
+	Prophecy = "Golden Touch" "Smothering Tendrils" "A Forest of False Idols" "A Rift in Time" "Agony at Dusk" "Black Devotion" "Blind Faith" "Blinding Light" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Dark Instincts" "Dying Cry" "End of the Light" "Faith Exhumed" "Greed's Folly" "Heavy Blows" "Last of the Wildmen" "Mouth of Horrors" "Nature's Resilience" "Power Magnified" "Sun's Punishment" "The Apex Predator" "The Bloody Flowers Redux" "The Fall of an Empire" "The Flow of Energy" "The King and the Brambles" "The Mentor" "The Silverwood" "The Snuffed Flame" "The Storm Spire" "Trapped in the Tower" "Winter's Mournful Melodies" "A Call into the Void" "A Firm Foothold" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Baptism by Death" "Blood in the Eyes" "Blood of the Betrayed" "Custodians of Silence" "Fear's Wide Reach" "From Death Springs Life" "Heart of the Fire" "Nemesis of Greed" "Notched Flesh" "Roth's Legacy" "Storm on the Reef" "Strong as a Bull" "Storm on the Horizon" "The Brutal Enforcer" "The Eagle's Cry" "The Flayed Man" "The Lady in Black" "The Last Watch" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Prison Guard" "The Prison Key" "The Singular Spirit" "The Sinner's Stone" "The Sword King's Passion" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "A Regal Death" "The Corrupt" "The God of Misfortune" "The Dream Trial" "The Lost Maps" "The Fortune Teller's Collection" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "The Ambitious Bandit I" "The Ambitious Bandit II"
 	SetTextColor 128 0 128 255 # Prophecy
 	SetFontSize 25
 
@@ -568,6 +580,13 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
+# 1/8 C
+Show
+	BaseType = "Jeweller's Orb" "Orb of Chance" "Orb of Alteration" "Chromatic Orb"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
 Show
 	StackSize >= 10
 	BaseType = "Perandus Coin"
@@ -583,13 +602,12 @@ Show
 	DisableDropSound
 	#BlockStrictness 3 Hide
 
-# 1/8 C
 Show
-	BaseType = "Jeweller's Orb" "Orb of Chance" "Orb of Alteration" "Chromatic Orb"
+	BaseType = "Orb of Transmutation" "Blacksmith's Whetstone"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 2 Hide
 
 Show
 	BaseType = "Chaos Shard" "Alchemy Shard" "Regal Shard" "Binding Shard"
@@ -599,7 +617,7 @@ Show
 	#BlockStrictness 2 Hide
 
 Show
-	BaseType = "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Augmentation"
+	BaseType = "Armourer's Scrap" "Orb of Augmentation"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -610,15 +628,6 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
-
-# Large Stacks
-Show
-	StackSize >= 2
-	Class = "Stackable Currency"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
 	#BlockStrictness 1 Hide
 
 Show
@@ -626,7 +635,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 1 Hide
+	#BlockStrictness 2 Hide
 
 Show
 	BaseType = "Scroll of Wisdom"
@@ -704,7 +713,7 @@ Show
 
 Hide
 	Class = "Divination Card"
-	BaseType = "A Mother's Parting Gift" "Audacity" "Birth of the Three" "The Surgeon" "Dark Temptation" "Death" "Destined to Crumble" "Dying Anguish" "Lantador's Lost Love" "Light and Truth" "Lingering Remnants" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Blazing Fire" "The Carrion Crow" "The Cataclysm" "The Coming Storm" "The Conduit" "The Twins" "The Fathomless Depths" "The Hermit" "The Incantation" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Oath" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "Thunderous Skies" "Turn the Other Cheek" "Cartographer's Delight" "Tranquillity" "The Calling" "The Deceiver" "Anarchy's Price" "Grave Knowledge" "The Opulent" "Thirst for Knowledge" "Rain of Chaos"
+	BaseType = "Audacity" "Birth of the Three" "The Surgeon" "Death" "Destined to Crumble" "Lantador's Lost Love" "Light and Truth" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Twins" "The Fathomless Depths" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Metalsmith's Gift" "The Mountain" "The Rabid Rhoa" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "Cartographer's Delight" "Anarchy's Price" "The Opulent" "Rain of Chaos" "Grave Knowledge" "Thunderous Skies" "Echoes of Love"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 30
 	DisableDropSound
@@ -740,7 +749,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
+	#BlockStrictness 3 Hide
 
 Show
 	SocketGroup >= "RGB"
@@ -771,6 +780,13 @@ Show
 
 Show
 	BaseType = "Cluster Jewel"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	SynthesisedItem = True
 	SetTextColor 100 150 200 200 # Special Rares
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -970,7 +986,7 @@ Show
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
-Show
+Hide
 	Class = "Gem"
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 30
@@ -990,7 +1006,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 10 Hide
+	#BlockStrictness 3 Hide
 
 # Craft for Profit
 Show
@@ -1111,7 +1127,8 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-Show
+Hide
+	ItemLevel <= 70
 	BaseType = "Flask"
 	BaseType = "Divine"
 	SetTextColor 255 192 203 255 # Flasks
@@ -1126,7 +1143,7 @@ Show
 Show
 	HasInfluence = "Elder" "Crusader" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 86
-	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather"
+	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather" "Sadist Garb" "Vaal Regalia" "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1151,8 +1168,21 @@ Show
 
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
+	ItemLevel >= 86
+	BaseType = "Runic Hatchet" "Infernal Axe" "Royal Axe" "Siege Axe" "Fleshripper" "Void Axe" "Despot Axe" "Vaal Axe" "Sundering Axe" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Citadel Bow" "Assassin Bow" "Gemini Claw" "Terror Claw" "Sai" "Ambusher" "Platinum Kris" "Behemoth Mace" "Auric Mace" "Coronal Maul" "Terror Maul" "Imperial Maul" "Meatgrinder" "Colossus Mallet" "Eclipse Staff" "Imperial Staff" "Judgement Staff" "Maelström Staff" "Tiger Hook" "Midnight Blade" "Eternal Sword" "Vaal Blade" "Dragoon Sword" "Jewelled Foil" "Exquisite Blade" "Infernal Sword" "Lion Sword" "Vaal Greatsword" "Convoking Wand" "Profane Wand" "Opal Wand" "Imbued Wand" "Colossal Tower Shield" "Crusader Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Spike-Point Arrow Quiver" "Broadhead Arrow Quiver"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "BS.mp3"
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red 
+
+Show
+	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 84
-	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves"
+	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather" "Sadist Garb" "Vaal Regalia" "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1173,11 +1203,22 @@ Show
 	MinimapIcon 1 Red Triangle
 	PlayEffect Red 
 
-# 84 T1 Chests
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 86
-	BaseType = "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Assassin's Garb" "Sadist Garb" "Glorious Plate" "Astral Plate"
+	ItemLevel >= 84
+	BaseType = "Runic Hatchet" "Infernal Axe" "Royal Axe" "Siege Axe" "Fleshripper" "Void Axe" "Despot Axe" "Vaal Axe" "Sundering Axe" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Citadel Bow" "Assassin Bow" "Gemini Claw" "Terror Claw" "Sai" "Ambusher" "Platinum Kris" "Behemoth Mace" "Auric Mace" "Coronal Maul" "Terror Maul" "Imperial Maul" "Meatgrinder" "Colossus Mallet" "Eclipse Staff" "Imperial Staff" "Judgement Staff" "Maelström Staff" "Tiger Hook" "Midnight Blade" "Eternal Sword" "Vaal Blade" "Dragoon Sword" "Jewelled Foil" "Exquisite Blade" "Infernal Sword" "Lion Sword" "Vaal Greatsword" "Convoking Wand" "Profane Wand" "Opal Wand" "Imbued Wand" "Colossal Tower Shield" "Crusader Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Spike-Point Arrow Quiver" "Broadhead Arrow Quiver"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBorderColor 255 165 0 255
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "BA.wav"
+	MinimapIcon 1 Red Triangle
+	PlayEffect Red 
+
+Show
+	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
+	ItemLevel >= 84
+	BaseType = "Two-Stone Ring" "Jade Amulet" "Lapis Amulet" "Amber Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Diamond Ring" "Moonstone Ring" "Amethyst Ring" "Leather Belt" "Rustic Sash"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1186,11 +1227,10 @@ Show
 	MinimapIcon 1 Red Triangle
 	PlayEffect Red 
 
-# 84 T1 Chests
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 84
-	BaseType = "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar" "Vaal Regalia" "Assassin's Garb" "Sadist Garb" "Glorious Plate" "Astral Plate"
+	ItemLevel >= 80
+	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather" "Sadist Garb" "Vaal Regalia" "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1201,10 +1241,22 @@ Show
 
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 84
-	Class = "Rings" "Amulets" "Belts"
+	ItemLevel >= 80
+	BaseType = "Runic Hatchet" "Infernal Axe" "Royal Axe" "Siege Axe" "Fleshripper" "Void Axe" "Despot Axe" "Vaal Axe" "Sundering Axe" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Citadel Bow" "Assassin Bow" "Gemini Claw" "Terror Claw" "Sai" "Ambusher" "Platinum Kris" "Behemoth Mace" "Auric Mace" "Coronal Maul" "Terror Maul" "Imperial Maul" "Meatgrinder" "Colossus Mallet" "Eclipse Staff" "Imperial Staff" "Judgement Staff" "Maelström Staff" "Tiger Hook" "Midnight Blade" "Eternal Sword" "Vaal Blade" "Dragoon Sword" "Jewelled Foil" "Exquisite Blade" "Infernal Sword" "Lion Sword" "Vaal Greatsword" "Convoking Wand" "Profane Wand" "Opal Wand" "Imbued Wand" "Colossal Tower Shield" "Crusader Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Spike-Point Arrow Quiver" "Broadhead Arrow Quiver"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 0 128 0 255 # B Tier
+	SetBorderColor 0 128 0 255
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "BB.wav"
+	MinimapIcon 2 Red Triangle
+	PlayEffect Red Temp
+
+Show
+	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
+	ItemLevel >= 80
+	BaseType = "Two-Stone Ring" "Jade Amulet" "Lapis Amulet" "Amber Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Diamond Ring" "Moonstone Ring" "Amethyst Ring" "Leather Belt" "Rustic Sash"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBorderColor 0 128 0 255
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "BB.wav"
@@ -1254,6 +1306,16 @@ Show
 	Corrupted = False
 	ItemLevel >= 86
 	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Deicide Mask" "Royal Burgonet"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	ItemLevel >= 85
+	BaseType = "Astral Plate" "Imbued Wand"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
@@ -1380,7 +1442,7 @@ Show
 # Tier 2 Rares
 Show
 	Rarity = Rare
-	BaseType = "Royal Burgonet" "Sinner Tricorne" "Solaris Circlet" "Fluted Bascinet" "Prophet Crown" "Vaal Mask" "Vaal Gauntlets" "Stealth Gloves" "Arcanist Gloves" "Hydrascale Gauntlets" "Legion Gloves" "Assassin's Mitts" "Vaal Greaves" "Stealth Boots" "Arcanist Slippers" "Hydrascale Boots" "Legion Boots" "Assassin's Boots"
+	BaseType = "Sinner Tricorne" "Solaris Circlet" "Fluted Bascinet" "Prophet Crown" "Vaal Mask" "Vaal Gauntlets" "Stealth Gloves" "Arcanist Gloves" "Hydrascale Gauntlets" "Legion Gloves" "Assassin's Mitts" "Vaal Greaves" "Stealth Boots" "Arcanist Slippers" "Hydrascale Boots" "Legion Boots" "Assassin's Boots"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
@@ -1412,7 +1474,7 @@ Show
 # T1 Shields
 Show
 	Rarity = Rare
-	BaseType = "Pinnacle Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Elegant Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
+	BaseType = "Pinnacle Tower Shield" "Imperial Buckler" "Elegant Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 2 Hide
@@ -1436,7 +1498,7 @@ Show
 # Tier 1 Weapons
 Show
 	Rarity = Rare
-	BaseType = "Runic Hatchet" "Gemini Claw" "Demon Dagger" "Behemoth Mace" "Sambar Sceptre" "Tiger Hook" "Dragoon Sword" "Jewelled Foil" "Broadhead Arrow Quiver" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Imbued Wand" "Corsair Sword" "Slaughter Knife" "Harbinger Bow"
+	BaseType = "Runic Hatchet" "Gemini Claw" "Demon Dagger" "Behemoth Mace" "Sambar Sceptre" "Tiger Hook" "Dragoon Sword" "Jewelled Foil" "Broadhead Arrow Quiver" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Imbued Wand" "Corsair Sword" "Slaughter Knife" "Harbinger Bow" "Coronal Maul" "Imperial Maul" "Fleshripper" "Vaal Axe"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
@@ -1504,139 +1566,160 @@ Show
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
-Show
-	Identified = False
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Class = "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 255 255 0 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Hide
+#	Identified = False
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Class = "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 255 255 0 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Class = "Body Armours"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 255 255 0 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Hide
+#	Identified = False
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Class = "Body Armours"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 255 255 0 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Class = "Helmets"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 255 255 0 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Hide
+#	Identified = False
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Class = "Helmets"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 255 255 0 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Class = "Gloves"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 255 255 0 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Hide
+#	Identified = False
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Class = "Gloves"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 255 255 0 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Class = "Boots"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 255 255 0 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Hide
+#	Identified = False
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Class = "Boots"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 255 255 0 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Class = "Amulets"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Hide
+#	Identified = False
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Class = "Amulets"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Class = "Rings"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Hide
+#	Identified = False
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Class = "Rings"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	Rarity = Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Class = "Belts"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Hide
+#	Identified = False
+#	Rarity = Rare
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Class = "Belts"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
 #===============================================================================
 # Section: Chance Bases
 #===============================================================================
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Leather Belt"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
+#Hide
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Leather Belt"
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 3 Hide
 
 #===============================================================================
 # Section: Magics
 #===============================================================================
 
 Show
+	Sockets = "4"
+	ItemLevel <= 35
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	LinkedSockets <= 3
+	ItemLevel <= 35
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	Sockets = "3"
+	ItemLevel <= 20
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
 	Rarity = Magic
 	ItemLevel <= 20
 	Class = "Belts" "Rings" "Amulets"
-	SetFontSize 30
+	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
 Show
 	Rarity = Magic
 	ItemLevel <= 15
-	SetFontSize 30
+	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
@@ -1644,14 +1727,14 @@ Show
 	Rarity = Normal
 	ItemLevel <= 10
 	Class = "Belts" "Rings" "Amulets"
-	SetFontSize 30
+	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
 Show
 	Rarity = Normal
 	ItemLevel <= 6
-	SetFontSize 30
+	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
