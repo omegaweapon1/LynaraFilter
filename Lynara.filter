@@ -1690,13 +1690,15 @@ Show
 Show
 	Sockets = "4"
 	ItemLevel <= 35
+	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
 Show
-	LinkedSockets <= 3
+	LinkedSockets = 3
 	ItemLevel <= 35
+	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
@@ -1704,6 +1706,7 @@ Show
 Show
 	Sockets = "3"
 	ItemLevel <= 20
+	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
