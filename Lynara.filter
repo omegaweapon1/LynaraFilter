@@ -799,7 +799,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.wav" 100
+	CustomAlertSound "GA.mp3" 100
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey 
 
@@ -811,7 +811,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.wav" 100
+	CustomAlertSound "GA.mp3" 100
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey 
 
@@ -822,7 +822,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.wav" 100
+	CustomAlertSound "GA.mp3" 100
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey 
 
@@ -834,7 +834,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.wav" 100
+	CustomAlertSound "GB.mp3" 100
 	MinimapIcon 1 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
@@ -846,7 +846,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.wav" 100
+	CustomAlertSound "GB.mp3" 100
 	MinimapIcon 1 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
@@ -857,7 +857,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.wav" 100
+	CustomAlertSound "GB.mp3" 100
 	MinimapIcon 1 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
@@ -1232,7 +1232,6 @@ Show
 	#BlockStrictness 1 Hide
 
 Show
-	BaseType =
 	BaseType = "Eternal Mana Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
