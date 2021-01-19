@@ -762,7 +762,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 2 Hide
 
 Show
 	SocketGroup >= "RGB"
@@ -792,9 +792,78 @@ Show
 	DisableDropSound
 
 Show
-	BaseType = "Cluster Jewel"
+	ItemLevel >= 75
+	BaseType = "Large Cluster Jewel"
+	EnchantmentPassiveNum <= 8
 	SetTextColor 100 150 200 200 # Special Rares
 	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.wav" 100
+	MinimapIcon 0 Grey UpsideDownHouse
+	PlayEffect Grey 
+
+Show
+	ItemLevel >= 75
+	BaseType = "Large Cluster Jewel"
+	EnchantmentPassiveNum <= 5
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.wav" 100
+	MinimapIcon 0 Grey UpsideDownHouse
+	PlayEffect Grey 
+
+Show
+	ItemLevel >= 75
+	BaseType = "Small Cluster Jewel"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.wav" 100
+	MinimapIcon 0 Grey UpsideDownHouse
+	PlayEffect Grey 
+
+Show
+	ItemLevel >= 68
+	BaseType = "Large Cluster Jewel"
+	EnchantmentPassiveNum <= 8
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.wav" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey Temp
+
+Show
+	ItemLevel >= 68
+	BaseType = "Medium Cluster Jewel"
+	EnchantmentPassiveNum <= 5
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.wav" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey Temp
+
+Show
+	ItemLevel >= 68
+	BaseType = "Small Cluster Jewel"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.wav" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey Temp
+
+Show
+	BaseType = "Cluster Jewel"
+	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
 
@@ -1012,7 +1081,7 @@ Show
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
-Hide
+Show
 	Class = "Gem"
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 30
@@ -1157,6 +1226,14 @@ Show
 	ItemLevel <= 70
 	BaseType = "Flask"
 	BaseType = "Divine"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	BaseType =
+	BaseType = "Eternal Mana Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
 	DisableDropSound
@@ -1357,13 +1434,31 @@ Show
 	DisableDropSound
 
 # 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 83
-#	BaseType = "Karui Chopper"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	ItemLevel >= 84
+	BaseType = "Opal Sceptre"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	ItemLevel = 83
+	BaseType = "Karui Chopper"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	ItemLevel >= 84
+	BaseType = "Two-Toned Boots"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
 
 #===============================================================================
 # Section: Special Rares
@@ -1409,6 +1504,12 @@ Show
 	DisableDropSound
 
 Show
+	Class = "Heist"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
 	Class = "Trinket" "Heist Target"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetFontSize 45
@@ -1447,27 +1548,11 @@ Hide
 	#BlockStrictness 1 Hide
 
 Show
-	ItemLevel >= 84
-	BaseType = "Eye Jewel"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel >= 83
-	BaseType = "Eye Jewel"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 4 Hide
-
-Show
 	Rarity = Rare
 	Class = "Abyss Jewel"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
 
 Show
 	Rarity = Magic
@@ -1475,7 +1560,6 @@ Show
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
 
 Show
 	ItemLevel >= 86
@@ -1509,22 +1593,12 @@ Show
 	Class = "Jewel"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
 
 Show
 	Rarity = Magic
 	Class = "Jewel"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
-
-# Tier 2 Rares
-Show
-	Rarity = Rare
-	Class = "Quivers"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
 
 # Tier 2 Rares
 Show
@@ -1773,10 +1847,64 @@ Show
 Show
 	Corrupted = False
 	Rarity = Normal
-	BaseType = "Granite Flask" "Sapphire Flask" "Paua Amulet" "Zodiac Leather" "Glorious Plate" "Lacquered Garb" "Ezomyte Dagger"
+	BaseType = "Granite Flask"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
+
+# Headhunter
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Sapphire Flask"
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 3 Hide
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Paua Amulet"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+# Headhunter
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Zodiac Leather"
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 3 Hide
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Glorious Plate"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Lacquered Garb"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+# Headhunter
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Ezomyte Dagger"
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 3 Hide
 
 #===============================================================================
 # Section: Magics
