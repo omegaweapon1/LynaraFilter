@@ -1433,31 +1433,66 @@ Show
 	DisableDropSound
 
 # 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	ItemLevel >= 84
+#	BaseType = "Opal Sceptre"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
+
+# 84 T1 Helmets
 Show
 	Corrupted = False
-	ItemLevel >= 84
-	BaseType = "Opal Sceptre"
+	ItemLevel >= 85
+	BaseType = "Astral Plate"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	ItemLevel = 83
+#	BaseType = "Karui Chopper"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 # 84 T1 Helmets
 Show
 	Corrupted = False
 	ItemLevel = 83
-	BaseType = "Karui Chopper"
+	BaseType = "Exquisite Blade"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
 
 # 84 T1 Helmets
-Show
-	Corrupted = False
-	ItemLevel >= 84
-	BaseType = "Two-Toned Boots"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	ItemLevel = 83
+#	BaseType = "Imbued Wand"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	ItemLevel >= 84
+#	BaseType = "Two-Toned Boots"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	BaseType = "Convoking Wand"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 #===============================================================================
 # Section: Special Rares
@@ -1506,7 +1541,6 @@ Show
 	Class = "Heist"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
 
 Show
 	Class = "Trinket" "Heist Target"
