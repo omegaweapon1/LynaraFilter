@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Lynara
-# VERSION:       3.13
+# VERSION:       3.14
 # AUTHOR:        Lynara
 # CONTACT:       mitchoka@gmail.com
 # LINK:          https://grinding.zone/?page=filtershaper&loadfilter=https://raw.githubusercontent.com/omegaweapon1/LynaraFilter/master/Lynara.filter
@@ -105,15 +105,9 @@ Show
 #===============================================================================
 
 Show
-	BaseType = "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
+	BaseType = "Inscribed Ultimatum"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	BaseType = "Ritual Splinter" "Ritual Vessel" "Crescent Splinter" "Blood-filled Vessel"
-	SetTextColor 128 64 64 200 # Challenge League
 	SetFontSize 45
 	DisableDropSound
 
@@ -188,6 +182,18 @@ Show
 Show
 	Rarity = Unique
 	BaseType = "Ornate Quiver" "Saint's Hauberk" "Rawhide Boots" "Crusader Boots" "Silk Gloves" "Prophecy Wand" "Wyrmscale Doublet" "Jewelled Foil" "Siege Axe" "Zodiac Leather" "Jingling Spirit Shield" "Ezomyte Tower Shield" "Greatwolf Talisman" "Ambush Mitts" "Carnal Boots" "Legion Gloves" "Glorious Plate" "Timeless Jewel" "Prismatic Jewel"
+	SetTextColor 175 96 37 255 # Unique
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "US.mp3" 100
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown 
+
+# Tier 1 Uniques
+Show
+	BaseType = "Vaal Reliquary Key"
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -369,6 +375,18 @@ Show
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
+# Tier 16
+Show
+	BaseType = "Chronicle of Atzoatl"
+	SetTextColor 184 218 242 255 # Maps
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MS.mp3" 100
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
 # Red Tier
 Show
 	MapTier >= 16
@@ -448,6 +466,16 @@ Show
 Show
 	Class = "Map Fragments"
 	BaseType = "Timeless Karui Emblem" "Breachstone" "Inya's Key" "Yriel's Key" "Volkuur's Key" "Eber's Key" "Mortal Rage" "Mortal Hope" "Mortal Grief" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Rusted Sulphite Scarab" "Gilded Bestiary Scarab" "Gilded Divination Scarab" "Gilded Torment Scarab" "Gilded Cartography Scarab" "Gilded Ambush Scarab" "Polished Bestiary Scarab" "Polished Harbinger Scarab" "Polished Legion Scarab" "Timeless Eternal Emblem" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
+Show
+	BaseType = "Crescent Splinter"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -547,7 +575,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Glyphic Fossil" "Prime Chaotic Resonator" "Prime Alchemical Resonator" "Bloodstained Fossil" "Ancient Orb" "Vial of Transcendence" "Geomancer's Incubator" "Vial of Awakening" "Orb of Unmaking"
+	BaseType = "Glyphic Fossil" "Prime Chaotic Resonator" "Prime Alchemical Resonator" "Bloodstained Fossil" "Ancient Orb" "Vial of Transcendence" "Geomancer's Incubator" "Vial of Awakening" "Orb of Unmaking" "Tainted Oil" "Accelerating Catalyst" "Unstable Catalyst" "Noxious Catalyst"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -557,7 +585,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Sanctified Fossil" "Opalescent Oil" "Divine Orb" "Orb of Annulment" "Time-Lost Incubator" "Essence of Horror" "Thaumaturge's Incubator" "Deafening Essence of Scorn" "Deafening Essence of Rage" "Deafening Essence of Zeal" "Harbinger's Orb" "Gilded Fossil" "Tangled Fossil" "Enchanted Fossil" "Black Oil" "Diviner's Incubator" "Foreboding Incubator" "Eldritch Incubator" "Otherworldly Incubator" "Deafening Essence of Envy" "Perfect Fossil" "Exalted Shard" "Vial of Consequence" "Prime Regrading Lens" "Secondary Regrading Lens" "Tailoring Orb" "Tempering Orb"
+	BaseType = "Sanctified Fossil" "Opalescent Oil" "Divine Orb" "Orb of Annulment" "Time-Lost Incubator" "Essence of Horror" "Thaumaturge's Incubator" "Deafening Essence of Scorn" "Deafening Essence of Rage" "Deafening Essence of Zeal" "Harbinger's Orb" "Gilded Fossil" "Tangled Fossil" "Enchanted Fossil" "Black Oil" "Diviner's Incubator" "Foreboding Incubator" "Eldritch Incubator" "Otherworldly Incubator" "Deafening Essence of Envy" "Perfect Fossil" "Exalted Shard" "Vial of Consequence" "Prime Regrading Lens" "Secondary Regrading Lens" "Tailoring Orb" "Tempering Orb" "Veiled Chaos Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -595,7 +623,7 @@ Show
 
 # 1/8 C
 Show
-	BaseType = "Jeweller's Orb" "Orb of Chance" "Orb of Alteration" "Chromatic Orb"
+	BaseType = "Jeweller's Orb" "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Chaos Shard" "Alteration Shard" "Alchemy Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -609,7 +637,7 @@ Show
 
 Show
 	StackSize >= 5
-	BaseType = "Chaos Shard" "Alchemy Shard" "Regal Shard"
+	BaseType = "Alchemy Shard" "Regal Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -918,6 +946,19 @@ Show
 	HasExplicitMod = "Redblade" "Brinerot" "Mutewind" "Betrayer's" "Deceiver's" "Turncoat's"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType = "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType = "Ritual Splinter" "Ritual Vessel" "Blood-filled Vessel"
+	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
 
@@ -1258,7 +1299,7 @@ Show
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 86
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring" "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1309,7 +1350,7 @@ Show
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 84
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring" "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1433,6 +1474,14 @@ Show
 	DisableDropSound
 
 # 84 T1 Helmets
+Show
+	Corrupted = False
+	BaseType = "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+# 84 T1 Helmets
 #Show
 #	Corrupted = False
 #	ItemLevel >= 84
@@ -1451,22 +1500,22 @@ Show
 	DisableDropSound
 
 # 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel = 83
-#	BaseType = "Karui Chopper"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
 Show
 	Corrupted = False
-	ItemLevel = 83
-	BaseType = "Exquisite Blade"
+	ItemLevel >= 84
+	BaseType = "Karui Chopper" "Vaal Axe"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	ItemLevel = 83
+#	BaseType = "Exquisite Blade"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 # 84 T1 Helmets
 #Show
@@ -1615,7 +1664,6 @@ Show
 	BaseType = "Sacrificial Garb"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
 
 #===============================================================================
 # Section: Rares
@@ -1740,7 +1788,7 @@ Show
 # New Bases
 Show
 	Rarity = Rare
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 4 Hide
@@ -1751,7 +1799,7 @@ Show
 	Class = "Belts"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
+	#BlockStrictness 3 Hide
 
 # Rare Rings/Amulets
 Show
@@ -1759,14 +1807,14 @@ Show
 	Class = "Rings" "Amulets"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 4 Hide
 
 Show
 	Rarity = Rare
 	ItemLevel < 60
 	SetFontSize 30
 	DisableDropSound
-	#BlockStrictness 1 Hide
+	#BlockStrictness 2 Hide
 
 #Hide
 #	Identified = False
@@ -1877,13 +1925,13 @@ Show
 #===============================================================================
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Granite Flask"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Granite Flask"
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 3 Hide
 
 # Headhunter
 #Show
@@ -1913,22 +1961,22 @@ Show
 #	#BlockStrictness 3 Hide
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Glorious Plate"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Glorious Plate"
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 3 Hide
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Lacquered Garb"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Lacquered Garb"
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 3 Hide
 
 # Headhunter
 #Show
