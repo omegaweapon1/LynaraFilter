@@ -377,7 +377,7 @@ Show
 
 # Tier 16
 Show
-	BaseType = "Chronicle of Atzoatl"
+	BaseType = "Chronicle of Atzoatl" "Sacred Blossom"
 	SetTextColor 184 218 242 255 # Maps
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
