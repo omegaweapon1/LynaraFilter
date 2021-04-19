@@ -1503,7 +1503,7 @@ Show
 Show
 	Corrupted = False
 	ItemLevel >= 84
-	BaseType = "Karui Chopper" "Vaal Axe"
+	BaseType = "Karui Chopper"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
@@ -1534,6 +1534,15 @@ Show
 #	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 #	SetFontSize 45
 #	DisableDropSound
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	ItemLevel >= 84
+	BaseType = "Copper Kris" "Golden Kris" "Platinum Kris"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
 
 # 84 T1 Helmets
 #Show
@@ -1607,10 +1616,11 @@ Show
 	DisableDropSound
 
 # Corrupted Rares
-Hide
+Show
 	Rarity = Rare
 	BaseType = "Breach Ring"
-	SetFontSize 30
+	SetBorderColor 191 0 0 255
+	SetFontSize 45
 
 # Corrupted Rares
 Show
@@ -1681,6 +1691,13 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
+# Bases based on builds played
+Show
+	Rarity = Rare
+	BaseType = "Copper Kris" "Golden Kris" "Platinum Kris" "Karui Chopper"
+	SetFontSize 45
+	DisableDropSound
+
 # Tier 2 Rares
 Show
 	Rarity = Rare
@@ -1748,7 +1765,7 @@ Show
 # Tier 1 Weapons
 Show
 	Rarity = Rare
-	BaseType = "Runic Hatchet" "Gemini Claw" "Demon Dagger" "Behemoth Mace" "Sambar Sceptre" "Tiger Hook" "Dragoon Sword" "Jewelled Foil" "Broadhead Arrow Quiver" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Imbued Wand" "Corsair Sword" "Slaughter Knife" "Harbinger Bow" "Coronal Maul" "Imperial Maul" "Fleshripper" "Vaal Axe"
+	BaseType = "Runic Hatchet" "Gemini Claw" "Demon Dagger" "Behemoth Mace" "Sambar Sceptre" "Tiger Hook" "Dragoon Sword" "Jewelled Foil" "Broadhead Arrow Quiver" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Imbued Wand" "Corsair Sword" "Slaughter Knife" "Harbinger Bow" "Coronal Maul" "Imperial Maul" "Fleshripper" "Vaal Axe" "Platinum Kris" "Copper Kris" "Golden Kris"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
