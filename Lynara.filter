@@ -286,6 +286,14 @@ Show
 # Section: Maps
 #===============================================================================
 
+Show
+	MapTier = 3
+	Class = "Maps"
+	BaseType = "Pier"
+	SetTextColor 184 218 242 255 # Maps
+	SetFontSize 45
+	DisableDropSound
+
 # White Corrupted Maps
 Show
 	Corrupted = True
@@ -326,6 +334,7 @@ Show
 # Red Tier
 Show
 	Class = "Blueprint"
+	BaseType = "Blueprint: Laboratory" "Blueprint: Prohibited Library" "Blueprint: Repository" "Blueprint: Tunnels"
 	SetTextColor 184 218 242 255 # Maps
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -334,9 +343,9 @@ Show
 	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue 
 
-# Yellow Tier
+# Red Tier
 Show
-	Class = "Contract"
+	Class = "Blueprint"
 	SetTextColor 184 218 242 255 # Maps
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -344,6 +353,13 @@ Show
 	CustomAlertSound "MB.mp3" 100
 	MinimapIcon 2 Blue Hexagon
 	PlayEffect Blue Temp
+
+# Yellow Tier
+Show
+	Class = "Contract"
+	SetTextColor 184 218 242 255 # Maps
+	SetFontSize 45
+	DisableDropSound
 
 # Tier 16
 Show
@@ -636,19 +652,18 @@ Show
 	DisableDropSound
 
 Show
+	BaseType = "Orb of Transmutation" "Blacksmith's Whetstone"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+Show
 	StackSize >= 5
 	BaseType = "Alchemy Shard" "Regal Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
-
-Show
-	BaseType = "Orb of Transmutation" "Blacksmith's Whetstone"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
 
 Show
 	BaseType = "Chaos Shard" "Alchemy Shard" "Regal Shard" "Binding Shard"
@@ -778,6 +793,7 @@ Show
 
 Show
 	Sockets = "6"
+	Rarity <= Magic
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -785,6 +801,7 @@ Show
 
 Show
 	SocketGroup >= "RGB"
+	Rarity <= Magic
 	Height = 3
 	Width = 1
 	SetTextColor 170 158 130 255 # Currency
@@ -794,6 +811,7 @@ Show
 
 Show
 	SocketGroup >= "RGB"
+	Rarity <= Magic
 	Height = 2
 	Width = 2
 	SetTextColor 170 158 130 255 # Currency
@@ -803,6 +821,7 @@ Show
 
 Show
 	SocketGroup >= "RGB"
+	Rarity <= Magic
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -977,6 +996,7 @@ Show
 
 Show
 	LinkedSockets = 5
+	Rarity <= Magic
 	Class = "Body Armours"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -985,6 +1005,7 @@ Show
 
 Show
 	LinkedSockets = 5
+	Rarity <= Magic
 	Class = "Two Hand" "Staves"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1448,7 +1469,7 @@ Show
 Show
 	Corrupted = False
 	ItemLevel >= 86
-	BaseType = "Steel Ring" "Opal Ring" "Crystal Belt" "Cerulean Ring" "Vermillion Ring" "Convoking Wand"
+	BaseType = "Steel Ring" "Opal Ring" "Crystal Belt" "Cerulean Ring" "Vermillion Ring" "Convoking Wand" "Seaglass Amulet" "Blessed Boots" "Artillery Quiver" "Apothecary's Gloves" "Iolite Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1465,7 +1486,6 @@ Show
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
 
 Show
 	BaseType = "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring"
@@ -1476,10 +1496,18 @@ Show
 # 84 T1 Helmets
 Show
 	Corrupted = False
-	BaseType = "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	BaseType = "Grasping Mail"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	BaseType = "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 # 84 T1 Helmets
 #Show
@@ -1500,13 +1528,22 @@ Show
 	DisableDropSound
 
 # 84 T1 Helmets
-Show
-	Corrupted = False
-	ItemLevel >= 84
-	BaseType = "Karui Chopper"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	ItemLevel >= 84
+#	BaseType = "Karui Chopper"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	ItemLevel >= 84
+#	BaseType = "Opal Wand"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 # 84 T1 Helmets
 #Show
@@ -1536,13 +1573,13 @@ Show
 #	DisableDropSound
 
 # 84 T1 Helmets
-Show
-	Corrupted = False
-	ItemLevel >= 84
-	BaseType = "Copper Kris" "Golden Kris" "Platinum Kris"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	ItemLevel >= 84
+#	BaseType = "Copper Kris" "Golden Kris" "Platinum Kris"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 # 84 T1 Helmets
 #Show
@@ -1632,12 +1669,19 @@ Show
 	SetFontSize 45
 
 # Corrupted Rares
-Hide
+Show
 	Corrupted = True
 	Identified = True
 	Rarity = Rare
 	SetFontSize 30
 	#BlockStrictness 1 Hide
+
+# Corrupted Rares
+Show
+	Corrupted = False
+	Identified = True
+	Rarity = Rare
+	SetFontSize 30
 
 Show
 	Rarity = Rare
@@ -1833,7 +1877,69 @@ Show
 	DisableDropSound
 	#BlockStrictness 2 Hide
 
-#Hide
+#-------------------------------------------------------------------------------
+# Subsection: Sockets
+#-------------------------------------------------------------------------------
+
+Show
+	LinkedSockets = 5
+	Rarity > Magic
+	Class = "Body Armours"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	LinkedSockets = 5
+	Rarity > Magic
+	Class = "Two Hand" "Staves"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	Sockets = "6"
+	Rarity > Magic
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	SocketGroup >= "RGB"
+	Rarity > Magic
+	Height = 3
+	Width = 1
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	SocketGroup >= "RGB"
+	Rarity > Magic
+	Height = 2
+	Width = 2
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	SocketGroup >= "RGB"
+	Rarity > Magic
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: Chaos Recipe
+#-------------------------------------------------------------------------------
+
+#Show
 #	Identified = False
 #	Rarity = Rare
 #	ItemLevel >= 60
@@ -1846,7 +1952,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 2 Hide
 
-#Hide
+#Show
 #	Identified = False
 #	Rarity = Rare
 #	ItemLevel >= 60
@@ -1859,7 +1965,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 2 Hide
 
-#Hide
+#Show
 #	Identified = False
 #	Rarity = Rare
 #	ItemLevel >= 60
@@ -1872,7 +1978,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 2 Hide
 
-#Hide
+#Show
 #	Identified = False
 #	Rarity = Rare
 #	ItemLevel >= 60
@@ -1885,7 +1991,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 2 Hide
 
-#Hide
+#Show
 #	Identified = False
 #	Rarity = Rare
 #	ItemLevel >= 60
@@ -1898,7 +2004,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 2 Hide
 
-#Hide
+#Show
 #	Identified = False
 #	Rarity = Rare
 #	ItemLevel >= 60
@@ -1911,7 +2017,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 2 Hide
 
-#Hide
+#Show
 #	Identified = False
 #	Rarity = Rare
 #	ItemLevel >= 60
@@ -1924,7 +2030,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 2 Hide
 
-#Hide
+#Show
 #	Identified = False
 #	Rarity = Rare
 #	ItemLevel >= 60
@@ -1948,7 +2054,6 @@ Show
 #	BaseType = "Granite Flask"
 #	SetFontSize 45
 #	DisableDropSound
-#	#BlockStrictness 3 Hide
 
 # Headhunter
 #Show
@@ -1957,16 +2062,6 @@ Show
 #	BaseType = "Sapphire Flask"
 #	SetFontSize 45
 #	DisableDropSound
-#	#BlockStrictness 3 Hide
-
-# Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Paua Amulet"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
 
 # Headhunter
 #Show
@@ -1975,7 +2070,6 @@ Show
 #	BaseType = "Zodiac Leather"
 #	SetFontSize 45
 #	DisableDropSound
-#	#BlockStrictness 3 Hide
 
 # Headhunter
 #Show
@@ -1984,16 +2078,6 @@ Show
 #	BaseType = "Glorious Plate"
 #	SetFontSize 45
 #	DisableDropSound
-#	#BlockStrictness 3 Hide
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Lacquered Garb"
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 3 Hide
 
 # Headhunter
 #Show
@@ -2002,7 +2086,38 @@ Show
 #	BaseType = "Ezomyte Dagger"
 #	SetFontSize 45
 #	DisableDropSound
-#	#BlockStrictness 3 Hide
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Lacquered Garb"
+	SetFontSize 45
+	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Prophecy Wand"
+	SetFontSize 45
+	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Unset Ring"
+	SetFontSize 45
+	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Paua Amulet"
+	SetFontSize 45
+	DisableDropSound
 
 #===============================================================================
 # Section: Magics
