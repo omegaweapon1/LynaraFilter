@@ -733,7 +733,7 @@ Show
 # GG Cards
 Show
 	Class = "Divination Card"
-	BaseType = "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Immortal" "Alluring Bounty" "The Samurai's Eye" "Succor of the Sinless" "The Nurse" "Pride of the First Ones" "Immortal Resolve" "Nook's Crown" "The Dragon's Heart" "The World Eater" "The Spark and the Flame" "The Iron Bard" "Wealth and Power" "The Price of Loyalty" "Abandoned Wealth" "Hunter's Reward" "The Progeny of Lunaris" "The Cheater" "The Greatest Intentions"
+	BaseType = "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Immortal" "Alluring Bounty" "The Samurai's Eye" "Succor of the Sinless" "The Nurse" "Pride of the First Ones" "Immortal Resolve" "Nook's Crown" "The Dragon's Heart" "The World Eater" "The Spark and the Flame" "The Iron Bard" "Wealth and Power" "The Price of Loyalty" "Abandoned Wealth" "Hunter's Reward" "The Progeny of Lunaris" "The Cheater" "The Greatest Intentions" "Unrequited Love" "Brother's Stash" "Deadly Joy" "The Cheater" "Love Through Ice" "Succor of the Sinless" "Gift of Asenath" "Alluring Bounty" "Desecrated Virtue" "Luminous Trove"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -746,7 +746,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "Seven Years Bad Luck" "The Queen" "The Polymath" "The Damned" "The Craving" "The Eye of Terror" "The Enlightened" "Council of Cats" "The Eldritch Decay" "The Strategist" "The White Knight" "Fateful Meeting"
+	BaseType = "Seven Years Bad Luck" "The Queen" "The Polymath" "The Damned" "The Craving" "The Eye of Terror" "The Enlightened" "Council of Cats" "The Eldritch Decay" "The Strategist" "The White Knight" "Fateful Meeting" "The Pact" "A Note in the Wind" "The Greatest Intentions" "Winter's Embrace" "The Long Con" "Keeper's Corruption" "The Sustenance"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -758,7 +758,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "The Saint's Treasure" "Void of the Elements" "The Offering" "Etched in Blood" "Pride Before the Fall" "The Celestial Justicar" "The Escape" "Burning Blood" "The Celestial Stone" "The Mayor" "The Bargain" "Squandered Prosperity" "The Soul" "Azyran's Reward" "Blessing of God" "The Hoarder" "The Wolven King's Bite" "Dark Dreams" "The Ethereal" "The Easy Stroll" "The Awakened" "Acclimatisation"
+	BaseType = "The Saint's Treasure" "Void of the Elements" "The Offering" "Etched in Blood" "Pride Before the Fall" "The Celestial Justicar" "The Escape" "Burning Blood" "The Celestial Stone" "The Mayor" "The Bargain" "Squandered Prosperity" "The Soul" "Azyran's Reward" "Blessing of God" "The Hoarder" "The Wolven King's Bite" "Dark Dreams" "The Ethereal" "The Easy Stroll" "The Awakened" "Acclimatisation" "The Escape"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
