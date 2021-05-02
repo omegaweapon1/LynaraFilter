@@ -8,10 +8,12 @@
 # CONTACT:       mitchoka@gmail.com
 # LINK:          https://grinding.zone/?page=filtershaper&loadfilter=https://raw.githubusercontent.com/omegaweapon1/LynaraFilter/master/Lynara.filter
 #
-# Strictness 1:  White Maps
-# Strictness 2:  Yellow Maps
-# Strictness 3:  Red Maps
-# Strictness 4:  T16s
+# Strictness 1:  Fresh Maps
+# Strictness 2:  Woke 1-3
+# Strictness 3:  Woke 4-6
+# Strictness 4:  Woke 7-8
+# Strictness 5:  Woke 8+
+# Strictness 6:  Turbo Juiced
 # Default strictness: 0
 #
 # Created with Filter Master editor at https://grinding.zone
@@ -100,6 +102,26 @@ Show
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
+Show
+	BaseType = "Ivory Watchstone"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Brown Circle
+	PlayEffect Brown 
+
+Show
+	BaseType = "Watchstone"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
 #===============================================================================
 # Section: Challenge League
 #===============================================================================
@@ -111,6 +133,16 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
+Show
+	BaseType = "Vaal Reliquary Key"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Brown Circle
+	PlayEffect Brown 
+
 #===============================================================================
 # Section: 6L
 #===============================================================================
@@ -118,6 +150,7 @@ Show
 # Tier 1 Uniques
 Show
 	LinkedSockets = 6
+	SocketGroup ! "WWWWWW"
 	Rarity = Unique
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 255 255 255 255 # S Tier
@@ -264,17 +297,6 @@ Show
 	MinimapIcon 2 Brown Star
 	PlayEffect Brown Temp
 
-# T2 Uniques
-Show
-	BaseType = "Maven's Invitation"
-	SetTextColor 175 96 37 255 # Unique
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "UB.mp3" 100
-	MinimapIcon 2 Brown Star
-	PlayEffect Brown Temp
-
 # Catch All Uniques
 Show
 	Rarity = Unique
@@ -286,24 +308,51 @@ Show
 # Section: Maps
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: Guardians
+#-------------------------------------------------------------------------------
+
+# Tier 16
 Show
-	MapTier = 3
+	HasInfluence = "Elder"
 	Class = "Maps"
-	BaseType = "Pier"
 	SetTextColor 184 218 242 255 # Maps
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "MS.mp3" 100
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
 
-# White Corrupted Maps
+# Tier 16
 Show
-	Corrupted = True
-	Rarity = Normal
-	MapTier <= 5
+	HasInfluence = "Shaper"
 	Class = "Maps"
 	SetTextColor 184 218 242 255 # Maps
-	SetFontSize 30
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
+	CustomAlertSound "MS.mp3" 100
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+#-------------------------------------------------------------------------------
+# Subsection: Special Maps
+#-------------------------------------------------------------------------------
+
+# Tier 16
+Show
+	BaseType = "Chronicle of Atzoatl" "Sacred Blossom"
+	SetTextColor 184 218 242 255 # Maps
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MS.mp3" 100
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
 
 # Red Tier
 Show
@@ -331,6 +380,22 @@ Show
 	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue 
 
+# Tier 16
+Show
+	AnyEnchantment = True
+	Class = "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MA.mp3" 100
+	MinimapIcon 1 Blue Hexagon
+	PlayEffect Blue 
+
+#-------------------------------------------------------------------------------
+# Subsection: Blueprints
+#-------------------------------------------------------------------------------
+
 # Red Tier
 Show
 	Class = "Blueprint"
@@ -347,12 +412,8 @@ Show
 Show
 	Class = "Blueprint"
 	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MB.mp3" 100
-	MinimapIcon 2 Blue Hexagon
-	PlayEffect Blue Temp
 
 # Yellow Tier
 Show
@@ -361,47 +422,50 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# Tier 16
+#-------------------------------------------------------------------------------
+# Subsection: Maven
+#-------------------------------------------------------------------------------
+
+# Red Tier
 Show
-	MapTier >= 16
-	Class = "Maps"
-	BaseType = "Maze of the Minotaur" "Lair of the Hydra" "Forge of the Phoenix" "Pit of the Chimera"
+	BaseType = "Maven's Invitation: The Feared" "Maven's Invitation: The Formed" "Maven's Invitation: The Forgotten" "Maven's Invitation: The Hidden" "Maven's Invitation: The Twisted"
 	SetTextColor 184 218 242 255 # Maps
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
+	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
-	MinimapIcon 0 Blue Hexagon
+	CustomAlertSound "MA.mp3" 100
+	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue 
 
-# Tier 16
+# Red Tier
 Show
-	Identified = True
-	Rarity = Rare
-	Quality >= 10
-	MapTier >= 14
+	BaseType = "Maven's Invitation"
+	SetTextColor 184 218 242 255 # Maps
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Maps
+#-------------------------------------------------------------------------------
+
+#Show
+#	MapTier = 3
+#	Class = "Maps"
+#	BaseType = "Pier"
+#	SetTextColor 184 218 242 255 # Maps
+#	SetFontSize 45
+#	DisableDropSound
+
+# White Corrupted Maps
+Show
+	Corrupted = True
+	Rarity = Normal
+	MapTier <= 5
 	Class = "Maps"
 	SetTextColor 184 218 242 255 # Maps
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
+	SetFontSize 30
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue 
-
-# Tier 16
-Show
-	BaseType = "Chronicle of Atzoatl" "Sacred Blossom"
-	SetTextColor 184 218 242 255 # Maps
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue 
+	#BlockStrictness 2 Hide
 
 # Red Tier
 Show
@@ -417,6 +481,18 @@ Show
 
 # Yellow Tier
 Show
+	MapTier >= 14
+	Class = "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MB.mp3" 100
+	MinimapIcon 2 Blue Hexagon
+	PlayEffect Blue Temp
+
+# Yellow Tier
+Show
 	MapTier >= 11
 	Class = "Maps"
 	SetTextColor 184 218 242 255 # Maps
@@ -426,6 +502,7 @@ Show
 	CustomAlertSound "MB.mp3" 100
 	MinimapIcon 2 Blue Hexagon
 	PlayEffect Blue Temp
+	#BlockStrictness 5 Hide
 
 # Tier 4-5
 Show
@@ -458,8 +535,12 @@ Show
 # Section: Map Fragments
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: Atlas Bosses
+#-------------------------------------------------------------------------------
+
 Show
-	BaseType = "Timeless Maraketh Emblem" "Timeless Maraketh Emblem" "Fragment of the Phoenix" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Chayula's Breachstone"
+	BaseType = "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness" "The Maven's Writ"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -470,7 +551,7 @@ Show
 	PlayEffect Brown 
 
 Show
-	BaseType = "Uul-Netol's Breachstone" "Timeless Vaal Emblem" "Mortal Ignorance" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Purification" "Fragment of Constriction"
+	BaseType = "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Purification" "Fragment of Constriction" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Fragment of the Phoenix"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -478,17 +559,6 @@ Show
 	CustomAlertSound "GA.mp3" 100
 	MinimapIcon 1 Brown Circle
 	PlayEffect Brown 
-
-Show
-	Class = "Map Fragments"
-	BaseType = "Timeless Karui Emblem" "Breachstone" "Inya's Key" "Yriel's Key" "Volkuur's Key" "Eber's Key" "Mortal Rage" "Mortal Hope" "Mortal Grief" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Rusted Sulphite Scarab" "Gilded Bestiary Scarab" "Gilded Divination Scarab" "Gilded Torment Scarab" "Gilded Cartography Scarab" "Gilded Ambush Scarab" "Polished Bestiary Scarab" "Polished Harbinger Scarab" "Polished Legion Scarab" "Timeless Eternal Emblem" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
-	SetTextColor 255 165 0 255 # Fragments
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
-	MinimapIcon 2 Brown Circle
-	PlayEffect Brown Temp
 
 Show
 	BaseType = "Crescent Splinter"
@@ -500,8 +570,159 @@ Show
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
 
+#-------------------------------------------------------------------------------
+# Subsection: Atziri
+#-------------------------------------------------------------------------------
+
 Show
-	BaseType = "The Maven's Writ"
+	BaseType = "Mortal Grief" "Mortal Hope" "Mortal Ignorance" "Mortal Rage"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
+Show
+	BaseType = "Sacrifice at Midnight" "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Noon"
+	SetTextColor 255 165 0 255 # Fragments
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Breach
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Pure Breachstone"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GS.mp3" 100
+	MinimapIcon 0 Brown Circle
+	PlayEffect Brown 
+
+Show
+	BaseType = "Enriched Breachstone"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Brown Circle
+	PlayEffect Brown 
+
+Show
+	BaseType = "Charged Breachstone" "Chayula's Breachstone" "Uul-Netol's Breachstone"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
+Show
+	BaseType = "Breachstone"
+	SetTextColor 255 165 0 255 # Fragments
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Delirium
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Simulacrum"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GS.mp3" 100
+	MinimapIcon 0 Brown Circle
+	PlayEffect Brown 
+
+Show
+	BaseType = "Simulacrum Splinter"
+	SetTextColor 255 165 0 255 # Fragments
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Legion
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Timeless Maraketh Emblem" "Timeless Templar Emblem"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Brown Circle
+	PlayEffect Brown 
+
+Show
+	BaseType = "Timeless Eternal Empire Emblem" "Timeless Karui Emblem" "Timeless Vaal Emblem"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
+Show
+	BaseType = "Timeless Vaal Splinter" "Timeless Templar Splinter" "Timeless Maraketh Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter"
+	SetTextColor 255 165 0 255 # Fragments
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Scarab
+#-------------------------------------------------------------------------------
+
+Show
+	Class = "Map Fragments"
+	BaseType = "Winged" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Gilded Legion Scarab"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GS.mp3" 100
+	MinimapIcon 0 Brown Circle
+	PlayEffect Brown 
+
+Show
+	Class = "Map Fragments"
+	BaseType = "Gilded" "Polished Divination Scarab" "Polished Sulphite Scarab" "Polished Legion Scarab"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Brown Circle
+	PlayEffect Brown 
+
+Show
+	Class = "Map Fragments"
+	BaseType = "Polished" "Rusted Divination Scarab" "Rusted Sulphite Scarab" "Rusted Legion Scarab"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
+Show
+	Class = "Map Fragments"
+	BaseType = "Rusted"
 	SetTextColor 255 165 0 255 # Fragments
 	SetFontSize 45
 	DisableDropSound
@@ -509,12 +730,19 @@ Show
 Show
 	Class = "Maps" "Map Fragments"
 	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 255 255 255 # Error
 	SetFontSize 45
 	DisableDropSound
 
 #===============================================================================
 # Section: Prophecies
 #===============================================================================
+
+Hide
+	BaseType = "Prophecy"
+	Prophecy = "Golden Touch" "Smothering Tendrils" "A Forest of False Idols" "A Rift in Time" "Agony at Dusk" "Black Devotion" "Blind Faith" "Blinding Light" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Dark Instincts" "Dying Cry" "End of the Light" "Faith Exhumed" "Greed's Folly" "Heavy Blows" "Last of the Wildmen" "Mouth of Horrors" "Nature's Resilience" "Power Magnified" "Sun's Punishment" "The Apex Predator" "The Bloody Flowers Redux" "The Fall of an Empire" "The Flow of Energy" "The King and the Brambles" "The Mentor" "The Silverwood" "The Snuffed Flame" "The Storm Spire" "Trapped in the Tower" "Winter's Mournful Melodies" "A Call into the Void" "A Firm Foothold" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Baptism by Death" "Blood in the Eyes" "Blood of the Betrayed" "Custodians of Silence" "Fear's Wide Reach" "From Death Springs Life" "Heart of the Fire" "Nemesis of Greed" "Notched Flesh" "Roth's Legacy" "Storm on the Reef" "Strong as a Bull" "Storm on the Horizon" "The Brutal Enforcer" "The Eagle's Cry" "The Flayed Man" "The Lady in Black" "The Last Watch" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Prison Guard" "The Prison Key" "The Singular Spirit" "The Sinner's Stone" "The Sword King's Passion" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "A Regal Death" "The Corrupt" "The God of Misfortune" "The Dream Trial" "The Lost Maps" "The Fortune Teller's Collection" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Thaumaturgical History II" "Thaumaturgical History III" "The Ambitious Bandit I" "The Ambitious Bandit II" "Thaumaturgical History I" "A Regal Death" "Erased from Memory" "Lasting Impressions" "The Alchemist" "The Corrupt" "The God of Misfortune"
+	SetTextColor 128 0 128 255 # Prophecy
+	SetFontSize 25
 
 Show
 	Prophecy = "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Song of the Sekhema" "Lost in the Pages" "The Bowstring's Music"
@@ -545,31 +773,27 @@ Show
 	PlayEffect Yellow Temp
 
 Show
-	Class = "Stackable Currency"
 	BaseType = "Prophecy"
 	Prophecy = "Crushing Squall" "Fire from the Sky" "Ice from Above" "Lightning Falls" "The Undead Storm" "A Master Seeks Help" "Bountiful Traps" "The Dreamer's Dream" "The Feral Lord V" "The Plaguemaw V" "The Unbreathing Queen V" "Unbearable Whispers V" "Thaumaturgical History IV" "The Ambitious Bandit III"
 	SetTextColor 128 0 128 255 # Prophecy
 	SetFontSize 45
 
-Hide
-	Class = "Stackable Currency"
-	BaseType = "Prophecy"
-	Prophecy = "Golden Touch" "Smothering Tendrils" "A Forest of False Idols" "A Rift in Time" "Agony at Dusk" "Black Devotion" "Blind Faith" "Blinding Light" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Dark Instincts" "Dying Cry" "End of the Light" "Faith Exhumed" "Greed's Folly" "Heavy Blows" "Last of the Wildmen" "Mouth of Horrors" "Nature's Resilience" "Power Magnified" "Sun's Punishment" "The Apex Predator" "The Bloody Flowers Redux" "The Fall of an Empire" "The Flow of Energy" "The King and the Brambles" "The Mentor" "The Silverwood" "The Snuffed Flame" "The Storm Spire" "Trapped in the Tower" "Winter's Mournful Melodies" "A Call into the Void" "A Firm Foothold" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Baptism by Death" "Blood in the Eyes" "Blood of the Betrayed" "Custodians of Silence" "Fear's Wide Reach" "From Death Springs Life" "Heart of the Fire" "Nemesis of Greed" "Notched Flesh" "Roth's Legacy" "Storm on the Reef" "Strong as a Bull" "Storm on the Horizon" "The Brutal Enforcer" "The Eagle's Cry" "The Flayed Man" "The Lady in Black" "The Last Watch" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Prison Guard" "The Prison Key" "The Singular Spirit" "The Sinner's Stone" "The Sword King's Passion" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "A Regal Death" "The Corrupt" "The God of Misfortune" "The Dream Trial" "The Lost Maps" "The Fortune Teller's Collection" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Thaumaturgical History I" "Thaumaturgical History II" "Thaumaturgical History III" "The Ambitious Bandit I" "The Ambitious Bandit II"
-	SetTextColor 128 0 128 255 # Prophecy
-	SetFontSize 25
-
 Show
-	Class = "Stackable Currency"
 	BaseType = "Prophecy"
 	SetTextColor 128 0 128 255 # Prophecy
+	SetBorderColor 255 255 255 255 # Error
 	SetFontSize 45
 
 #===============================================================================
 # Section: Currency
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: Blight
+#-------------------------------------------------------------------------------
+
 Show
-	BaseType = "Mirror Shard" "Vial of the Ghost" "Golden Oil" "Exalted Orb" "Vial of Sacrifice" "Fractured Fossil" "Hollow Fossil" "Faceted Fossil" "Blessing of Chayula" "Silver Oil" "Ancient Reliquary Key" "Timeworn Reliquary Key" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Maven's Orb"
+	BaseType = "Golden Oil"
 	SetTextColor 170 158 130 255 # Currency
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -580,18 +804,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Ivory Watchstone"
-	SetTextColor 170 158 130 255 # Currency
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "CS.mp3" 100
-	MinimapIcon 0 Yellow Diamond
-	PlayEffect Yellow 
-
-Show
-	BaseType = "Glyphic Fossil" "Prime Chaotic Resonator" "Prime Alchemical Resonator" "Bloodstained Fossil" "Ancient Orb" "Vial of Transcendence" "Geomancer's Incubator" "Vial of Awakening" "Orb of Unmaking" "Tainted Oil" "Accelerating Catalyst" "Unstable Catalyst" "Noxious Catalyst"
+	BaseType = "Tainted Oil" "Silver Oil"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -601,7 +814,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Sanctified Fossil" "Opalescent Oil" "Divine Orb" "Orb of Annulment" "Time-Lost Incubator" "Essence of Horror" "Thaumaturge's Incubator" "Deafening Essence of Scorn" "Deafening Essence of Rage" "Deafening Essence of Zeal" "Harbinger's Orb" "Gilded Fossil" "Tangled Fossil" "Enchanted Fossil" "Black Oil" "Diviner's Incubator" "Foreboding Incubator" "Eldritch Incubator" "Otherworldly Incubator" "Deafening Essence of Envy" "Perfect Fossil" "Exalted Shard" "Vial of Consequence" "Prime Regrading Lens" "Secondary Regrading Lens" "Tailoring Orb" "Tempering Orb" "Veiled Chaos Orb"
+	BaseType = "Black Oil" "Opalescent Oil"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -612,75 +825,279 @@ Show
 
 # Pick up always
 Show
-	BaseType = "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Cartographer's Seal" "Unshaping Orb" "Harbinger's Shard" "Stacked Deck" "Annulment Shard" "Essence of Hysteria" "Essence of Delirium" "Deafening Essence" "Shrieking Essence" "Screaming Essence" "Incubator" "Splinter of Chayula" "Simple Sextant" "Prime Sextant" "Awakened Sextant" "Delirium Orb"
+	Class = "Stackable Currency"
+	BaseType = "Oil"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Metamorph
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Fertile Catalyst" "Prismatic Catalyst"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CA.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Unstable Catalyst" "Accelerating Catalyst"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
 
 # Pick up always
 Show
-	Class = "Currency"
-	BaseType = "Blessing of" "Breachstone" "Splinter of" "Oil" "Resonator" "Catalyst" "Rogue's Marker"
+	Class = "Stackable Currency"
+	BaseType = "Catalyst"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
+#-------------------------------------------------------------------------------
+# Subsection: Incubator
+#-------------------------------------------------------------------------------
+
 Show
-	BaseType = "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Remnant of Corruption" "Horizon Shard" "Engineer's Shard" "Silver Coin" "Ancient Shard" "Simulacrum Splinter"
+	BaseType = "Geomancer's Incubator" "Time-Lost Incubator"
+	SetTextColor 170 158 130 255 # Currency
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CS.mp3" 100
+	MinimapIcon 0 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Maddening Incubator" "Skittering Incubator"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CA.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Morphing Incubator" "Fossilised Incubator" "Blighted Incubator"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+# Pick up always
+Show
+	BaseType = "Incubator"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
+#-------------------------------------------------------------------------------
+# Subsection: Fossil
+#-------------------------------------------------------------------------------
+
 Show
-	StackSize >= 20
+	BaseType = "Glyphic Fossil" "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Tangled Fossil" "Hollow Fossil" "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+	SetTextColor 170 158 130 255 # Currency
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CS.mp3" 100
+	MinimapIcon 0 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Gilded Fossil" "Sanctified Fossil" "Lucent Fossil" "Encrusted Fossil"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CA.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" "Potent Chaotic Resonator" "Perfect Fossil" "Shuddering Fossil" "Corroded Fossil" "Pristine Fossil" "Prismatic Fossil" "Aetheric Fossil" "Bound Fossil"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+# Pick up always
+Show
+	BaseType = "Potent Alchemical Resonator" "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" "Aberrant Fossil" "Dense Fossil" "Enchanted Fossil" "Frigid Fossil" "Jagged Fossil" "Metallic Fossil" "Scorched Fossil" "Serrated Fossil"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
-# 1/8 C
+#-------------------------------------------------------------------------------
+# Subsection: Temple Vials
+#-------------------------------------------------------------------------------
+
 Show
-	BaseType = "Jeweller's Orb" "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Chaos Shard" "Alteration Shard" "Alchemy Shard"
+	BaseType = "Vial of Dominance" "Vial of Consequence" "Vial of Transcendence" "Vial of Sacrifice" "Vial of the Ghost"
+	SetTextColor 170 158 130 255 # Currency
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CS.mp3" 100
+	MinimapIcon 0 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Vial of Awakening"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CA.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Vial of Fate"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+# Pick up always
+Show
+	BaseType = "Vial of Summoning" "Vial of the Ritual"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
+#-------------------------------------------------------------------------------
+# Subsection: Breach
+#-------------------------------------------------------------------------------
+
 Show
-	StackSize >= 10
+	BaseType = "Blessing of Chayula"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CA.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Blessing of Uul-Netol"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+# Pick up always
+Show
+	BaseType = "Blessing of" "Splinter of"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Generic Currency
+#-------------------------------------------------------------------------------
+
+# Pick up always
+Show
 	BaseType = "Perandus Coin"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
 Show
-	BaseType = "Orb of Transmutation" "Blacksmith's Whetstone"
+	BaseType = "Mirror Shard" "Maven's Orb" "Awakener's Orb" "Tempering Orb" "Tailoring Orb" "Prime Regrading Lens" "Secondary Regrading Lens" "Exalted Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
+	SetTextColor 170 158 130 255 # Currency
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CS.mp3" 100
+	MinimapIcon 0 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Elevated Sextant" "Divine Orb" "Ancient Orb" "Orb of Unmaking" "Exalted Shard" "Orb of Annulment" "Veiled Chaos Orb" "Essence of Hysteria" "Essence of Delirium" "Essence of Insanity" "Essence of Horror"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CA.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Deafening Essence" "Delirium Orb" "Ritual Vessel"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	StackSize >= 20
+	Class = "Stackable Currency"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+# Pick up always
+Show
+	BaseType = "Remnant of Corruption" "Shrieking Essence" "Screaming Essence" "Ritual Splinter" "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Harbinger's Shard" "Annulment Shard" "Sextant" "Rogue's Marker" "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Silver Coin" "Ancient Shard" "Orb of Alteration"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
+# Pick up always
 Show
-	StackSize >= 5
-	BaseType = "Alchemy Shard" "Regal Shard"
+	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Chromatic Orb" "Alteration Shard" "Orb of Transmutation" "Blacksmith's Whetstone"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 6 Hide
 
+# Pick up always
 Show
-	BaseType = "Chaos Shard" "Alchemy Shard" "Regal Shard" "Binding Shard"
+	BaseType = "Chaos Shard" "Alchemy Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Armourer's Scrap" "Orb of Augmentation"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
+	#BlockStrictness 4 Hide
 
 Show
-	BaseType = "Armourer's Scrap" "Orb of Augmentation"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
-
-Show
-	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence" "Perandus Coin"
+	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -703,15 +1120,20 @@ Show
 Show
 	Class = "Currency"
 	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 255 255 255 # Error
 	SetFontSize 45
 	DisableDropSound
 
 Show
 	Class = "Stackable Currency"
 	SetTextColor 170 158 130 255 # Currency
-	SetBackgroundColor 0 0 0 240
+	SetBorderColor 255 255 255 255 # Error
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Subsection Name
+#-------------------------------------------------------------------------------
 
 #===============================================================================
 # Section: Divination Cards
@@ -722,6 +1144,14 @@ Hide
 	BaseType = "The Demoness"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 30
+
+Show
+	Class = "Divination Card"
+	BaseType = "The Gambler" "Assassin's Favour" "Her Mask" "Dying Anguish" "The Trial" "A Mother's Parting Gift" "Dark Temptation" "Emperor's Luck" "Imperial Legacy" "The Catalyst" "The Doppelganger" "The Encroaching Darkness" "The Fox" "The Gemcutter" "The Scholar" "Three Faces in the Dark" "Three Voices" "Vinia's Token"
+	SetTextColor 30 144 255 255 # Divination Card
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 6 Hide
 
 Show
 	Class = "Divination Card"
@@ -746,7 +1176,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "Seven Years Bad Luck" "The Queen" "The Polymath" "The Damned" "The Craving" "The Eye of Terror" "The Enlightened" "Council of Cats" "The Eldritch Decay" "The Strategist" "The White Knight" "Fateful Meeting" "The Pact" "A Note in the Wind" "The Greatest Intentions" "Winter's Embrace" "The Long Con" "Keeper's Corruption" "The Sustenance"
+	BaseType = "Seven Years Bad Luck" "The Queen" "The Polymath" "The Damned" "The Craving" "The Eye of Terror" "The Enlightened" "Council of Cats" "The Eldritch Decay" "The Strategist" "The White Knight" "Fateful Meeting" "The Pact" "A Note in the Wind" "The Greatest Intentions" "Winter's Embrace" "The Long Con" "Keeper's Corruption" "The Sustenance" "The King's Heart"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -758,7 +1188,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "The Saint's Treasure" "Void of the Elements" "The Offering" "Etched in Blood" "Pride Before the Fall" "The Celestial Justicar" "The Escape" "Burning Blood" "The Celestial Stone" "The Mayor" "The Bargain" "Squandered Prosperity" "The Soul" "Azyran's Reward" "Blessing of God" "The Hoarder" "The Wolven King's Bite" "Dark Dreams" "The Ethereal" "The Easy Stroll" "The Awakened" "Acclimatisation" "The Escape"
+	BaseType = "The Saint's Treasure" "Void of the Elements" "The Offering" "Etched in Blood" "Pride Before the Fall" "The Celestial Justicar" "The Escape" "Burning Blood" "The Celestial Stone" "The Mayor" "The Bargain" "Squandered Prosperity" "The Soul" "Azyran's Reward" "Blessing of God" "The Hoarder" "The Wolven King's Bite" "Dark Dreams" "The Ethereal" "The Easy Stroll" "The Awakened" "Acclimatisation" "The Escape" "The Rite of Elements" "The Primordial"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -790,6 +1220,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 6 Hide
 
 Show
 	Sockets = "6"
