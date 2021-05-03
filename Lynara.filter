@@ -535,6 +535,10 @@ Show
 # Section: Map Fragments
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: Labyrinth
+#-------------------------------------------------------------------------------
+
 Show
 	BaseType = "Gift to the Goddess" "Dedication to the Goddess"
 	SetTextColor 255 165 0 255 # Fragments
@@ -699,7 +703,7 @@ Show
 	PlayEffect Brown 
 
 Show
-	BaseType = "Timeless Eternal Empire Emblem" "Timeless Karui Emblem" "Timeless Vaal Emblem"
+	BaseType = "Timeless Karui Emblem" "Timeless Vaal Emblem" "Timeless Eternal Emblem"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
