@@ -2422,7 +2422,7 @@ Show
 	BaseType = "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Moonstone Ring" "Diamond Ring" "Coral Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 8 Hide
+	#BlockStrictness 5 Hide
 
 # New Bases
 Show
