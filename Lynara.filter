@@ -672,6 +672,12 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
+	BaseType = "Simulacrum Splinter"
+	SetTextColor 255 165 0 255 # Fragments
+	SetFontSize 45
+	DisableDropSound
+
+Show
 	BaseType = "Simulacrum"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBackgroundColor 255 255 255 255 # S Tier
@@ -681,12 +687,6 @@ Show
 	CustomAlertSound "GS.mp3" 100
 	MinimapIcon 0 Brown Circle
 	PlayEffect Brown 
-
-Show
-	BaseType = "Simulacrum Splinter"
-	SetTextColor 255 165 0 255 # Fragments
-	SetFontSize 45
-	DisableDropSound
 
 #-------------------------------------------------------------------------------
 # Subsection: Legion
@@ -785,6 +785,7 @@ Show
 #===============================================================================
 
 Hide
+	Class = "Currency"
 	BaseType = "Prophecy"
 	Prophecy = "Golden Touch" "Smothering Tendrils" "A Forest of False Idols" "A Rift in Time" "Agony at Dusk" "Black Devotion" "Blind Faith" "Blinding Light" "Burning Dread" "Cold Blooded Fury" "Cold Greed" "Crimson Hues" "Dark Instincts" "Dying Cry" "End of the Light" "Faith Exhumed" "Greed's Folly" "Heavy Blows" "Last of the Wildmen" "Mouth of Horrors" "Nature's Resilience" "Power Magnified" "Sun's Punishment" "The Apex Predator" "The Bloody Flowers Redux" "The Fall of an Empire" "The Flow of Energy" "The King and the Brambles" "The Mentor" "The Silverwood" "The Snuffed Flame" "The Storm Spire" "Trapped in the Tower" "Winter's Mournful Melodies" "A Call into the Void" "A Firm Foothold" "A Whispered Prayer" "Abnormal Effulgence" "Against the Tide" "Baptism by Death" "Blood in the Eyes" "Blood of the Betrayed" "Custodians of Silence" "Fear's Wide Reach" "From Death Springs Life" "Heart of the Fire" "Nemesis of Greed" "Notched Flesh" "Roth's Legacy" "Storm on the Reef" "Strong as a Bull" "Storm on the Horizon" "The Brutal Enforcer" "The Eagle's Cry" "The Flayed Man" "The Lady in Black" "The Last Watch" "The Lost Undying" "The Mysterious Gift" "The Nest" "The Petrified" "The Prison Guard" "The Prison Key" "The Singular Spirit" "The Sinner's Stone" "The Sword King's Passion" "The Vanguard" "The Walking Mountain" "The Ward's Ward" "A Regal Death" "The Corrupt" "The God of Misfortune" "The Dream Trial" "The Lost Maps" "The Fortune Teller's Collection" "The Feral Lord I" "The Feral Lord II" "The Feral Lord III" "The Feral Lord IV" "The Plaguemaw I" "The Plaguemaw II" "The Plaguemaw III" "The Plaguemaw IV" "The Unbreathing Queen I" "The Unbreathing Queen II" "The Unbreathing Queen III" "The Unbreathing Queen IV" "Unbearable Whispers I" "Unbearable Whispers II" "Unbearable Whispers III" "Unbearable Whispers IV" "Beyond Sight I" "Beyond Sight II" "Beyond Sight III" "Beyond Sight IV" "Thaumaturgical History II" "Thaumaturgical History III" "The Ambitious Bandit I" "The Ambitious Bandit II" "Thaumaturgical History I" "A Regal Death" "Erased from Memory" "Lasting Impressions" "The Alchemist" "The Corrupt" "The God of Misfortune"
 	SetTextColor 128 0 128 255 # Prophecy
@@ -825,6 +826,7 @@ Show
 	SetFontSize 45
 
 Show
+	Class = "Currency"
 	BaseType = "Prophecy"
 	SetTextColor 128 0 128 255 # Prophecy
 	SetBorderColor 255 255 255 255 # Error
@@ -1072,7 +1074,7 @@ Show
 
 # Pick up always
 Show
-	BaseType = "Perandus Coin"
+	BaseType = "Perandus Coin" "Rogue's Marker"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1176,10 +1178,6 @@ Show
 	SetBorderColor 255 255 255 255 # Error
 	SetFontSize 45
 	DisableDropSound
-
-#-------------------------------------------------------------------------------
-# Subsection: Subsection Name
-#-------------------------------------------------------------------------------
 
 #===============================================================================
 # Section: Divination Cards
