@@ -535,6 +535,32 @@ Show
 # Section: Map Fragments
 #===============================================================================
 
+Show
+	BaseType = "Gift to the Goddess" "Dedication to the Goddess"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Brown Circle
+	PlayEffect Brown 
+
+Show
+	BaseType = "Tribute to the Goddess"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
+Show
+	BaseType = "Offering to the Goddess"
+	SetTextColor 255 165 0 255 # Fragments
+	SetFontSize 45
+	DisableDropSound
+
 #-------------------------------------------------------------------------------
 # Subsection: Atlas Bosses
 #-------------------------------------------------------------------------------
@@ -569,6 +595,12 @@ Show
 	CustomAlertSound "GB.mp3" 100
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
+
+Show
+	BaseType = "Divine Vessel"
+	SetTextColor 255 165 0 255 # Fragments
+	SetFontSize 45
+	DisableDropSound
 
 #-------------------------------------------------------------------------------
 # Subsection: Atziri
@@ -667,7 +699,7 @@ Show
 	PlayEffect Brown 
 
 Show
-	BaseType = "Timeless Karui Emblem" "Timeless Vaal Emblem" "Timeless Eternal Emblem"
+	BaseType = "Timeless Eternal Empire Emblem" "Timeless Karui Emblem" "Timeless Vaal Emblem"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -723,6 +755,16 @@ Show
 Show
 	Class = "Map Fragments"
 	BaseType = "Rusted"
+	SetTextColor 255 165 0 255 # Fragments
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Misc
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Yriel's Key" "Volkuur's Key" "Inya's Key" "Eber's Key"
 	SetTextColor 255 165 0 255 # Fragments
 	SetFontSize 45
 	DisableDropSound
