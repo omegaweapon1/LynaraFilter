@@ -1950,13 +1950,13 @@ Show
 #	DisableDropSound
 
 # 84 T1 Helmets
-Show
-	Corrupted = False
-	ItemLevel >= 85
-	BaseType = "Astral Plate"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	ItemLevel >= 85
+#	BaseType = "Astral Plate"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 # 84 T1 Helmets
 #Show
@@ -2024,10 +2024,131 @@ Show
 # Section: Special Rares
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: Heist
+#-------------------------------------------------------------------------------
+
+# Broach
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Foliate Brooch"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+
+# Cloak
 Show
-	BaseType = "Haewark Hamlet" "Tirn's End" "Lex Proxima" "Lex Ejoris" "New Vastir" "Glennach Cairns" "Valdo's Rest" "Lira Arthain"
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Whisper-woven Cloak"
+	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+
+# Huck
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Tattered Cloak" "Golden Brooch" "Trarthan Flashpowder" "Standard Sharpening Stone"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+
+# Karst
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Precise Arrowhead" "Master Lockpick"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+
+# Tibbs
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Obsidian Sharpening Stone" "Steel Bracers"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Isla
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Burst Band" "Thaumetic Blowtorch"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Tullina
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Obsidian Sharpening Stone" "Silkweave Sole"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Niles
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Burst Band" "Thaumaturgical Ward"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Nenet
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Precise Arrowhead" "Thaumaturgical Sensing Charm"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+
+# Vinderi
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Obsidian Sharpening Stone" "Thaumetic Flashpowder"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Gianna
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Regicide Disguise Kit" "Burst Band"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Class = "Heist"
+	BaseType = "Master Lockpick" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Thaumaturgical Ward" "Grandmaster Keyring" "Silkweave Sole" "Regicide Disguise Kit" "Thaumetic Blowtorch" "Trarthan Flashpowder" "Obsidian Sharpening Stone" "Standard Sharpening Stone" "Precise Arrowhead" "Burst Band" "Whisper-woven Cloak" "Tattered Cloak" "Foliate Brooch" "Golden Brooch"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+Show
+	Class = "Heist"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	Class = "Trinket" "Heist Target"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Talisman
+#-------------------------------------------------------------------------------
 
 Show
 	Class = "Amulets"
@@ -2049,30 +2170,16 @@ Show
 	DisableDropSound
 	#BlockStrictness 3 Hide
 
-Show
-	ItemLevel >= 83
-	Class = "Heist"
-	BaseType = "Master Lockpick" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Thaumaturgical Ward" "Grandmaster Keyring" "Silkweave Sole" "Regicide Disguise Kit" "Thaumetic Blowtorch" "Trarthan Flashpowder" "Obsidian Sharpening Stone" "Standard Sharpening Stone" "Precise Arrowhead" "Burst Band" "Whisper-woven Cloak" "Tattered Cloak" "Foliate Brooch" "Golden Brooch"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#-------------------------------------------------------------------------------
+# Subsection: Corrupted
+#-------------------------------------------------------------------------------
 
+# Corrupted Rares
 Show
-	Class = "Heist"
-	BaseType = "Master Lockpick" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Thaumaturgical Ward" "Grandmaster Keyring" "Silkweave Sole" "Regicide Disguise Kit" "Thaumetic Blowtorch" "Trarthan Flashpowder" "Obsidian Sharpening Stone" "Standard Sharpening Stone" "Precise Arrowhead" "Burst Band" "Whisper-woven Cloak" "Tattered Cloak" "Foliate Brooch" "Golden Brooch"
+	Rarity = Rare
+	BaseType = "Breach Ring"
+	SetBorderColor 191 0 0 255
 	SetFontSize 45
-	DisableDropSound
-
-Show
-	Class = "Heist"
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	Class = "Trinket" "Heist Target"
-	SetTextColor 128 64 64 200 # Challenge League
-	SetFontSize 45
-	DisableDropSound
 
 # Corrupted Rares
 Show
@@ -2082,13 +2189,6 @@ Show
 	Class = "Jewel"
 	SetFontSize 45
 	DisableDropSound
-
-# Corrupted Rares
-Show
-	Rarity = Rare
-	BaseType = "Breach Ring"
-	SetBorderColor 191 0 0 255
-	SetFontSize 45
 
 # Corrupted Rares
 Show
@@ -2114,19 +2214,9 @@ Show
 	Rarity = Rare
 	SetFontSize 30
 
-Show
-	Rarity = Rare
-	Class = "Abyss Jewel"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	Rarity = Magic
-	Class = "Abyss Jewel"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
+#-------------------------------------------------------------------------------
+# Subsection: Abyss Jewels
+#-------------------------------------------------------------------------------
 
 Show
 	ItemLevel >= 86
@@ -2144,6 +2234,32 @@ Show
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+
+Show
+	ItemLevel >= 84
+	Class = "Abyss Jewel"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "BB.wav" 100
+	MinimapIcon 2 Red Triangle
+	PlayEffect Red Temp
+
+Show
+	Rarity = Rare
+	Class = "Abyss Jewel"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Magic
+	Class = "Abyss Jewel"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
 
 Show
 	BaseType = "Sacrificial Garb"
@@ -2165,13 +2281,7 @@ Show
 	Class = "Jewel"
 	SetFontSize 45
 	DisableDropSound
-
-# Bases based on builds played
-Show
-	Rarity = Rare
-	BaseType = "Copper Kris" "Golden Kris" "Platinum Kris" "Karui Chopper"
-	SetFontSize 45
-	DisableDropSound
+	#BlockStrictness 5 Hide
 
 # Tier 2 Rares
 Show
@@ -2179,7 +2289,7 @@ Show
 	BaseType = "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 2 Hide
 
 # Tier 2 Rares
 Show
@@ -2224,7 +2334,7 @@ Show
 # Tier 1 Daggers and Wands
 Show
 	Rarity = Rare
-	BaseType = "Demon Dagger" "Imbued Wand" "Corsair Sword" "Slaughter Knife"
+	BaseType = "Demon Dagger" "Imbued Wand" "Corsair Sword" "Slaughter Knife" "Platinum Kris"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 2 Hide
@@ -2243,7 +2353,7 @@ Show
 	BaseType = "Runic Hatchet" "Gemini Claw" "Demon Dagger" "Behemoth Mace" "Sambar Sceptre" "Tiger Hook" "Dragoon Sword" "Jewelled Foil" "Broadhead Arrow Quiver" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Imbued Wand" "Corsair Sword" "Slaughter Knife" "Harbinger Bow" "Coronal Maul" "Imperial Maul" "Fleshripper" "Vaal Axe" "Platinum Kris" "Copper Kris" "Golden Kris"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 1 Hide
+	#BlockStrictness 2 Hide
 
 # Tier 1 Rares
 Show
@@ -2268,7 +2378,7 @@ Show
 	BaseType = "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Moonstone Ring" "Diamond Ring" "Coral Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
+	#BlockStrictness 8 Hide
 
 # New Bases
 Show
@@ -2276,6 +2386,7 @@ Show
 	BaseType = "Steel Ring" "Opal Ring" "Bone Helmet" "Two-Toned Boots"
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 6 Hide
 
 # New Bases
 Show
@@ -2283,7 +2394,7 @@ Show
 	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
+	#BlockStrictness 5 Hide
 
 # Rare Belts
 Show
