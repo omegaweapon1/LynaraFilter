@@ -27,14 +27,6 @@
 # Section: Weird Shit
 #===============================================================================
 
-# MTX Catch All
-Show
-	Class = "Microtransactions"
-	SetTextColor 255 192 203 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 255 192 203 255
-	SetFontSize 45
-
 # Quest Items
 Show
 	Class = "Quest Items"
