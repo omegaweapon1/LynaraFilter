@@ -27,14 +27,6 @@
 # Section: Weird Shit
 #===============================================================================
 
-# Hideout Catch All
-Show
-	Class = "Hideout"
-	SetTextColor 255 192 203 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 255 192 203 255
-	SetFontSize 45
-
 # MTX Catch All
 Show
 	Class = "Microtransactions"
@@ -2674,36 +2666,36 @@ Show
 #	DisableDropSound
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Lacquered Garb"
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Lacquered Garb"
+#	SetFontSize 45
+#	DisableDropSound
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Prophecy Wand"
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Prophecy Wand"
+#	SetFontSize 45
+#	DisableDropSound
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Unset Ring"
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Unset Ring"
+#	SetFontSize 45
+#	DisableDropSound
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Paua Amulet"
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Paua Amulet"
+#	SetFontSize 45
+#	DisableDropSound
 
 #===============================================================================
 # Section: Magics
