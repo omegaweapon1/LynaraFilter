@@ -2666,36 +2666,36 @@ Show
 #	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Lacquered Garb"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Lacquered Garb"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Prophecy Wand"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Prophecy Wand"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Unset Ring"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Unset Ring"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Paua Amulet"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Paua Amulet"
+	SetFontSize 45
+	DisableDropSound
 
 #===============================================================================
 # Section: Magics
