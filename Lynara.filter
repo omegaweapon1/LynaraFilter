@@ -1803,7 +1803,7 @@ Show
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 86
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring" "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1854,7 +1854,7 @@ Show
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 84
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring" "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1952,7 +1952,7 @@ Show
 Show
 	Corrupted = False
 	ItemLevel >= 86
-	BaseType = "Steel Ring" "Opal Ring" "Crystal Belt" "Cerulean Ring" "Vermillion Ring" "Convoking Wand" "Seaglass Amulet" "Blessed Boots" "Artillery Quiver" "Apothecary's Gloves" "Iolite Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Crystal Belt" "Cerulean Ring" "Vermillion Ring" "Convoking Wand" "Seaglass Amulet" "Fugitive Boots" "Artillery Quiver" "Apothecary's Gloves" "Iolite Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1987,7 +1987,7 @@ Show
 # 84 T1 Helmets
 #Show
 #	Corrupted = False
-#	BaseType = "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+#	BaseType = "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 #	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 #	SetFontSize 45
 #	DisableDropSound
@@ -2452,7 +2452,7 @@ Show
 # New Bases
 Show
 	Rarity = Rare
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Grasping Mail" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 5 Hide
