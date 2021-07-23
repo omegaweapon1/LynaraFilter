@@ -1153,7 +1153,7 @@ Show
 	DisableDropSound
 	#BlockStrictness 4 Hide
 
-Hide
+Show
 	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
@@ -1167,7 +1167,7 @@ Show
 	DisableDropSound
 	#BlockStrictness 2 Hide
 
-Hide
+Show
 	BaseType = "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
@@ -1303,7 +1303,7 @@ Show
 	DisableDropSound
 	#BlockStrictness 2 Hide
 
-Hide
+Show
 	SocketGroup >= "RGB"
 	Rarity <= Magic
 	SetTextColor 170 158 130 255 # Currency
@@ -1767,7 +1767,7 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-Hide
+Show
 	ItemLevel <= 70
 	BaseType = "Flask"
 	BaseType = "Divine"
@@ -1776,7 +1776,7 @@ Hide
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
-Hide
+Show
 	BaseType = "Eternal Mana Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
