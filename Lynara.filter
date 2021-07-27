@@ -127,11 +127,21 @@ Show
 #===============================================================================
 
 Show
-	BaseType = "Enkindling Orb" "Instilling Orb" "Expedition Logbook"
+	BaseType = "Expedition Logbook"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+
+Show
+	ItemLevel >= 84
+	BaseType = "Runic Crown" "Runic Sabatons" "Runic Gauntlets"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
 
 Show
 	BaseType = "Runic Crown" "Runic Sabatons" "Runic Gauntlets"
@@ -139,6 +149,15 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+
+Show
+	BaseType = "Exotic Coinage" "Scrap Metal" "Burial Medallion"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
 
 Show
 	BaseType = "Exotic Coinage" "Scrap Metal" "Astragali" "Burial Medallion" "Circle Artifact" "Scythe Artifact" "Order Artifact" "Sun Artifact"
@@ -1110,7 +1129,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Deafening Essence" "Delirium Orb" "Ritual Vessel"
+	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Deafening Essence" "Delirium Orb" "Ritual Vessel" "Instilling Orb" "Enkindling Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1252,7 +1271,7 @@ Show
 
 Hide
 	Class = "Divination Card"
-	BaseType = "Audacity" "Birth of the Three" "The Surgeon" "Death" "Destined to Crumble" "Lantador's Lost Love" "Light and Truth" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Twins" "The Fathomless Depths" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Metalsmith's Gift" "The Mountain" "The Rabid Rhoa" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "Cartographer's Delight" "Anarchy's Price" "The Opulent" "Rain of Chaos" "Grave Knowledge" "Thunderous Skies" "Echoes of Love" "The Incantation" "The Lunaris Priestess" "Turn the Other Cheek"
+	BaseType = "Audacity" "Birth of the Three" "The Surgeon" "Death" "Destined to Crumble" "Lantador's Lost Love" "Light and Truth" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Fathomless Depths" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Metalsmith's Gift" "The Mountain" "The Rabid Rhoa" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "Cartographer's Delight" "Anarchy's Price" "The Opulent" "Rain of Chaos" "Grave Knowledge" "Thunderous Skies" "Echoes of Love" "The Incantation" "The Lunaris Priestess" "Turn the Other Cheek"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 30
 	DisableDropSound
