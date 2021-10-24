@@ -157,15 +157,6 @@ Show
 	DisableDropSound
 	CustomAlertSound "GB.mp3" 100
 
-# Headhunter
-Show
-	Corrupted = False
-	ItemLevel >= 70
-	Rarity = Normal
-	BaseType = "Unset Ring"
-	SetFontSize 45
-	DisableDropSound
-
 #===============================================================================
 # Section: 6L
 #===============================================================================
@@ -1751,7 +1742,17 @@ Show
 # Craft for Profit
 Show
 	ItemLevel >= 84
-	BaseType = "Divine Life Flask" "Diamond Flask" "Quicksilver Flask" "Jade Flask" "Granite Flask" "Quartz Flask" "Eternal Mana Flask" "Eternal Life Flask" "Basalt Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask"
+	BaseType = "Diamond Flask" "Quicksilver Flask" "Jade Flask" "Granite Flask" "Quartz Flask" "Basalt Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask"
+	SetTextColor 255 192 203 255 # Flasks
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Craft for Profit
+Show
+	ItemLevel >= 84
+	Quality >= 10
+	BaseType = "Divine Life Flask" "Eternal Life Flask" "Eternal Mana Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1760,7 +1761,18 @@ Show
 # Craft for Profit
 Show
 	ItemLevel >= 70
-	BaseType = "Divine Life Flask" "Diamond Flask" "Quicksilver Flask" "Jade Flask" "Granite Flask" "Quartz Flask" "Eternal Mana Flask" "Eternal Life Flask" "Basalt Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask"
+	BaseType = "Diamond Flask" "Quicksilver Flask" "Jade Flask" "Granite Flask" "Quartz Flask" "Basalt Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask"
+	SetTextColor 255 192 203 255 # Flasks
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+# Craft for Profit
+Show
+	ItemLevel >= 70
+	Quality >= 10
+	BaseType = "Divine Life Flask" "Eternal Life Flask" "Eternal Mana Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
