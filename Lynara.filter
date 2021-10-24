@@ -450,6 +450,21 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
+# Subsection: Expedition
+#-------------------------------------------------------------------------------
+
+# Red Tier
+Show
+	Class = "Expedition Logbook"
+	SetTextColor 184 218 242 255 # Maps
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MA.mp3" 100
+	MinimapIcon 1 Blue Hexagon
+	PlayEffect Blue 
+
+#-------------------------------------------------------------------------------
 # Subsection: Maven
 #-------------------------------------------------------------------------------
 
