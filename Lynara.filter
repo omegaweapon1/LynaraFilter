@@ -157,6 +157,15 @@ Show
 	DisableDropSound
 	CustomAlertSound "GB.mp3" 100
 
+# Headhunter
+Show
+	Corrupted = False
+	ItemLevel >= 70
+	Rarity = Normal
+	BaseType = "Unset Ring"
+	SetFontSize 45
+	DisableDropSound
+
 #===============================================================================
 # Section: 6L
 #===============================================================================
@@ -1230,7 +1239,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 5 Hide
+	#BlockStrictness 6 Hide
 
 Show
 	StackSize >= 7
@@ -1238,7 +1247,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
+	#BlockStrictness 5 Hide
 
 Show
 	StackSize >= 4
@@ -1246,14 +1255,14 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 2 Hide
 
 Show
 	BaseType = "Portal Scroll"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
+	#BlockStrictness 1 Hide
 
 Show
 	BaseType = "Scroll of Wisdom"
@@ -1741,30 +1750,17 @@ Show
 
 # Craft for Profit
 Show
-	ItemLevel >= 18
-	BaseType = "Iron Flask"
+	ItemLevel >= 84
+	BaseType = "Divine Life Flask" "Diamond Flask" "Quicksilver Flask" "Jade Flask" "Granite Flask" "Quartz Flask" "Eternal Mana Flask" "Eternal Life Flask" "Basalt Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask"
 	SetTextColor 255 192 203 255 # Flasks
-	SetBorderColor 0 128 0 255 # B Tier
+	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
 
 # Craft for Profit
 Show
-	ItemLevel >= 18
-	Quality >= 15
-	BaseType = "Divine Life Flask" "Diamond Flask" "Quicksilver Flask"
-	SetTextColor 255 192 203 255 # Flasks
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-# Craft for Profit
-Show
-	ItemLevel >= 18
-	Quality >= 10
-	BaseType = "Quartz Flask" "Diamond Flask" "Quicksilver Flask" "Silver Flask" "Jade Flask" "Basalt Flask" "Granite Flask" "Stibnite Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask"
+	ItemLevel >= 70
+	BaseType = "Divine Life Flask" "Diamond Flask" "Quicksilver Flask" "Jade Flask" "Granite Flask" "Quartz Flask" "Eternal Mana Flask" "Eternal Life Flask" "Basalt Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1786,7 +1782,7 @@ Show
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
+	#BlockStrictness 1 Hide
 
 Show
 	ItemLevel <= 6
@@ -1869,7 +1865,6 @@ Show
 	DisableDropSound
 
 Show
-	ItemLevel <= 70
 	BaseType = "Flask"
 	BaseType = "Divine"
 	SetTextColor 255 192 203 255 # Flasks
@@ -1878,7 +1873,7 @@ Show
 	#BlockStrictness 1 Hide
 
 Show
-	BaseType = "Eternal Mana Flask"
+	BaseType = "Eternal Mana Flask" "Eternal Life Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
 	DisableDropSound
