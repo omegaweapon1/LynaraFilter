@@ -290,7 +290,7 @@ Show
 # B Tier Uniques
 Show
 	Rarity = Unique
-	BaseType = "Arcanist Gloves" "Nubuck Boots" "Nubuck Gloves" "Sanctified Life Flask" "Timeworn Claw" "Callous Mask" "Bismuth Flask" "Champion Kite Shield" "Clasped Mitts" "Elegant Ringmail" "Rawhide Tower Shield" "Vaal Mask"
+	BaseType = "Arcanist Gloves" "Nubuck Boots" "Nubuck Gloves" "Sanctified Life Flask" "Callous Mask" "Bismuth Flask" "Champion Kite Shield" "Clasped Mitts" "Elegant Ringmail" "Rawhide Tower Shield" "Vaal Mask"
 	SetTextColor 175 96 37 255 # Unique
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1125,6 +1125,27 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
+# Subsection: Expedition
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Exotic Coinage" "Scrap Metal" "Burial Medallion"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+# Pick up always
+Show
+	BaseType = "Astragali"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
 # Subsection: Generic Currency
 #-------------------------------------------------------------------------------
 
@@ -1272,6 +1293,13 @@ Show
 
 Show
 	BaseType = "Scroll of Wisdom"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Hide
+	BaseType = "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
