@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Lynara
-# VERSION:       3.17
+# VERSION:       3.18
 # AUTHOR:        Lynara
 # CONTACT:       mitchoka@gmail.com
 # LINK:          https://grinding.zone/?page=filtershaper&loadfilter=https://raw.githubusercontent.com/omegaweapon1/LynaraFilter/master/Lynara.filter
@@ -136,8 +136,30 @@ Show
 #	DisableDropSound
 #	CustomAlertSound "GB.mp3" 100
 
+#Show
+#	SetTextColor 128 64 64 200 # Challenge League
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "GB.mp3" 100
+
 Show
-	ArchnemesisMod =
+	BaseType = "Recombinator"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+
+Show
+	BaseType = "Augmenting Power Core" "Transforming Power Core" "Amplifying Power Core"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+
+Show
+	BaseType = "Power Core" "Sentinel"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetFontSize 45
 	DisableDropSound
@@ -1293,7 +1315,7 @@ Show
 # GG Cards
 Show
 	Class = "Divination Card"
-	BaseType = "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Immortal" "Alluring Bounty" "The Samurai's Eye" "Succor of the Sinless" "The Nurse" "Immortal Resolve" "The Dragon's Heart" "The World Eater" "The Iron Bard" "Wealth and Power" "Abandoned Wealth" "The Cheater" "Unrequited Love" "Brother's Stash" "Deadly Joy" "Love Through Ice" "Gift of Asenath" "Alluring Bounty" "Desecrated Virtue" "Luminous Trove" "Seven Years Bad Luck"
+	BaseType = "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Immortal" "Alluring Bounty" "The Samurai's Eye" "Succor of the Sinless" "The Nurse" "Immortal Resolve" "The Dragon's Heart" "The World Eater" "The Iron Bard" "Wealth and Power" "Abandoned Wealth" "The Cheater" "Unrequited Love" "Brother's Stash" "Deadly Joy" "Love Through Ice" "Gift of Asenath" "Alluring Bounty" "Desecrated Virtue" "Luminous Trove" "Seven Years Bad Luck" "The Apothecary"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1306,7 +1328,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "The Eye of Terror" "The Enlightened" "The Eldritch Decay" "The White Knight" "The Pact" "Winter's Embrace" "The Long Con" "The Sustenance" "Nook's Crown" "The Aspirant" "Pride of the First Ones" "The Price of Loyalty" "The Artist" "Dementophobia" "The Astromancer" "The Bitter Blossom" "The Saint's Treasure" "Justified Ambition" "Judging Voices"
+	BaseType = "The Eye of Terror" "The Enlightened" "The Eldritch Decay" "The White Knight" "The Pact" "Winter's Embrace" "The Long Con" "The Sustenance" "Nook's Crown" "The Aspirant" "Pride of the First Ones" "The Price of Loyalty" "The Artist" "Dementophobia" "The Astromancer" "The Bitter Blossom" "The Saint's Treasure" "Justified Ambition" "Judging Voices" "Altered Perception" "A Fate Worse Than Death" "The Destination"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1318,7 +1340,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "Etched in Blood" "Pride Before the Fall" "The Celestial Justicar" "The Escape" "Burning Blood" "The Celestial Stone" "The Bargain" "Squandered Prosperity" "The Soul" "Azyran's Reward" "The Hoarder" "The Ethereal" "The Rite of Elements" "Chasing Risk" "Guardian's Challenge" "Disdain" "The Spark and the Flame" "The Progeny of Lunaris" "Hunter's Reward" "The Greatest Intentions" "The Damned" "The Gulf" "The Patient" "The Craving" "The Enthusiasts" "The Sephirot" "Remembrance" "Terrible Secret of Space" "The Bones" "The Old Man" "The Strategist" "The Wilted Rose" "Ambitious Obsession" "A Familiar Call" "Fateful Meeting" "The Eternal War" "Keeper's Corruption" "The Academic" "The Sacrifice" "A Note in the Wind" "Council of Cats" "Deathly Designs" "Draped in Dreams" "A Modest Request" "The King's Heart"
+	BaseType = "Etched in Blood" "Pride Before the Fall" "The Celestial Justicar" "The Escape" "Burning Blood" "The Celestial Stone" "The Bargain" "Squandered Prosperity" "The Soul" "Azyran's Reward" "The Hoarder" "The Ethereal" "The Rite of Elements" "Chasing Risk" "Guardian's Challenge" "Disdain" "The Spark and the Flame" "The Progeny of Lunaris" "Hunter's Reward" "The Greatest Intentions" "The Damned" "The Gulf" "The Patient" "The Craving" "The Enthusiasts" "The Sephirot" "Remembrance" "Terrible Secret of Space" "The Bones" "The Old Man" "The Strategist" "The Wilted Rose" "Ambitious Obsession" "A Familiar Call" "Fateful Meeting" "The Eternal War" "Keeper's Corruption" "The Academic" "The Sacrifice" "A Note in the Wind" "Council of Cats" "Deathly Designs" "Draped in Dreams" "A Modest Request" "The King's Heart" "Darker Half" "Home"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2128,10 +2150,19 @@ Show
 Show
 	Corrupted = False
 	ItemLevel >= 84
-	BaseType = "Colossal Tower Shield"
+	BaseType = "Imperial Claw"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	ItemLevel >= 84
+#	BaseType = "Colossal Tower Shield"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 # 84 T1 Helmets
 #Show
@@ -2764,12 +2795,12 @@ Show
 #	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Ezomyte Dagger"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Ezomyte Dagger"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
 #Show
