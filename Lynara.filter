@@ -159,11 +159,78 @@ Show
 	CustomAlertSound "GB.mp3" 100
 
 Show
-	BaseType = "Power Core" "Sentinel"
+	BaseType = "Power Core"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetFontSize 45
 	DisableDropSound
+
+Show
+	BaseType = "Cosmic Apex Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+
+Show
+	BaseType = "Cryptic Apex Sentinel" "Cryptic Pandemonium Sentinel" "Cryptic Stalker Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 	CustomAlertSound "GB.mp3" 100
+
+Show
+	BaseType = "Ancient Apex Sentinel" "Ancient Pandemonium Sentinel" "Ancient Stalker Sentinel" "Primeval Apex Sentinel" "Primeval Pandemonium Sentinel" "Primeval Stalker Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Normal
+	Height <= 2
+	BaseType = "Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	Rarity = Magic
+	Height <= 2
+	BaseType = "Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	BaseType = "Rusted Stalker Sentinel" "Bronze Apex Sentinel" "Bronze Pandemonium Sentinel" "Bronze Stalker Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	BaseType = "Cobalt Apex Sentinel" "Cobalt Pandemonium Sentinel" "Cobalt Stalker Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+Show
+	BaseType = "Brimstone Apex Sentinel" "Brimstone Pandemonium Sentinel" "Brimstone Stalker Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 5 Hide
+
+Show
+	Height <= 2
+	BaseType = "Sentinel"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
 
 #===============================================================================
 # Section: 6L
@@ -605,6 +672,7 @@ Show
 Show
 	Class = "Maps"
 	SetTextColor 184 218 242 255 # Maps
+	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
@@ -699,8 +767,10 @@ Show
 	PlayEffect Brown Temp
 
 Show
-	BaseType = "Sacrifice at Midnight" "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Noon"
+	Class = "Map Fragment"
+	BaseType = "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Noon"
 	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
 
@@ -868,9 +938,9 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Class = "Maps" "Map Fragments"
+	Class = "Map Fragments"
 	SetTextColor 255 165 0 255 # Fragments
-	SetBorderColor 255 255 255 255 # Error
+	SetBorderColor 242 4 246 255 # Error
 	SetFontSize 45
 	DisableDropSound
 
@@ -1111,6 +1181,87 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
+# Subsection: Expedition
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Scrap Metal"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+# Pick up always
+Show
+	BaseType = "Astragali" "Exotic Coinage" "Burial Medallion"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Essence
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CA.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Deafening Essence"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+# Pick up always
+Show
+	BaseType = "Remnant of Corruption" "Shrieking Essence" "Screaming Essence"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	StackSize >= 3
+	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	StackSize >= 3
+	BaseType = "Whispering Essence"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	BaseType = "Whispering Essence"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+#-------------------------------------------------------------------------------
 # Subsection: Generic Currency
 #-------------------------------------------------------------------------------
 
@@ -1122,7 +1273,7 @@ Show
 	DisableDropSound
 
 Show
-	BaseType = "Mirror Shard" "Awakener's Orb" "Tempering Orb" "Tailoring Orb" "Prime Regrading Lens" "Secondary Regrading Lens" "Exalted Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Sacred Orb" "Orb of Conflict" "Orb of Domination" "Exceptional Eldritch" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment"
+	BaseType = "Mirror Shard" "Awakener's Orb" "Tempering Orb" "Tailoring Orb" "Prime Regrading Lens" "Secondary Regrading Lens" "Exalted Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Sacred Orb" "Orb of Conflict" "Exceptional Eldritch" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Orb of Dominance"
 	SetTextColor 170 158 130 255 # Currency
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1133,7 +1284,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Elevated Sextant" "Divine Orb" "Ancient Orb" "Exalted Shard" "Orb of Annulment" "Veiled Chaos Orb" "Essence of Hysteria" "Essence of Delirium" "Essence of Insanity" "Essence of Horror" "Grand Eldritch" "Greater Eldritch"
+	BaseType = "Elevated Sextant" "Divine Orb" "Ancient Orb" "Exalted Shard" "Orb of Annulment" "Veiled Chaos Orb" "Grand Eldritch" "Greater Eldritch"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1143,7 +1294,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Deafening Essence" "Delirium Orb" "Ritual Vessel" "Instilling Orb" "Enkindling Orb" "Lesser Eldritch"
+	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Delirium Orb" "Ritual Vessel" "Instilling Orb" "Enkindling Orb" "Lesser Eldritch"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1175,7 +1326,7 @@ Show
 
 # Pick up always
 Show
-	BaseType = "Remnant of Corruption" "Shrieking Essence" "Screaming Essence" "Ritual Splinter" "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Harbinger's Shard" "Annulment Shard" "Rogue's Marker" "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Ancient Shard" "Orb of Alteration" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass"
+	BaseType = "Ritual Splinter" "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Harbinger's Shard" "Annulment Shard" "Rogue's Marker" "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Ancient Shard" "Orb of Alteration" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1222,20 +1373,6 @@ Show
 	#BlockStrictness 4 Hide
 
 Show
-	StackSize >= 3
-	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 1 Hide
-
-Show
 	StackSize >= 10
 	BaseType = "Portal Scroll" "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency
@@ -1276,14 +1413,14 @@ Show
 Show
 	Class = "Currency"
 	SetTextColor 170 158 130 255 # Currency
-	SetBorderColor 255 255 255 255 # Error
+	SetBorderColor 242 4 246 255 # Error
 	SetFontSize 45
 	DisableDropSound
 
 Show
 	Class = "Stackable Currency"
 	SetTextColor 170 158 130 255 # Currency
-	SetBorderColor 255 255 255 255 # Error
+	SetBorderColor 242 4 246 255 # Error
 	SetFontSize 45
 	DisableDropSound
 
@@ -1414,12 +1551,26 @@ Show
 # Section: League Mod Rares
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: Veiled
+#-------------------------------------------------------------------------------
+
 Show
 	HasExplicitMod = "Catarina's Veiled" "Elreon's Veiled" "Gravicius' Veiled" "Guff's Veiled" "Haku's Veiled" "It That Fled's Veiled" "Korell's Veiled" "Korell's Veiled" "Leo's Veiled" "Rin's Veiled" "Tora's Veiled" "Vagan's Veiled" "Vorici's Veiled"
 	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 255 165 0 255 # A Tier
+	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+
+Show
+	HasExplicitMod = "Veiled" "Veil"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Clusters
+#-------------------------------------------------------------------------------
 
 Show
 	ItemLevel >= 75
@@ -1497,27 +1648,36 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
+#-------------------------------------------------------------------------------
+# Subsection: Synthesis
+#-------------------------------------------------------------------------------
+
 Show
 	SynthesisedItem = True
 	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
 
 Show
-	HasExplicitMod = "Veiled" "Veil"
+	FracturedItem = True
 	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Enchanted
+#-------------------------------------------------------------------------------
 
 # Over Qualitied
 Show
 	AnyEnchantment = True
 	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Delve
+#-------------------------------------------------------------------------------
 
 # Delve Mods
 Show
@@ -1564,6 +1724,10 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
+#-------------------------------------------------------------------------------
+# Subsection: Ritual
+#-------------------------------------------------------------------------------
+
 Show
 	BaseType = "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
 	SetTextColor 100 150 200 200 # Special Rares
@@ -1576,6 +1740,10 @@ Show
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Misc
+#-------------------------------------------------------------------------------
 
 # Over Qualitied
 Show
@@ -1900,7 +2068,7 @@ Show
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 1 Hide
+	#BlockStrictness 2 Hide
 
 #===============================================================================
 # Section: Bases
@@ -2124,7 +2292,7 @@ Show
 # 84 T1 Helmets
 Show
 	Corrupted = False
-	BaseType = "Grasping Mail"
+	BaseType = "Grasping Mail" "Sacrificial Garb"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
@@ -2154,6 +2322,25 @@ Show
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	ItemLevel >= 75
+	BaseType = "Imperial Claw"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	BaseType = "Imperial Claw"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
 
 # 84 T1 Helmets
 #Show
@@ -2476,11 +2663,6 @@ Show
 	DisableDropSound
 	#BlockStrictness 4 Hide
 
-Show
-	BaseType = "Sacrificial Garb"
-	SetFontSize 45
-	DisableDropSound
-
 #===============================================================================
 # Section: Rares
 #===============================================================================
@@ -2506,134 +2688,188 @@ Show
 	DisableDropSound
 	#BlockStrictness 2 Hide
 
-# Tier 2 Rares
+#-------------------------------------------------------------------------------
+# Subsection: Boots
+#-------------------------------------------------------------------------------
+
+# T0 Rare Bases
 Show
 	Rarity = Rare
-	BaseType = "Sinner Tricorne" "Solaris Circlet" "Fluted Bascinet" "Prophet Crown" "Vaal Mask" "Vaal Gauntlets" "Stealth Gloves" "Arcanist Gloves" "Hydrascale Gauntlets" "Legion Gloves" "Assassin's Mitts" "Vaal Greaves" "Stealth Boots" "Arcanist Slippers" "Hydrascale Boots" "Legion Boots" "Assassin's Boots"
+	BaseType = "Two-Toned Boots" "Fugitive Boots"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 5 Hide
 
-# Tier 2-3 Rares
+# T1 Rare Bases
 Show
 	Rarity = Rare
-	BaseType = "Royal Burgonet" "Ezomyte Burgonet" "Sinner Tricorne" "Silken Hood" "Solaris Circlet" "Mind Cage" "Fluted Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Magistrate Crown" "Vaal Mask" "Harlequin Mask" "Vaal Gauntlets" "Goliath Gauntlets" "Stealth Gloves" "Shagreen Gloves" "Arcanist Gloves" "Conjurer Gloves" "Hydrascale Gauntlets" "Wyrmscale Gauntlets" "Legion Gloves" "Soldier Gloves" "Assassin's Mitts" "Carnal Mitts" "Vaal Greaves" "Goliath Greaves" "Stealth Boots" "Shagreen Boots" "Arcanist Slippers" "Conjurer Boots" "Hydrascale Boots" "Wyrmscale Boots" "Legion Boots" "Soldier Boots" "Assassin's Boots" "Carnal Boots"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
-
-# Tier 1 Chests
-Show
-	Rarity = Rare
-	BaseType = "Glorious Plate" "Astral Plate" "Vaal Regalia" "Saintly Chainmail"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-# Tier 1 Chests and Bows
-Show
-	Rarity = Rare
-	BaseType = "Glorious Plate" "Astral Plate" "Vaal Regalia" "Saintly Chainmail" "Maraketh Bow" "Harbinger Bow" "Imperial Bow"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
-
-# T1 Shields
-Show
-	Rarity = Rare
-	BaseType = "Imperial Buckler" "Elegant Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Colossal Tower Shield"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-# Tier 1 Daggers and Wands
-Show
-	Rarity = Rare
-	BaseType = "Demon Dagger" "Corsair Sword" "Slaughter Knife" "Platinum Kris" "Gemini Claw"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-Show
-	Rarity = Rare
-	Class = "Dagger"
-	BaseType = "Sai"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-# Tier 1 Weapons
-Show
-	Rarity = Rare
-	BaseType = "Runic Hatchet" "Gemini Claw" "Demon Dagger" "Behemoth Mace" "Sambar Sceptre" "Tiger Hook" "Dragoon Sword" "Jewelled Foil" "Broadhead Arrow Quiver" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Imbued Wand" "Corsair Sword" "Slaughter Knife" "Harbinger Bow" "Coronal Maul" "Imperial Maul" "Fleshripper" "Vaal Axe" "Platinum Kris" "Copper Kris" "Golden Kris"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-# Tier 1 Rares
-Show
-	Rarity = Rare
-	BaseType = "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Praetor Crown" "Deicide Mask" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Titanium Spirit Shield" "Royal Burgonet"
+	BaseType = "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 4 Hide
 
-# Rare Belts
+# T2 Rare Bases
 Show
 	Rarity = Rare
-	Class = "Belts"
-	BaseType = "Cloth Belt" "Studded Belt"
+	BaseType = "Vaal Greaves" "Stealth Boots" "Arcanist Slippers" "Hydrascale Boots" "Legion Boots" "Carnal Boots" "Ambush Boots"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
 
-# Rare Rings/Amulets
+#-------------------------------------------------------------------------------
+# Subsection: Gloves
+#-------------------------------------------------------------------------------
+
+# T0 Bases
 Show
 	Rarity = Rare
-	BaseType = "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Moonstone Ring" "Diamond Ring" "Coral Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet"
+	BaseType = "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Apothecary's Gloves"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 5 Hide
 
-# New Bases
+# T1 Rare Bases
 Show
 	Rarity = Rare
-	BaseType = "Steel Ring" "Opal Ring" "Bone Helmet" "Two-Toned Boots"
+	BaseType = "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+# T2 Rare Bases
+Show
+	Rarity = Rare
+	BaseType = "Vaal Gauntlets" "Stealth Gloves" "Arcanist Gloves" "Hydrascale Gauntlets" "Legion Gloves" "Assassin's Mitts"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: Helmets
+#-------------------------------------------------------------------------------
+
+# T0 Bases
+Show
+	Rarity = Rare
+	BaseType = "Bone Helmet"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 5 Hide
+
+# T1 Rare Bases
+Show
+	Rarity = Rare
+	BaseType = "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+# T2 Rare Bases
+Show
+	Rarity = Rare
+	BaseType = "Eternal Burgonet" "Sinner Tricorne" "Mind Cage" "Fluted Bascinet" "Magistrate Crown" "Harlequin Mask"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: Shields
+#-------------------------------------------------------------------------------
+
+# T1 Rare Bases
+Show
+	Rarity = Rare
+	BaseType = "Colossal Tower Shield" "Ezomyte Tower Shield" "Lacquered Helmet" "Crusader Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: Body Armor
+#-------------------------------------------------------------------------------
+
+# T1 Rare Bases
+Show
+	Rarity = Rare
+	BaseType = "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "Saintly Chainmail" "Carnal Armour" "Sadist Garb"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: Weapon
+#-------------------------------------------------------------------------------
+
+# T1 Rare Bases
+Show
+	Rarity = Rare
+	BaseType = "Platinum Kris" "Imperial Claw" "Karui Chopper" "Convoking Wand" "Profane Wand" "Opal Wand" "Void Sceptre" "Opal Sceptre" "Copper Kris" "Golden Kris"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: Belt
+#-------------------------------------------------------------------------------
+
+# T0 Rare Belts
+Show
+	Rarity = Rare
+	Class = "Belts"
+	BaseType = "Vanguard Belt" "Crystal Belt"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+# T2 Rare Belts
+Show
+	Rarity = Rare
+	Class = "Belts"
+	BaseType = "Rustic Sash" "Heavy Belt" "Leather Belt"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+# Rare Belts
+Show
+	Rarity = Rare
+	Class = "Belts"
+	BaseType = "Cloth Belt" "Studded Belt" "Chain Belt"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: Accessory
+#-------------------------------------------------------------------------------
+
+# T0 Rare Accessory
+Show
+	Rarity = Rare
+	BaseType = "Steel Ring" "Opal Ring" "Cerulean Ring" "Vermillion Ring"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 6 Hide
 
-# New Bases
+# T1 Rare Accessory
 Show
 	Rarity = Rare
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	BaseType = "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Diamond Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet" "Unset Ring" "Amethyst Ring" "Iolite Ring"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 5 Hide
 
-# Rare Belts
+# T2 Rare Accessory
 Show
 	Rarity = Rare
-	Class = "Belts"
+	BaseType = "Moonstone Ring" "Coral Ring" "Blue Pearl Amulet" "Seaglass Amulet" "Marble Amulet" "Gold Ring"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
 
-# Rare Rings/Amulets
-Show
-	ItemLevel >= 83
-	Rarity = Rare
-	Class = "Amulets"
-	SetFontSize 45
-	DisableDropSound
-
-# Rare Rings/Amulets
-Show
-	ItemLevel >= 83
-	Rarity = Normal
-	Class = "Amulets"
-	SetFontSize 45
-	DisableDropSound
+#-------------------------------------------------------------------------------
+# Subsection: Misc
+#-------------------------------------------------------------------------------
 
 # Rare Rings/Amulets
 Show
@@ -2654,109 +2890,109 @@ Show
 # Subsection: Chaos Recipe
 #-------------------------------------------------------------------------------
 
-Show
-	Identified = False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Rarity = Rare
-	Class = "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255 # Vendor
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Show
+#	Identified = False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Rarity = Rare
+#	Class = "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255 # Vendor
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Rarity = Rare
-	Class = "Body Armours"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255 # Vendor
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Show
+#	Identified = False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Rarity = Rare
+#	Class = "Body Armours"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255 # Vendor
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Rarity = Rare
-	Class = "Helmets"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255 # Vendor
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Show
+#	Identified = False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Rarity = Rare
+#	Class = "Helmets"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255 # Vendor
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Rarity = Rare
-	Class = "Gloves"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255 # Vendor
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Show
+#	Identified = False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Rarity = Rare
+#	Class = "Gloves"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255 # Vendor
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Rarity = Rare
-	Class = "Boots"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255 # Vendor
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Show
+#	Identified = False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Rarity = Rare
+#	Class = "Boots"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255 # Vendor
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Rarity = Rare
-	Class = "Amulets"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255 # Vendor
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Show
+#	Identified = False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Rarity = Rare
+#	Class = "Amulets"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255 # Vendor
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Rarity = Rare
-	Class = "Rings"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Show
+#	Identified = False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Rarity = Rare
+#	Class = "Rings"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
-Show
-	Identified = False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Rarity = Rare
-	Class = "Belts"
-	SetTextColor 255 255 0 255
-	SetBackgroundColor 255 255 255 0
-	SetBorderColor 128 0 128 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+#Show
+#	Identified = False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	Rarity = Rare
+#	Class = "Belts"
+#	SetTextColor 255 255 0 255
+#	SetBackgroundColor 255 255 255 0
+#	SetBorderColor 128 0 128 255
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 2 Hide
 
 #===============================================================================
 # Section: Chance Bases
@@ -2799,6 +3035,14 @@ Show
 	Corrupted = False
 	Rarity = Normal
 	BaseType = "Ezomyte Dagger"
+	SetFontSize 45
+	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Solaris Circlet"
 	SetFontSize 45
 	DisableDropSound
 
