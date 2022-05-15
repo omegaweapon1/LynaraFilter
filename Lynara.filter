@@ -708,6 +708,7 @@ Show
 Show
 	BaseType = "Offering to the Goddess"
 	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
 
@@ -749,6 +750,7 @@ Show
 Show
 	BaseType = "Divine Vessel"
 	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
 
@@ -930,6 +932,7 @@ Show
 	Class = "Map Fragments"
 	BaseType = "Rusted"
 	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
 
@@ -1234,13 +1237,29 @@ Show
 
 Show
 	StackSize >= 3
-	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence"
+	BaseType = "Wailing Essence"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 5 Hide
 
 Show
-	BaseType = "Weeping Essence" "Muttering Essence" "Wailing Essence"
+	BaseType = "Wailing Essence"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+Show
+	StackSize >= 3
+	BaseType = "Weeping Essence" "Muttering Essence"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	BaseType = "Weeping Essence" "Muttering Essence"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
