@@ -3068,12 +3068,12 @@ Show
 #	DisableDropSound
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Solaris Circlet"
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Solaris Circlet"
+#	SetFontSize 45
+#	DisableDropSound
 
 # Headhunter
 #Show
