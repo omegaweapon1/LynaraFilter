@@ -1403,7 +1403,7 @@ Show
 
 Show
 	StackSize >= 10
-	BaseType = "Portal Scroll" "Scroll of Wisdom"
+	BaseType = "Portal Scroll" "Scroll of Wisdom" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1411,7 +1411,7 @@ Show
 
 Show
 	StackSize >= 7
-	BaseType = "Portal Scroll" "Scroll of Wisdom"
+	BaseType = "Portal Scroll" "Scroll of Wisdom" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1419,7 +1419,7 @@ Show
 
 Show
 	StackSize >= 4
-	BaseType = "Portal Scroll" "Scroll of Wisdom"
+	BaseType = "Portal Scroll" "Scroll of Wisdom" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1433,7 +1433,7 @@ Show
 	#BlockStrictness 1 Hide
 
 Show
-	BaseType = "Scroll of Wisdom"
+	BaseType = "Scroll of Wisdom" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -2487,13 +2487,13 @@ Show
 	DisableDropSound
 
 # Karst
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Precise Arrowhead" "Master Lockpick"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Precise Arrowhead" "Master Lockpick"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Tibbs
 Show
@@ -3060,12 +3060,12 @@ Show
 #	DisableDropSound
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Ezomyte Dagger"
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Ezomyte Dagger"
+#	SetFontSize 45
+#	DisableDropSound
 
 # Headhunter
 Show
