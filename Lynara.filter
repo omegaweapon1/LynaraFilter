@@ -8,7 +8,7 @@
 # CONTACT:       mitchoka@gmail.com
 # LINK:          https://grinding.zone/?page=filtershaper&loadfilter=https://raw.githubusercontent.com/omegaweapon1/LynaraFilter/master/Lynara.filter
 #
-# Strictness 1:  Tier 2
+# Strictness 1:  Tier 1
 # Strictness 2:  Tier 5
 # Strictness 3:  Tier 9
 # Strictness 4:  Tier 13
@@ -149,6 +149,8 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Purple Kite
+	PlayEffect Purple 
 
 Show
 	BaseType = "Augmenting Power Core" "Transforming Power Core" "Amplifying Power Core"
@@ -157,6 +159,8 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Purple Kite
+	PlayEffect Purple Temp
 
 Show
 	BaseType = "Power Core"
@@ -173,6 +177,8 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Purple Kite
+	PlayEffect Purple 
 
 Show
 	BaseType = "Cosmic Apex Sentinel"
@@ -181,6 +187,8 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Purple Kite
+	PlayEffect Purple 
 
 Show
 	BaseType = "Cryptic Apex Sentinel" "Cryptic Pandemonium Sentinel" "Cryptic Stalker Sentinel"
@@ -189,6 +197,8 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Purple Kite
+	PlayEffect Purple Temp
 
 Show
 	BaseType = "Ancient Apex Sentinel" "Ancient Pandemonium Sentinel" "Ancient Stalker Sentinel" "Primeval Apex Sentinel" "Primeval Pandemonium Sentinel" "Primeval Stalker Sentinel"
@@ -279,8 +289,8 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "GS.mp3" 100
-	MinimapIcon 0 White Star
-	PlayEffect White 
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown 
 
 Show
 	Corrupted = True
@@ -349,7 +359,7 @@ Show
 # T2 Uniques
 Show
 	Rarity = Unique
-	BaseType = "Blood Raiment" "Gemstone Sword" "Sorcerer Boots" "Royal Axe" "Occultist's Vestment" "Sapphire Flask" "Vaal Rapier" "Deerskin Gloves" "Riveted Gloves" "Nightmare Mace"
+	BaseType = "Blood Raiment" "Gemstone Sword" "Sorcerer Boots" "Occultist's Vestment" "Sapphire Flask" "Vaal Rapier" "Deerskin Gloves" "Riveted Gloves" "Nightmare Mace" "Champion Kite Shield" "Painted Tower Shield"
 	SetTextColor 175 96 37 255 # Unique
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -373,7 +383,7 @@ Show
 # B Tier Uniques
 Show
 	Rarity = Unique
-	BaseType = "Arcanist Gloves" "Nubuck Boots" "Nubuck Gloves" "Sanctified Life Flask" "Timeworn Claw" "Callous Mask" "Bismuth Flask" "Champion Kite Shield" "Clasped Mitts" "Elegant Ringmail" "Rawhide Tower Shield" "Vaal Mask"
+	BaseType = "Nubuck Gloves" "Bismuth Flask" "Elegant Ringmail" "Rawhide Tower Shield" "Vaal Mask"
 	SetTextColor 175 96 37 255 # Unique
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -653,7 +663,6 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "MB.mp3" 100
-	MinimapIcon 2 Blue Hexagon
 	PlayEffect Blue Temp
 	#BlockStrictness 5 Hide
 
@@ -779,7 +788,6 @@ Show
 	PlayEffect Brown Temp
 
 Show
-	Class = "Map Fragment"
 	BaseType = "Sacrifice at Dawn" "Sacrifice at Dusk" "Sacrifice at Midnight" "Sacrifice at Noon"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 255 255 255 0
@@ -849,6 +857,28 @@ Show
 	DisableDropSound
 
 Show
+	StackSize >= 40
+	BaseType = "Simulacrum Splinter"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GA.mp3" 100
+	MinimapIcon 1 Brown Circle
+	PlayEffect Brown 
+
+Show
+	StackSize >= 20
+	BaseType = "Simulacrum Splinter"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
+Show
 	BaseType = "Simulacrum"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBackgroundColor 255 255 255 255 # S Tier
@@ -906,7 +936,7 @@ Show
 
 Show
 	Class = "Map Fragments"
-	BaseType = "Winged" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Gilded Legion Scarab"
+	BaseType = "Winged"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -918,7 +948,7 @@ Show
 
 Show
 	Class = "Map Fragments"
-	BaseType = "Gilded" "Polished Divination Scarab" "Polished Sulphite Scarab" "Polished Legion Scarab"
+	BaseType = "Gilded"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -929,7 +959,7 @@ Show
 
 Show
 	Class = "Map Fragments"
-	BaseType = "Polished" "Rusted Divination Scarab" "Rusted Sulphite Scarab" "Rusted Legion Scarab"
+	BaseType = "Polished"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1186,6 +1216,17 @@ Show
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
+Show
+	StackSize >= 15
+	BaseType = "Splinter of"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "CB.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
 # Pick up always
 Show
 	BaseType = "Blessing of" "Splinter of"
@@ -1323,7 +1364,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Delirium Orb" "Ritual Vessel" "Instilling Orb" "Enkindling Orb" "Lesser Eldritch"
+	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Delirium Orb" "Instilling Orb" "Enkindling Orb" "Lesser Eldritch"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1630,12 +1671,12 @@ Show
 	ItemLevel >= 75
 	BaseType = "Small Cluster Jewel"
 	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 255 165 0 255 # A Tier
+	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
-	MinimapIcon 0 Grey UpsideDownHouse
-	PlayEffect Grey 
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey Temp
 
 Show
 	ItemLevel >= 68
@@ -1662,17 +1703,6 @@ Show
 	PlayEffect Grey Temp
 
 Show
-	ItemLevel >= 68
-	BaseType = "Small Cluster Jewel"
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
-	MinimapIcon 1 Grey UpsideDownHouse
-	PlayEffect Grey Temp
-
-Show
 	BaseType = "Cluster Jewel"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
@@ -1683,13 +1713,17 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	SynthesisedItem = True
+	FracturedItem = True
 	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey Temp
 
 Show
-	FracturedItem = True
+	SynthesisedItem = True
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
@@ -1764,9 +1798,22 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey Temp
 
 Show
-	BaseType = "Ritual Splinter" "Ritual Vessel" "Blood-filled Vessel"
+	BaseType = "Blood-filled Vessel"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "GB.mp3" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey Temp
+
+Show
+	BaseType = "Ritual Splinter" "Ritual Vessel"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
@@ -1904,6 +1951,7 @@ Show
 	DisableDropSound
 	CustomAlertSound "GemB.mp3" 100
 	MinimapIcon 2 Green Circle
+	PlayEffect Green Temp
 
 Show
 	Quality >= 14
@@ -2352,6 +2400,7 @@ Show
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 5 Hide
 
 # 84 T1 Helmets
 Show
@@ -2461,13 +2510,13 @@ Show
 #-------------------------------------------------------------------------------
 
 # Broach
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Foliate Brooch"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Foliate Brooch"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Cloak
 #Show
@@ -2497,22 +2546,22 @@ Show
 #	DisableDropSound
 
 # Tibbs
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Obsidian Sharpening Stone" "Steel Bracers"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Obsidian Sharpening Stone" "Steel Bracers"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Isla
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Burst Band" "Thaumetic Blowtorch"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Burst Band" "Thaumetic Blowtorch"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Tullina
 Show
@@ -2533,13 +2582,13 @@ Show
 #	DisableDropSound
 
 # Nenet
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Precise Arrowhead" "Thaumaturgical Sensing Charm"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Precise Arrowhead" "Thaumaturgical Sensing Charm"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Vinderi
 #Show
@@ -3085,12 +3134,12 @@ Show
 #	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Prophecy Wand"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Prophecy Wand"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
 #Show
@@ -3117,14 +3166,6 @@ Show
 	LinkedSockets = 3
 	SocketGroup = "BBB"
 	Class = "Wand" "Sceptre" "Rune Dagger"
-	SetTextColor 200 200 200 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 1 Hide
-
-Show
-	ItemLevel <= 45
-	BaseType = "Topaz Ring"
 	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
