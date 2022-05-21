@@ -1392,6 +1392,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 4 Hide
 
 # Pick up always
 Show
@@ -1407,7 +1408,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 6 Hide
+	#BlockStrictness 4 Hide
 
 Show
 	StackSize >= 7
@@ -1415,7 +1416,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 5 Hide
+	#BlockStrictness 3 Hide
 
 Show
 	StackSize >= 4
@@ -1517,7 +1518,7 @@ Show
 
 Hide
 	Class = "Divination Card"
-	BaseType = "Audacity" "Birth of the Three" "The Surgeon" "Death" "Destined to Crumble" "Lantador's Lost Love" "Light and Truth" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Fathomless Depths" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Metalsmith's Gift" "The Mountain" "The Rabid Rhoa" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "Cartographer's Delight" "Anarchy's Price" "The Opulent" "Rain of Chaos" "Grave Knowledge" "Thunderous Skies" "Echoes of Love" "The Incantation" "The Lunaris Priestess" "Turn the Other Cheek"
+	BaseType = "Audacity" "Birth of the Three" "The Surgeon" "Death" "Destined to Crumble" "Lantador's Lost Love" "Light and Truth" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Fathomless Depths" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Metalsmith's Gift" "The Mountain" "The Rabid Rhoa" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "Cartographer's Delight" "Anarchy's Price" "The Opulent" "Rain of Chaos" "Grave Knowledge" "Thunderous Skies" "Echoes of Love" "The Incantation" "The Lunaris Priestess" "Turn the Other Cheek" "A Mother's Parting Gift" "Dark Temptation" "Dying Anguish" "Rain Tempter" "The Coming Storm" "The Endurance" "The Gentleman" "The Hermit"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 30
 	DisableDropSound
@@ -2281,7 +2282,7 @@ Show
 Show
 	Corrupted = False
 	ItemLevel >= 84
-	BaseType = "Royal Burgonet" "Colossal Tower Shield" "Lion Pelt" "Glorious Plate" "Astral Plate" "Zodiac Leather" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots"
+	BaseType = "Royal Burgonet" "Colossal Tower Shield" "Lion Pelt" "Glorious Plate" "Astral Plate" "Zodiac Leather" "Titan Gauntlets" "Titan Greaves" "Slink Gloves" "Slink Boots" "Dragonscale Boots" "Dragonscale Gauntlets" "Triumphant Lamellar"
 	BaseDefencePercentile >= 95
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
@@ -2469,22 +2470,22 @@ Show
 	DisableDropSound
 
 # Cloak
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Whisper-woven Cloak"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Whisper-woven Cloak"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Huck
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Tattered Cloak" "Golden Brooch" "Trarthan Flashpowder" "Standard Sharpening Stone"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Tattered Cloak" "Golden Brooch" "Trarthan Flashpowder" "Standard Sharpening Stone"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Karst
 #Show
@@ -2523,13 +2524,13 @@ Show
 	DisableDropSound
 
 # Niles
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Burst Band" "Thaumaturgical Ward"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Burst Band" "Thaumaturgical Ward"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Nenet
 Show
@@ -2541,22 +2542,22 @@ Show
 	DisableDropSound
 
 # Vinderi
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Obsidian Sharpening Stone" "Thaumetic Flashpowder"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Obsidian Sharpening Stone" "Thaumetic Flashpowder"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Gianna
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Regicide Disguise Kit" "Burst Band"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Regicide Disguise Kit" "Burst Band"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 Show
 	Class = "Heist"
@@ -2707,7 +2708,7 @@ Show
 	Class = "Jewel"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 5 Hide
+	#BlockStrictness 3 Hide
 
 # Tier 2 Rares
 Show
