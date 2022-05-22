@@ -2748,6 +2748,12 @@ Show
 
 Show
 	Rarity = Rare
+	Class = "Rune Dagger" "Wand" "Sceptre" "Amulet"
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Rare
 	Class = "Jewel"
 	SetFontSize 45
 	DisableDropSound
