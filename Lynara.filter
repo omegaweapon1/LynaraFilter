@@ -490,6 +490,58 @@ Show
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
+# Tier 16
+Show
+	HasInfluence = "Crusader"
+	Class = "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MS.mp3" 100
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+# Tier 16
+Show
+	HasInfluence = "Redeemer"
+	Class = "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MS.mp3" 100
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+# Tier 16
+Show
+	HasInfluence = "Hunter"
+	Class = "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MS.mp3" 100
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+# Tier 16
+Show
+	HasInfluence = "Warlord"
+	Class = "Maps"
+	SetTextColor 184 218 242 255 # Maps
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "MS.mp3" 100
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
 #-------------------------------------------------------------------------------
 # Subsection: Special Maps
 #-------------------------------------------------------------------------------
@@ -996,7 +1048,7 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	BaseType = "Golden Oil"
+	BaseType = "Golden Oil" "Tainted Oil"
 	SetTextColor 170 158 130 255 # Currency
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1229,7 +1281,14 @@ Show
 
 # Pick up always
 Show
-	BaseType = "Blessing of" "Splinter of"
+	BaseType = "Blessing of Esh" "Blessing of Tul" "Blessing of Xoph"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+# Pick up always
+Show
+	BaseType = "Splinter of Chayula" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1364,7 +1423,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Delirium Orb" "Instilling Orb" "Enkindling Orb" "Lesser Eldritch"
+	BaseType = "Awakened Sextant" "Harbinger's Orb" "Stacked Deck" "Delirium Orb" "Instilling Orb" "Enkindling Orb" "Lesser Eldritch" "Tainted Blessing"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2628,6 +2687,43 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
+# Subsection: Expedition
+#-------------------------------------------------------------------------------
+
+Show
+	ItemLevel >= 80
+	BaseType = "Runic Crown" "Runic Gauntlets" "Runic Sabatons"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "BA.wav" 100
+	MinimapIcon 1 Red Triangle
+	PlayEffect Red 
+
+Show
+	BaseType = "Runic Crown" "Runic Gauntlets" "Runic Sabatons"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "BB.wav" 100
+	MinimapIcon 2 Red Triangle
+	PlayEffect Red Temp
+
+Show
+	BaseType = "Runic Gages" "Runic Sollerets" "Runic Crest"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType = "Runic Gloves" "Runic Greaves" "Runic Helm"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
 # Subsection: Talisman
 #-------------------------------------------------------------------------------
 
@@ -3114,6 +3210,14 @@ Show
 #	BaseType = "Glorious Plate"
 #	SetFontSize 45
 #	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Gladiator Plate"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
 #Show
