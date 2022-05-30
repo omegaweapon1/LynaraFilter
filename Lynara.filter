@@ -895,6 +895,7 @@ Show
 Show
 	BaseType = "Breachstone"
 	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
 
@@ -2454,6 +2455,15 @@ Show
 # 84 T1 Helmets
 Show
 	Corrupted = False
+	ItemLevel >= 85
+	BaseType = "Imperial Claw"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
 	ItemLevel >= 84
 	BaseType = "Imperial Claw"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
@@ -2857,6 +2867,13 @@ Show
 Show
 	Rarity = Magic
 	Class = "Jewel"
+	HasExplicitMod = "Vivid"
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Magic
+	Class = "Jewel"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
@@ -3244,12 +3261,12 @@ Show
 #	DisableDropSound
 
 # Headhunter
-Show
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Prophecy Wand"
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Prophecy Wand"
+#	SetFontSize 45
+#	DisableDropSound
 
 # Headhunter
 #Show
