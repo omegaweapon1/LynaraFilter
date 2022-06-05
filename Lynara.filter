@@ -71,7 +71,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CS.mp3" 100
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -119,6 +119,10 @@ Show
 # Section: Challenge League
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: Template
+#-------------------------------------------------------------------------------
+
 #Show
 #	SetTextColor 128 64 64 200 # Challenge League
 #	SetBorderColor 255 0 0 255 # S Tier
@@ -146,14 +150,19 @@ Show
 #	DisableDropSound
 #	CustomAlertSound "GB.mp3" 100
 
+#-------------------------------------------------------------------------------
+# Subsection: League
+#-------------------------------------------------------------------------------
+
 Show
 	BaseType = "Recombinator"
 	SetTextColor 128 64 64 200 # Challenge League
-	SetBorderColor 255 165 0 255 # A Tier
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
-	MinimapIcon 1 Purple Kite
+	CustomAlertSound "Gen02.mp3" 100
+	MinimapIcon 0 Purple Kite
 	PlayEffect Purple 
 
 Show
@@ -162,7 +171,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Gen00.mp3" 100
 	MinimapIcon 2 Purple Kite
 	PlayEffect Purple Temp
 
@@ -180,7 +189,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
+	CustomAlertSound "Gen01.mp3" 100
 	MinimapIcon 1 Purple Kite
 	PlayEffect Purple 
 
@@ -190,7 +199,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
+	CustomAlertSound "Gen01.mp3" 100
 	MinimapIcon 1 Purple Kite
 	PlayEffect Purple 
 
@@ -200,7 +209,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Gen00.mp3" 100
 	MinimapIcon 2 Purple Kite
 	PlayEffect Purple Temp
 
@@ -268,7 +277,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "US.mp3" 100
+	CustomAlertSound "Uni02.mp3" 100
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown 
 
@@ -280,19 +289,19 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
 Show
 	LinkedSockets = 6
 	Class = "Body Armours"
-	SetTextColor 255 0 0 255 # SS Tier
+	SetTextColor 170 158 130 255 # Currency
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GS.mp3" 100
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -304,7 +313,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -314,7 +323,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -331,7 +340,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "US.mp3" 100
+	CustomAlertSound "Uni02.mp3" 100
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown 
 
@@ -343,7 +352,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "US.mp3" 100
+	CustomAlertSound "Uni02.mp3" 100
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown 
 
@@ -356,7 +365,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "UB.mp3" 100
+	CustomAlertSound "Uni00.mp3" 100
 	MinimapIcon 2 Brown Star
 	PlayEffect Brown Temp
 
@@ -368,7 +377,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "UA.mp3" 100
+	CustomAlertSound "Uni01.mp3" 100
 	MinimapIcon 1 Brown Star
 	PlayEffect Brown 
 
@@ -380,7 +389,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "UA.mp3" 100
+	CustomAlertSound "Uni01.mp3" 100
 	MinimapIcon 1 Brown Star
 	PlayEffect Brown 
 
@@ -392,9 +401,23 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "UB.mp3" 100
+	CustomAlertSound "Uni00.mp3" 100
 	MinimapIcon 2 Brown Star
 	PlayEffect Brown Temp
+
+# T2 Uniques
+Show
+	MapTier >= 15
+	Rarity = Unique
+	Class = "Map"
+	BaseType = "Cursed Crypt" "Temple" "Harbinger"
+	SetTextColor 175 96 37 255 # Unique
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Uni01.mp3" 100
+	MinimapIcon 1 Brown Star
+	PlayEffect Brown 
 
 # T2 Uniques
 Show
@@ -404,7 +427,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "UB.mp3" 100
+	CustomAlertSound "Uni00.mp3" 100
 	MinimapIcon 2 Brown Star
 	PlayEffect Brown Temp
 
@@ -426,43 +449,230 @@ Show
 # Tier 16
 Show
 	BaseType = "The Maven's Writ" "Screaming Invitation" "Incandescent Invitation"
-	SetTextColor 184 218 242 255 # Maps
+	SetTextColor 75 250 255 255 # SMap
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue 
+	CustomAlertSound "SMap02.mp3" 100
+	MinimapIcon 0 Cyan Moon
+	PlayEffect Cyan 
 
 # Red Tier
 Show
 	BaseType = "Writhing Invitation" "Polaric Invitation"
-	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 255 165 0 255 # A Tier
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MA.mp3" 100
-	MinimapIcon 1 Blue Hexagon
-	PlayEffect Blue 
+	CustomAlertSound "SMap00.mp3" 100
+	MinimapIcon 2 Cyan Moon
+	PlayEffect Cyan Temp
 
 # Red Tier
 Show
 	BaseType = "Maven's Invitation: The Feared" "Maven's Invitation: The Formed" "Maven's Invitation: The Forgotten" "Maven's Invitation: The Hidden" "Maven's Invitation: The Twisted" "Maven's Invitation: The Atlas" "Maven's Invitation: The Elderslayers"
-	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 255 165 0 255 # A Tier
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MA.mp3" 100
-	MinimapIcon 1 Blue Hexagon
-	PlayEffect Blue 
+	CustomAlertSound "SMap00.mp3" 100
+	MinimapIcon 2 Cyan Moon
+	PlayEffect Cyan Temp
 
 # Red Tier
 Show
 	BaseType = "Maven's Invitation"
-	SetTextColor 184 218 242 255 # Maps
+	SetTextColor 75 250 255 255 # SMap
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Special Maps
+#-------------------------------------------------------------------------------
+
+# Tier 16
+Show
+	BaseType = "Chronicle of Atzoatl" "Sacred Blossom"
+	SetTextColor 75 250 255 255 # SMap
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap02.mp3" 100
+	MinimapIcon 0 Cyan Moon
+	PlayEffect Cyan 
+
+# Red Tier
+Show
+	UberBlightedMap = True
+	Class = "Maps"
+	SetTextColor 75 250 255 255 # SMap
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap02.mp3" 100
+	MinimapIcon 0 Cyan Moon
+	PlayEffect Cyan 
+
+# Red Tier
+Show
+	BlightedMap = True
+	MapTier = 16
+	Class = "Maps"
+	SetTextColor 75 250 255 255 # SMap
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap02.mp3" 100
+	MinimapIcon 0 Cyan Moon
+	PlayEffect Cyan 
+
+# Red Tier
+Show
+	BlightedMap = True
+	Class = "Maps"
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap01.mp3" 100
+	MinimapIcon 1 Cyan Moon
+	PlayEffect Cyan 
+
+# Red Tier
+Show
+	Class = "Maps"
+	BaseType = "Synthesised Map"
+	SetTextColor 75 250 255 255 # SMap
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap02.mp3" 100
+	MinimapIcon 0 Cyan Moon
+	PlayEffect Cyan 
+
+#-------------------------------------------------------------------------------
+# Subsection: Enchanted
+#-------------------------------------------------------------------------------
+
+# Red Tier
+Show
+	AnyEnchantment = True
+	MapTier >= 16
+	Class = "Maps"
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap01.mp3" 100
+	MinimapIcon 1 Cyan Moon
+	PlayEffect Cyan 
+
+# Tier 16
+Show
+	AnyEnchantment = True
+	MapTier >= 14
+	Class = "Maps"
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap00.mp3" 100
+	MinimapIcon 2 Cyan Moon
+	PlayEffect Cyan Temp
+
+# Tier 16
+Show
+	AnyEnchantment = True
+	Class = "Maps"
+	SetTextColor 75 250 255 255 # SMap
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Blueprints
+#-------------------------------------------------------------------------------
+
+# Red Tier
+Show
+	Class = "Blueprint"
+	BaseType = "Blueprint: Laboratory" "Blueprint: Prohibited Library" "Blueprint: Repository" "Blueprint: Tunnels"
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap01.mp3" 100
+	MinimapIcon 1 Cyan Moon
+	PlayEffect Cyan 
+
+# Red Tier
+Show
+	AreaLevel >= 80
+	Class = "Blueprint"
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap00.mp3" 100
+	MinimapIcon 2 Cyan Moon
+	PlayEffect Cyan Temp
+
+# Yellow Tier
+Show
+	Class = "Blueprint"
+	SetTextColor 75 250 255 255 # SMap
+	SetFontSize 45
+	DisableDropSound
+
+# Red Tier
+Show
+	AreaLevel >= 83
+	Class = "Contract"
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap00.mp3" 100
+	MinimapIcon 2 Cyan Moon
+	PlayEffect Cyan Temp
+
+# Yellow Tier
+Show
+	Class = "Contract"
+	SetTextColor 75 250 255 255 # SMap
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Expedition
+#-------------------------------------------------------------------------------
+
+# Red Tier
+Show
+	AreaLevel >= 83
+	Class = "Expedition Logbook"
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap01.mp3" 100
+	MinimapIcon 1 Cyan Moon
+	PlayEffect Cyan 
+
+# Red Tier
+Show
+	Class = "Expedition Logbook"
+	SetTextColor 75 250 255 255 # SMap
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "SMap00.mp3" 100
+	MinimapIcon 2 Cyan Moon
+	PlayEffect Cyan 
 
 #-------------------------------------------------------------------------------
 # Subsection: Guardians
@@ -477,7 +687,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
+	CustomAlertSound "Map02.mp3" 100
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -490,7 +700,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
+	CustomAlertSound "Map02.mp3" 100
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -503,7 +713,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
+	CustomAlertSound "Map02.mp3" 100
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -516,7 +726,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
+	CustomAlertSound "Map02.mp3" 100
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -529,7 +739,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
+	CustomAlertSound "Map02.mp3" 100
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -542,137 +752,8 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
+	CustomAlertSound "Map02.mp3" 100
 	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue 
-
-#-------------------------------------------------------------------------------
-# Subsection: Special Maps
-#-------------------------------------------------------------------------------
-
-# Tier 16
-Show
-	BaseType = "Chronicle of Atzoatl" "Sacred Blossom"
-	SetTextColor 184 218 242 255 # Maps
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue 
-
-# Red Tier
-Show
-	UberBlightedMap = True
-	Class = "Maps"
-	SetTextColor 184 218 242 255 # Maps
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue 
-
-# Red Tier
-Show
-	BlightedMap = True
-	MapTier = 16
-	Class = "Maps"
-	SetTextColor 184 218 242 255 # Maps
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue 
-
-# Red Tier
-Show
-	Class = "Maps"
-	BaseType = "Synthesised Map"
-	SetTextColor 184 218 242 255 # Maps
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MS.mp3" 100
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue 
-
-# Red Tier
-Show
-	BlightedMap = True
-	Class = "Maps"
-	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MA.mp3" 100
-	MinimapIcon 1 Blue Hexagon
-	PlayEffect Blue 
-
-# Tier 16
-Show
-	AnyEnchantment = True
-	Class = "Maps"
-	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MB.mp3" 100
-	MinimapIcon 2 Blue Hexagon
-	PlayEffect Blue Temp
-
-#-------------------------------------------------------------------------------
-# Subsection: Blueprints
-#-------------------------------------------------------------------------------
-
-# Red Tier
-Show
-	Class = "Blueprint"
-	BaseType = "Blueprint: Laboratory" "Blueprint: Prohibited Library" "Blueprint: Repository" "Blueprint: Tunnels"
-	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MA.mp3" 100
-	MinimapIcon 1 Blue Hexagon
-	PlayEffect Blue 
-
-# Red Tier
-Show
-	Class = "Blueprint"
-	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MB.mp3" 100
-	MinimapIcon 2 Blue Hexagon
-	PlayEffect Blue Temp
-
-# Yellow Tier
-Show
-	Class = "Contract"
-	SetTextColor 184 218 242 255 # Maps
-	SetFontSize 45
-	DisableDropSound
-
-#-------------------------------------------------------------------------------
-# Subsection: Expedition
-#-------------------------------------------------------------------------------
-
-# Red Tier
-Show
-	Class = "Expedition Logbook"
-	SetTextColor 184 218 242 255 # Maps
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "MA.mp3" 100
-	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue 
 
 #-------------------------------------------------------------------------------
@@ -698,7 +779,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MA.mp3" 100
+	CustomAlertSound "Map01.mp3" 100
 	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue 
 
@@ -710,7 +791,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "MB.mp3" 100
+	CustomAlertSound "Map00.mp3" 100
 	MinimapIcon 2 Blue Hexagon
 	PlayEffect Blue Temp
 
@@ -768,7 +849,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
+	CustomAlertSound "Frag01.mp3" 100
 	MinimapIcon 1 Brown Circle
 	PlayEffect Brown 
 
@@ -778,7 +859,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Frag00.mp3" 100
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
 
@@ -800,7 +881,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GS.mp3" 100
+	CustomAlertSound "Frag02.mp3" 100
 	MinimapIcon 0 Brown Circle
 	PlayEffect Brown 
 
@@ -810,7 +891,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
+	CustomAlertSound "Frag01.mp3" 100
 	MinimapIcon 1 Brown Circle
 	PlayEffect Brown 
 
@@ -820,7 +901,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Frag00.mp3" 100
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
 
@@ -841,7 +922,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Frag00.mp3" 100
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
 
@@ -863,28 +944,28 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GS.mp3" 100
+	CustomAlertSound "Frag02.mp3" 100
 	MinimapIcon 0 Brown Circle
 	PlayEffect Brown 
 
 Show
-	BaseType = "Pure Breachstone"
+	BaseType = "Pure Breachstone" "Chayula's Enriched Breachstone" "Uul-Netol's Enriched Breachstone"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GS.mp3" 100
+	CustomAlertSound "Frag02.mp3" 100
 	MinimapIcon 0 Brown Circle
 	PlayEffect Brown 
 
 Show
-	BaseType = "Enriched Breachstone"
+	BaseType = "Enriched Breachstone" "Chayula's Charged Breachstone" "Uul-Netol's Charged Breachstone"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
+	CustomAlertSound "Frag01.mp3" 100
 	MinimapIcon 1 Brown Circle
 	PlayEffect Brown 
 
@@ -894,7 +975,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Frag00.mp3" 100
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
 
@@ -910,24 +991,36 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	StackSize >= 40
+	StackSize >= 200
+	BaseType = "Simulacrum Splinter"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Frag02.mp3" 100
+	MinimapIcon 0 Brown Circle
+	PlayEffect Brown 
+
+Show
+	StackSize >= 75
 	BaseType = "Simulacrum Splinter"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
+	CustomAlertSound "Frag01.mp3" 100
 	MinimapIcon 1 Brown Circle
 	PlayEffect Brown 
 
 Show
-	StackSize >= 20
+	StackSize >= 25
 	BaseType = "Simulacrum Splinter"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Frag00.mp3" 100
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
 
@@ -944,7 +1037,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GS.mp3" 100
+	CustomAlertSound "Frag02.mp3" 100
 	MinimapIcon 0 Brown Circle
 	PlayEffect Brown 
 
@@ -959,8 +1052,8 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GS.mp3" 100
-	MinimapIcon 1 Brown Circle
+	CustomAlertSound "Frag02.mp3" 100
+	MinimapIcon 0 Brown Circle
 	PlayEffect Brown 
 
 Show
@@ -969,7 +1062,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
+	CustomAlertSound "Frag01.mp3" 100
 	MinimapIcon 1 Brown Circle
 	PlayEffect Brown 
 
@@ -979,7 +1072,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Frag00.mp3" 100
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
 
@@ -1001,7 +1094,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GS.mp3" 100
+	CustomAlertSound "Frag02.mp3" 100
 	MinimapIcon 0 Brown Circle
 	PlayEffect Brown 
 
@@ -1012,7 +1105,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
+	CustomAlertSound "Frag01.mp3" 100
 	MinimapIcon 1 Brown Circle
 	PlayEffect Brown 
 
@@ -1023,7 +1116,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Frag00.mp3" 100
 	MinimapIcon 2 Brown Circle
 	PlayEffect Brown Temp
 
@@ -1061,7 +1154,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CS.mp3" 100
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1071,7 +1164,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CA.mp3" 100
+	CustomAlertSound "Curr01.mp3" 100
 	MinimapIcon 1 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1081,7 +1174,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1104,7 +1197,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CA.mp3" 100
+	CustomAlertSound "Curr01.mp3" 100
 	MinimapIcon 1 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1114,7 +1207,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1138,27 +1231,27 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CS.mp3" 100
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Maddening Incubator" "Skittering Incubator" "Kalguuran Incubator"
+	BaseType = "Maddening Incubator" "Kalguuran Incubator"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CA.mp3" 100
+	CustomAlertSound "Curr01.mp3" 100
 	MinimapIcon 1 Yellow Diamond
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Morphing Incubator" "Fossilised Incubator" "Blighted Incubator"
+	BaseType = "Morphing Incubator" "Fossilised Incubator" "Blighted Incubator" "Skittering Incubator"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1181,7 +1274,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CS.mp3" 100
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1191,7 +1284,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CA.mp3" 100
+	CustomAlertSound "Curr01.mp3" 100
 	MinimapIcon 1 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1201,7 +1294,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1223,7 +1316,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CS.mp3" 100
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1233,7 +1326,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CA.mp3" 100
+	CustomAlertSound "Curr01.mp3" 100
 	MinimapIcon 1 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1243,7 +1336,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1264,7 +1357,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CA.mp3" 100
+	CustomAlertSound "Curr01.mp3" 100
 	MinimapIcon 1 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1274,7 +1367,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1285,7 +1378,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1313,7 +1406,18 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	StackSize >= 3
+	BaseType = "Astragali" "Exotic Coinage" "Burial Medallion"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1334,7 +1438,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CA.mp3" 100
+	CustomAlertSound "Curr01.mp3" 100
 	MinimapIcon 1 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1344,7 +1448,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1401,15 +1505,72 @@ Show
 	#BlockStrictness 1 Hide
 
 #-------------------------------------------------------------------------------
-# Subsection: Generic Currency
+# Subsection: Ritual
 #-------------------------------------------------------------------------------
 
+Show
+	BaseType = "Blood-filled Vessel" "Ritual Vessel"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr01.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	StackSize >= 25
+	BaseType = "Ritual Splinter"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
 # Pick up always
+Show
+	BaseType = "Ritual Splinter"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Heist
+#-------------------------------------------------------------------------------
+
+Show
+	StackSize >= 1500
+	BaseType = "Rogue's Marker"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr01.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	StackSize >= 300
+	BaseType = "Rogue's Marker"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
 Show
 	BaseType = "Rogue's Marker"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Generic Currency
+#-------------------------------------------------------------------------------
 
 Show
 	BaseType = "Mirror Shard" "Awakener's Orb" "Tempering Orb" "Tailoring Orb" "Prime Regrading Lens" "Secondary Regrading Lens" "Exalted Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Sacred Orb" "Orb of Conflict" "Exceptional Eldritch" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Orb of Dominance"
@@ -1418,7 +1579,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CS.mp3" 100
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1428,7 +1589,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CA.mp3" 100
+	CustomAlertSound "Curr01.mp3" 100
 	MinimapIcon 1 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1438,7 +1599,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1448,7 +1609,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
@@ -1459,13 +1620,13 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "CB.mp3" 100
+	CustomAlertSound "Curr00.mp3" 100
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
 # Pick up always
 Show
-	BaseType = "Ritual Splinter" "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Harbinger's Shard" "Annulment Shard" "Rogue's Marker" "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Ancient Shard" "Orb of Alteration" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass"
+	BaseType = "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Harbinger's Shard" "Annulment Shard" "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Ancient Shard" "Orb of Alteration" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1583,7 +1744,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "DS.mp3" 100
+	CustomAlertSound "Div02.mp3" 100
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue 
 
@@ -1595,19 +1756,19 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "DA.wav" 100
+	CustomAlertSound "Div01.mp3" 100
 	MinimapIcon 1 Blue Square
 	PlayEffect Blue 
 
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Familiar Call" "A Sea of Blue" "Acclimatisation" "Ambitious Obsession" "Boon of the First Ones" "Bowyer's Dream" "Broken Promises" "Brush, Paint and Palette" "Deathly Designs" "Dementophobia" "Dying Light" "Earth Drinker" "Home" "Humility" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Magnum Opus" "Mawr Blaidd" "Perfection" "Pride Before the Fall" "Remembrance" "Seven Years Bad Luck" "Society's Remorse" "The Academic" "The Avenger" "The Awakened" "The Bargain" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Emptiness" "The Ethereal" "The Eye of Terror" "The Immortal" "The Landing" "The Mad King" "The Magma Crab" "The Mind's Eyes" "The Offering" "The Pact" "The Polymath" "The Porcupine" "The Price of Loyalty" "The Price of Protection" "The Primordial" "The Rite of Elements" "The Sacrifice" "The Sephirot" "The Shortcut" "The Side Quest" "The Strategist" "The Sustenance" "The Void" "The Warlord" "The White Knight" "The Whiteout" "Unrequited Love" "Vanity" "Winter's Embrace" "The King's Heart" "The Nurse"
+	BaseType = "A Familiar Call" "A Sea of Blue" "Acclimatisation" "Ambitious Obsession" "Boon of the First Ones" "Bowyer's Dream" "Broken Promises" "Brush, Paint and Palette" "Deathly Designs" "Dementophobia" "Dying Light" "Earth Drinker" "Home" "Humility" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Magnum Opus" "Mawr Blaidd" "Perfection" "Pride Before the Fall" "Remembrance" "Seven Years Bad Luck" "Society's Remorse" "The Academic" "The Avenger" "The Awakened" "The Bargain" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Emptiness" "The Ethereal" "The Eye of Terror" "The Immortal" "The Landing" "The Mad King" "The Magma Crab" "The Mind's Eyes" "The Offering" "The Pact" "The Polymath" "The Porcupine" "The Price of Loyalty" "The Price of Protection" "The Primordial" "The Rite of Elements" "The Sacrifice" "The Sephirot" "The Shortcut" "The Side Quest" "The Strategist" "The Sustenance" "The Void" "The Warlord" "The White Knight" "The Whiteout" "Unrequited Love" "Vanity" "Winter's Embrace" "The King's Heart" "The Nurse" "The Professor"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "DB.mp3" 100
+	CustomAlertSound "Div00.mp3" 100
 	MinimapIcon 2 Blue Square
 	PlayEffect Blue Temp
 
@@ -1641,7 +1802,7 @@ Show
 # Default Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Dab of Ink" "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Azyran's Reward" "Baited Expectations" "Bijoux" "Blind Venture" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hope" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lysah's Respite" "Misery in Darkness" "Mitts" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Doppelganger" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endless Darkness" "The Endurance" "The Eye of the Dragon" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Gambler" "The Garish Power" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The One With All" "The Penitent" "The Puzzle" "The Queen" "The Rabbit's Foot" "The Realm" "The Skeleton" "The Soul" "The Spark and the Flame" "The Standoff" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Unexpected Prize" "The Union" "The Valkyrie" "The Vast" "The Visionary" "The Wilted Rose" "The Wolf" "The Wolf's Legacy" "The Wolven King's Bite" "The World Eater" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power" "The Patient"
+	BaseType = "A Dab of Ink" "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Azyran's Reward" "Baited Expectations" "Bijoux" "Blind Venture" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hope" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lysah's Respite" "Misery in Darkness" "Mitts" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Doppelganger" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endless Darkness" "The Endurance" "The Eye of the Dragon" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Gambler" "The Garish Power" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The One With All" "The Penitent" "The Puzzle" "The Queen" "The Rabbit's Foot" "The Realm" "The Skeleton" "The Soul" "The Spark and the Flame" "The Standoff" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Unexpected Prize" "The Union" "The Valkyrie" "The Vast" "The Visionary" "The Wilted Rose" "The Wolf" "The Wolf's Legacy" "The Wolven King's Bite" "The World Eater" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power" "The Patient" "Sambodhi's Wisdom"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 45
 	DisableDropSound
@@ -1659,69 +1820,6 @@ Show
 	SetBorderColor 242 4 246 255 # Error
 	SetFontSize 45
 	DisableDropSound
-
-#-------------------------------------------------------------------------------
-# Subsection: Old Div Card Filter
-#-------------------------------------------------------------------------------
-
-#Show
-#	Class = "Divination Card"
-#	BaseType = "The Gambler" "Assassin's Favour" "Her Mask" "Dying Anguish" "The Trial" "A Mother's Parting Gift" "Dark Temptation" "Emperor's Luck" "Imperial Legacy" "The Catalyst" "The Doppelganger" "The Encroaching Darkness" "The Fox" "The Gemcutter" "The Scholar" "Three Faces in the Dark" "Three Voices" "Vinia's Token"
-#	SetTextColor 30 144 255 255 # Divination Card
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 6 Hide
-
-#Show
-#	Class = "Divination Card"
-#	BaseType = "The Wolf's Legacy" "The Master Artisan"
-#	SetTextColor 30 144 255 255 # Divination Card
-#	SetFontSize 45
-#	DisableDropSound
-
-# GG Cards
-#Show
-#	Class = "Divination Card"
-#	BaseType = "House of Mirrors" "The Doctor" "The Demon" "The Fiend" "Beauty Through Death" "The Immortal" "Alluring Bounty" "The Samurai's Eye" "Succor of the Sinless" "The Nurse" "Immortal Resolve" "The Dragon's Heart" "The World Eater" "The Iron Bard" "Wealth and Power" "Abandoned Wealth" "The Cheater" "Unrequited Love" "Brother's Stash" "Deadly Joy" "Love Through Ice" "Gift of Asenath" "Alluring Bounty" "Desecrated Virtue" "Luminous Trove" "Seven Years Bad Luck" "The Apothecary"
-#	SetTextColor 30 144 255 255 # Divination Card
-#	SetBackgroundColor 255 255 255 255 # S Tier
-#	SetBorderColor 255 0 0 255 # S Tier
-#	SetFontSize 45
-#	DisableDropSound
-#	CustomAlertSound "DS.mp3" 100
-#	MinimapIcon 0 Blue Square
-#	PlayEffect Blue 
-
-# Good Cards
-#Show
-#	Class = "Divination Card"
-#	BaseType = "The Eye of Terror" "The Enlightened" "The Eldritch Decay" "The White Knight" "The Pact" "Winter's Embrace" "The Long Con" "The Sustenance" "Nook's Crown" "The Aspirant" "Pride of the First Ones" "The Price of Loyalty" "The Artist" "Dementophobia" "The Astromancer" "The Bitter Blossom" "The Saint's Treasure" "Justified Ambition" "Judging Voices" "Altered Perception" "A Fate Worse Than Death" "The Destination"
-#	SetTextColor 30 144 255 255 # Divination Card
-#	SetBorderColor 255 165 0 255 # A Tier
-#	SetFontSize 45
-#	DisableDropSound
-#	CustomAlertSound "DA.wav" 100
-#	MinimapIcon 1 Blue Square
-#	PlayEffect Blue 
-
-# Good Cards
-#Show
-#	Class = "Divination Card"
-#	BaseType = "Etched in Blood" "Pride Before the Fall" "The Celestial Justicar" "The Escape" "Burning Blood" "The Celestial Stone" "The Bargain" "Squandered Prosperity" "The Soul" "Azyran's Reward" "The Hoarder" "The Ethereal" "The Rite of Elements" "Chasing Risk" "Guardian's Challenge" "Disdain" "The Spark and the Flame" "The Progeny of Lunaris" "Hunter's Reward" "The Greatest Intentions" "The Damned" "The Gulf" "The Patient" "The Craving" "The Enthusiasts" "The Sephirot" "Remembrance" "Terrible Secret of Space" "The Bones" "The Old Man" "The Strategist" "The Wilted Rose" "Ambitious Obsession" "A Familiar Call" "Fateful Meeting" "The Eternal War" "Keeper's Corruption" "The Academic" "The Sacrifice" "A Note in the Wind" "Council of Cats" "Deathly Designs" "Draped in Dreams" "A Modest Request" "The King's Heart" "Darker Half" "Home"
-#	SetTextColor 30 144 255 255 # Divination Card
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
-#	CustomAlertSound "DB.mp3" 100
-#	MinimapIcon 2 Blue Square
-#	PlayEffect Blue Temp
-
-#Hide
-#	Class = "Divination Card"
-#	BaseType = "Audacity" "Birth of the Three" "The Surgeon" "Death" "Destined to Crumble" "Lantador's Lost Love" "Light and Truth" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Fathomless Depths" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Metalsmith's Gift" "The Mountain" "The Rabid Rhoa" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "Cartographer's Delight" "Anarchy's Price" "The Opulent" "Rain of Chaos" "Grave Knowledge" "Thunderous Skies" "Echoes of Love" "The Incantation" "The Lunaris Priestess" "Turn the Other Cheek" "A Mother's Parting Gift" "Dark Temptation" "Dying Anguish" "Rain Tempter" "The Coming Storm" "The Endurance" "The Gentleman" "The Hermit"
-#	SetTextColor 30 144 255 255 # Divination Card
-#	SetFontSize 30
-#	DisableDropSound
 
 #===============================================================================
 # Section: Vendor Recipes
@@ -1785,6 +1883,9 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
+	PlayEffect Grey Temp
 
 Show
 	HasExplicitMod = "Veiled" "Veil"
@@ -1804,8 +1905,8 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
-	MinimapIcon 0 Grey UpsideDownHouse
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Grey UpsideDownHouse
 	PlayEffect Grey 
 
 Show
@@ -1816,20 +1917,9 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GA.mp3" 100
-	MinimapIcon 0 Grey UpsideDownHouse
-	PlayEffect Grey 
-
-Show
-	ItemLevel >= 75
-	BaseType = "Small Cluster Jewel"
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
+	CustomAlertSound "Base01.mp3" 100
 	MinimapIcon 1 Grey UpsideDownHouse
-	PlayEffect Grey Temp
+	PlayEffect Grey 
 
 Show
 	ItemLevel >= 68
@@ -1839,8 +1929,8 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
-	MinimapIcon 1 Grey UpsideDownHouse
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
 Show
@@ -1851,8 +1941,8 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
-	MinimapIcon 1 Grey UpsideDownHouse
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
 Show
@@ -1871,8 +1961,8 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
-	MinimapIcon 1 Grey UpsideDownHouse
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
 Show
@@ -1885,7 +1975,22 @@ Show
 # Subsection: Enchanted
 #-------------------------------------------------------------------------------
 
-# Over Qualitied
+Show
+	AnyEnchantment = True
+	Class = "Gloves"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	AnyEnchantment = True
+	Class = "Boots"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
 Show
 	AnyEnchantment = True
 	SetTextColor 100 150 200 200 # Special Rares
@@ -1905,7 +2010,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GS.mp3" 100
+	CustomAlertSound "Base02.mp3" 100
 	MinimapIcon 0 Grey UpsideDownHouse
 	PlayEffect Grey 
 
@@ -1916,6 +2021,9 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
+	PlayEffect Grey Temp
 
 # Bestiary Mods
 Show
@@ -1924,6 +2032,9 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
+	PlayEffect Grey Temp
 
 # Incursion Mods
 Show
@@ -1932,6 +2043,9 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
+	PlayEffect Grey Temp
 
 # Warband Mods
 Show
@@ -1940,33 +2054,72 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
+	PlayEffect Grey Temp
 
 #-------------------------------------------------------------------------------
 # Subsection: Ritual
 #-------------------------------------------------------------------------------
 
+# Delve Mods
 Show
-	BaseType = "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
+	ItemLevel >= 83
+	BaseType = "Blizzard Crown" "Cloudwhisper Boots"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base02.mp3" 100
+	MinimapIcon 0 Grey UpsideDownHouse
+	PlayEffect Grey 
+
+# Delve Mods
+Show
+	BaseType = "Blizzard Crown" "Cloudwhisper Boots"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey 
+
+Show
+	ItemLevel >= 83
+	BaseType = "Penitent Mask" "Archdemon Crown" "Taxing Gauntlets" "Gauche Gloves" "Leyline Gloves" "Basemetal Treads" "Duskwalk Slippers"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Grey UpsideDownHouse
+	PlayEffect Grey 
+
+Show
+	BaseType = "Penitent Mask" "Archdemon Crown" "Taxing Gauntlets" "Gauche Gloves" "Leyline Gloves" "Basemetal Treads" "Duskwalk Slippers"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
-	MinimapIcon 1 Grey UpsideDownHouse
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
 Show
-	BaseType = "Blood-filled Vessel"
+	ItemLevel >= 83
+	BaseType = "Dreamquest Slippers" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Stormrider Boots" "Debilitation Gauntlets" "Gruelling Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Nexus Gloves" "Aetherwind Gloves" "Winter Crown" "Gale Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Sorrow Mask"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GB.mp3" 100
-	MinimapIcon 1 Grey UpsideDownHouse
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
 Show
-	BaseType = "Ritual Splinter" "Ritual Vessel"
+	BaseType = "Dreamquest Slippers" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Stormrider Boots" "Debilitation Gauntlets" "Gruelling Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Nexus Gloves" "Aetherwind Gloves" "Winter Crown" "Gale Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Sorrow Mask"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
@@ -2045,7 +2198,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GemS.mp3" 100
+	CustomAlertSound "Gem02.mp3" 100
 	MinimapIcon 0 Green Circle
 	PlayEffect Green 
 
@@ -2058,18 +2211,29 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GemS.mp3" 100
+	CustomAlertSound "Gem02.mp3" 100
 	MinimapIcon 0 Green Circle
 	PlayEffect Green 
 
 Show
-	GemLevel >= 20
+	GemLevel >= 21
 	Class = "Gem"
 	SetTextColor 27 162 155 255 # Gem
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GemA.mp3" 100
+	CustomAlertSound "Gem01.mp3" 100
+	MinimapIcon 1 Green Circle
+	PlayEffect Green 
+
+Show
+	Quality >= 21
+	Class = "Gem"
+	SetTextColor 27 162 155 255 # Gem
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Gem01.mp3" 100
 	MinimapIcon 1 Green Circle
 	PlayEffect Green 
 
@@ -2080,29 +2244,51 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GemA.mp3" 100
+	CustomAlertSound "Gem01.mp3" 100
 	MinimapIcon 1 Green Circle
 	PlayEffect Green 
 
 Show
-	Quality >= 20
+	Class = "Gem"
+	BaseType = "Enhance Support" "Enlighten Support" "Empower Support" "Vaal Breach"
+	SetTextColor 27 162 155 255 # Gem
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Gem01.mp3" 100
+	MinimapIcon 1 Green Circle
+	PlayEffect Green 
+
+Show
+	GemLevel = 20
 	Class = "Gem"
 	SetTextColor 27 162 155 255 # Gem
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GemB.mp3" 100
+	CustomAlertSound "Gem00.mp3" 100
+	MinimapIcon 2 Green Circle
+	PlayEffect Green Temp
+
+Show
+	Quality = 20
+	Class = "Gem"
+	SetTextColor 27 162 155 255 # Gem
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Gem00.mp3" 100
 	MinimapIcon 2 Green Circle
 	PlayEffect Green Temp
 
 Show
 	Class = "Gem"
-	BaseType = "Enlighten" "Empower" "Portal" "Vaal Breach"
+	BaseType = "Portal"
 	SetTextColor 27 162 155 255 # Gem
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "GemB.mp3" 100
+	CustomAlertSound "Gem00.mp3" 100
 	MinimapIcon 2 Green Circle
 	PlayEffect Green Temp
 
@@ -2326,7 +2512,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BS.mp3" 100
+	CustomAlertSound "Base02.mp3" 100
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red 
 
@@ -2339,7 +2525,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BS.mp3" 100
+	CustomAlertSound "Base02.mp3" 100
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red 
 
@@ -2352,7 +2538,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BS.mp3" 100
+	CustomAlertSound "Base02.mp3" 100
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red 
 
@@ -2364,7 +2550,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BA.wav" 100
+	CustomAlertSound "Base01.mp3" 100
 	MinimapIcon 1 Red Triangle
 	PlayEffect Red 
 
@@ -2376,7 +2562,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BA.wav" 100
+	CustomAlertSound "Base01.mp3" 100
 	MinimapIcon 1 Red Triangle
 	PlayEffect Red 
 
@@ -2388,7 +2574,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BA.wav" 100
+	CustomAlertSound "Base01.mp3" 100
 	MinimapIcon 1 Red Triangle
 	PlayEffect Red 
 
@@ -2400,7 +2586,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BA.wav" 100
+	CustomAlertSound "Base01.mp3" 100
 	MinimapIcon 1 Red Triangle
 	PlayEffect Red 
 
@@ -2412,7 +2598,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav" 100
+	CustomAlertSound "Base00.mp3" 100
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
@@ -2424,7 +2610,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav" 100
+	CustomAlertSound "Base00.mp3" 100
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
@@ -2436,7 +2622,7 @@ Show
 	SetBorderColor 0 128 0 255
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav" 100
+	CustomAlertSound "Base00.mp3" 100
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
@@ -2462,24 +2648,16 @@ Show
 	BaseType = "Vaal Regalia" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Colossal Tower Shield"
 	BaseDefencePercentile >= 95
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav" 100
-	MinimapIcon 2 Red Triangle
-	PlayEffect Red Temp
 
 Show
 	Corrupted = False
 	ItemLevel >= 86
 	BaseType = "Steel Ring" "Opal Ring" "Crystal Belt" "Cerulean Ring" "Vermillion Ring" "Convoking Wand" "Seaglass Amulet" "Fugitive Boots" "Artillery Quiver" "Apothecary's Gloves" "Iolite Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav" 100
-	MinimapIcon 2 Red Triangle
-	PlayEffect Red Temp
 
 # 84 T1 Helmets
 Show
@@ -2649,6 +2827,54 @@ Show
 # Subsection: Heist
 #-------------------------------------------------------------------------------
 
+# Cloak
+Show
+	ItemLevel >= 83
+	Class = "Heist"
+	BaseType = "Whisper-woven Cloak"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Orange Cross
+	PlayEffect Orange Temp
+
+# Cloak
+Show
+	ItemLevel >= 83
+	Class = "Heist"
+	BaseType = "Foliate Brooch"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Orange Cross
+	PlayEffect Orange Temp
+
+# Cloak
+Show
+	ItemLevel >= 83
+	Class = "Heist"
+	BaseType = "Precise Arrowhead" "Obsidian Sharpening Stone" "Burst Band"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Orange Cross
+	PlayEffect Orange Temp
+
+# Cloak
+Show
+	ItemLevel >= 83
+	Class = "Heist"
+	BaseType = "Master Lockpick" "Steel Bracers" "Thaumetic Blowtorch" "Silkweave Sole" "Thaumaturgical Ward" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Regicide Disguise Kit"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Orange Cross
+	PlayEffect Orange Temp
+
 # Broach
 #Show
 #	ItemLevel >= 81
@@ -2778,7 +3004,7 @@ Show
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BA.wav" 100
+	CustomAlertSound "Base01.mp3" 100
 	MinimapIcon 1 Red Triangle
 	PlayEffect Red 
 
@@ -2788,7 +3014,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav" 100
+	CustomAlertSound "Base00.mp3" 100
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
@@ -2877,7 +3103,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav" 100
+	CustomAlertSound "Base00.mp3" 100
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
@@ -2894,7 +3120,7 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "BB.wav" 100
+	CustomAlertSound "Base00.mp3" 100
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
