@@ -1154,7 +1154,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "Curr02.mp3" 150
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1231,7 +1231,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "Curr02.mp3" 150
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1274,7 +1274,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "Curr02.mp3" 150
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1316,7 +1316,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "Curr02.mp3" 150
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
@@ -1579,7 +1579,7 @@ Show
 	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "Curr02.mp3" 150
+	CustomAlertSound "Curr02.mp3" 100
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
