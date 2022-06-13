@@ -2703,12 +2703,19 @@ Show
 # 84 T1 Helmets
 Show
 	Corrupted = False
+	BaseType = "Convoking Wand"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
 	ItemLevel >= 85
 	BaseType = "Imperial Claw"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 6 Hide
 
 # 84 T1 Helmets
 Show
