@@ -120,29 +120,36 @@ Show
 #===============================================================================
 
 #-------------------------------------------------------------------------------
-# Subsection: Template
+# Subsection: [Template] - League
 #-------------------------------------------------------------------------------
 
 #Show
 #	SetTextColor 128 64 64 200 # Challenge League
+#	SetBackgroundColor 255 255 255 255 # S Tier
 #	SetBorderColor 255 0 0 255 # S Tier
 #	SetFontSize 45
 #	DisableDropSound
-#	CustomAlertSound "GS.mp3" 100
+#	CustomAlertSound "Gen02.mp3" 100
+#	MinimapIcon 0 Purple Kite
+#	PlayEffect Purple 
 
 #Show
 #	SetTextColor 128 64 64 200 # Challenge League
 #	SetBorderColor 255 165 0 255 # A Tier
 #	SetFontSize 45
 #	DisableDropSound
-#	CustomAlertSound "GA.mp3" 100
+#	CustomAlertSound "Gen01.mp3" 100
+#	MinimapIcon 1 Purple Kite
+#	PlayEffect Purple 
 
 #Show
 #	SetTextColor 128 64 64 200 # Challenge League
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
 #	DisableDropSound
-#	CustomAlertSound "GB.mp3" 100
+#	CustomAlertSound "Gen00.mp3" 100
+#	MinimapIcon 2 Purple Kite
+#	PlayEffect Purple Temp
 
 #Show
 #	SetTextColor 128 64 64 200 # Challenge League
@@ -153,6 +160,28 @@ Show
 #-------------------------------------------------------------------------------
 # Subsection: League
 #-------------------------------------------------------------------------------
+
+Show
+	Class = "Rune Dagger" "Wand" "Sceptre" "Amulet"
+	HasExplicitMod = "Magister's" "Exalter's" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Gen01.mp3" 100
+	MinimapIcon 1 Purple Kite
+	PlayEffect Purple 
+
+Show
+	Class = "Shield"
+	HasExplicitMod = "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Mad Lord's" "Lithomancer's"
+	SetTextColor 128 64 64 200 # Challenge League
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Gen00.mp3" 100
+	MinimapIcon 2 Purple Kite
+	PlayEffect Purple Temp
 
 Show
 	BaseType = "Recombinator"
@@ -331,6 +360,55 @@ Show
 # Section: Uniques
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: [Template] - Uniques
+#-------------------------------------------------------------------------------
+
+# Tier 1 Uniques
+#Show
+#	Rarity = Unique
+#	SetTextColor 175 96 37 255 # Unique
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Uni02.mp3" 100
+#	MinimapIcon 0 Brown Star
+#	PlayEffect Brown 
+
+# T2 Uniques
+#Show
+#	Rarity = Unique
+#	SetTextColor 175 96 37 255 # Unique
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Uni01.mp3" 100
+#	MinimapIcon 1 Brown Star
+#	PlayEffect Brown 
+
+# T2 Uniques
+#Show
+#	Rarity = Unique
+#	SetTextColor 175 96 37 255 # Unique
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Uni00.mp3" 100
+#	MinimapIcon 2 Brown Star
+#	PlayEffect Brown Temp
+
+# T2 Uniques
+#Show
+#	Rarity = Unique
+#	SetTextColor 175 96 37 255 # Unique
+#	SetFontSize 45
+#	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: General
+#-------------------------------------------------------------------------------
+
 # Tier 1 Uniques
 Show
 	Rarity = Unique
@@ -410,7 +488,7 @@ Show
 	MapTier >= 15
 	Rarity = Unique
 	Class = "Map"
-	BaseType = "Cursed Crypt" "Temple" "Harbinger"
+	BaseType = "Cursed Crypt" "Temple" "Harbinger" "Shore"
 	SetTextColor 175 96 37 255 # Unique
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -422,7 +500,17 @@ Show
 # T2 Uniques
 Show
 	Rarity = Unique
-	Class = "Maps" "Piece"
+	Class = "Maps"
+	BaseType = "Moon Temple"
+	SetTextColor 175 96 37 255 # Unique
+	SetFontSize 45
+	DisableDropSound
+
+# T2 Uniques
+Show
+	Rarity = Unique
+	Class = "Maps"
+	BaseType = "Courtyard" "Museum" "Cursed Crypt" "Temple" "Harbinger" "Synthesised Map"
 	SetTextColor 175 96 37 255 # Unique
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -430,6 +518,14 @@ Show
 	CustomAlertSound "Uni00.mp3" 100
 	MinimapIcon 2 Brown Star
 	PlayEffect Brown Temp
+
+# T2 Uniques
+Show
+	Rarity = Unique
+	Class = "Maps" "Piece"
+	SetTextColor 175 96 37 255 # Unique
+	SetFontSize 45
+	DisableDropSound
 
 # Catch All Uniques
 Show
@@ -441,6 +537,47 @@ Show
 #===============================================================================
 # Section: Maps
 #===============================================================================
+
+#-------------------------------------------------------------------------------
+# Subsection: [Template] - Special Maps
+#-------------------------------------------------------------------------------
+
+# Tier 16
+#Show
+#	SetTextColor 75 250 255 255 # SMap
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "SMap02.mp3" 100
+#	MinimapIcon 0 Cyan Moon
+#	PlayEffect Cyan 
+
+# Red Tier
+#Show
+#	SetTextColor 75 250 255 255 # SMap
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "SMap01.mp3" 100
+#	MinimapIcon 1 Cyan Moon
+#	PlayEffect Cyan 
+
+# Red Tier
+#Show
+#	SetTextColor 75 250 255 255 # SMap
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "SMap00.mp3" 100
+#	MinimapIcon 2 Cyan Moon
+#	PlayEffect Cyan Temp
+
+# Red Tier
+#Show
+#	SetTextColor 75 250 255 255 # SMap
+#	SetFontSize 45
+#	DisableDropSound
 
 #-------------------------------------------------------------------------------
 # Subsection: Pinnacle
@@ -675,6 +812,48 @@ Show
 	PlayEffect Cyan 
 
 #-------------------------------------------------------------------------------
+# Subsection: [Template] - Maps
+#-------------------------------------------------------------------------------
+
+# Tier 16
+#Show
+#	SetTextColor 184 218 242 255 # Maps
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Map02.mp3" 100
+#	MinimapIcon 0 Blue Hexagon
+#	PlayEffect Blue 
+
+# Red Tier
+#Show
+#	SetTextColor 184 218 242 255 # Maps
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Map01.mp3" 100
+#	MinimapIcon 1 Blue Hexagon
+#	PlayEffect Blue 
+
+# Yellow Tier
+#Show
+#	SetTextColor 184 218 242 255 # Maps
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Map00.mp3" 100
+#	MinimapIcon 2 Blue Hexagon
+#	PlayEffect Blue Temp
+
+# Corrupted Maps
+#Show
+#	SetTextColor 184 218 242 255 # Maps
+#	SetBorderColor 255 255 255 0
+#	SetFontSize 45
+#	DisableDropSound
+
+#-------------------------------------------------------------------------------
 # Subsection: Guardians
 #-------------------------------------------------------------------------------
 
@@ -840,6 +1019,44 @@ Show
 #===============================================================================
 
 #-------------------------------------------------------------------------------
+# Subsection: [Template] - Fragments
+#-------------------------------------------------------------------------------
+
+#Show
+#	SetTextColor 255 165 0 255 # Fragments
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Frag02.mp3" 100
+#	MinimapIcon 0 Brown Circle
+#	PlayEffect Brown 
+
+#Show
+#	SetTextColor 255 165 0 255 # Fragments
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Frag01.mp3" 100
+#	MinimapIcon 1 Brown Circle
+#	PlayEffect Brown 
+
+#Show
+#	SetTextColor 255 165 0 255 # Fragments
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Frag00.mp3" 100
+#	MinimapIcon 2 Brown Circle
+#	PlayEffect Brown Temp
+
+#Show
+#	SetTextColor 255 165 0 255 # Fragments
+#	SetBorderColor 255 255 255 0
+#	SetFontSize 45
+#	DisableDropSound
+
+#-------------------------------------------------------------------------------
 # Subsection: Labyrinth
 #-------------------------------------------------------------------------------
 
@@ -981,6 +1198,13 @@ Show
 
 Show
 	BaseType = "Breachstone"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 255 255 0
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType = "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Esh" "Splinter of Tul" "Splinter of Xoph"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 255 255 255 0
 	SetFontSize 45
@@ -1144,6 +1368,45 @@ Show
 #===============================================================================
 
 #-------------------------------------------------------------------------------
+# Subsection: [Template] - Currency
+#-------------------------------------------------------------------------------
+
+#Show
+#	SetTextColor 170 158 130 255 # Currency
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Curr02.mp3" 100
+#	MinimapIcon 0 Yellow Diamond
+#	PlayEffect Yellow 
+
+#Show
+#	SetTextColor 170 158 130 255 # Currency
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Curr01.mp3" 100
+#	MinimapIcon 1 Yellow Diamond
+#	PlayEffect Yellow 
+
+#Show
+#	SetTextColor 170 158 130 255 # Currency
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Curr00.mp3" 100
+#	MinimapIcon 2 Yellow Diamond
+#	PlayEffect Yellow Temp
+
+# Pick up always
+#Show
+#	SetTextColor 170 158 130 255 # Currency
+#	SetBorderColor 255 255 255 0
+#	SetFontSize 45
+#	DisableDropSound
+
+#-------------------------------------------------------------------------------
 # Subsection: Blight
 #-------------------------------------------------------------------------------
 
@@ -1268,7 +1531,7 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	BaseType = "Glyphic Fossil" "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Tangled Fossil" "Hollow Fossil" "Prime Chaotic Resonator"
+	BaseType = "Glyphic Fossil" "Faceted Fossil" "Fractured Fossil" "Hollow Fossil"
 	SetTextColor 170 158 130 255 # Currency
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1279,7 +1542,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Gilded Fossil" "Sanctified Fossil" "Lucent Fossil"
+	BaseType = "Gilded Fossil" "Sanctified Fossil" "Lucent Fossil" "Prime Chaotic Resonator"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1289,7 +1552,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Powerful Chaotic Resonator" "Potent Chaotic Resonator" "Perfect Fossil" "Shuddering Fossil" "Corroded Fossil" "Pristine Fossil" "Prismatic Fossil" "Aetheric Fossil" "Bound Fossil" "Deft Fossil" "Fundamental Fossil"
+	BaseType = "Powerful Chaotic Resonator" "Potent Chaotic Resonator" "Perfect Fossil" "Shuddering Fossil" "Corroded Fossil" "Pristine Fossil" "Prismatic Fossil" "Aetheric Fossil" "Bound Fossil" "Deft Fossil" "Fundamental Fossil" "Bloodstained Fossil" "Tangled Fossil"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1310,7 +1573,7 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	BaseType = "Vial of Dominance" "Vial of Consequence" "Vial of Transcendence" "Vial of Sacrifice" "Vial of the Ghost"
+	BaseType = "Vial of"
 	SetTextColor 170 158 130 255 # Currency
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1320,32 +1583,32 @@ Show
 	MinimapIcon 0 Yellow Diamond
 	PlayEffect Yellow 
 
-Show
-	BaseType = "Vial of Awakening"
-	SetTextColor 170 158 130 255 # Currency
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Curr01.mp3" 100
-	MinimapIcon 1 Yellow Diamond
-	PlayEffect Yellow 
+#Show
+#	BaseType =
+#	SetTextColor 170 158 130 255 # Currency
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Curr01.mp3" 100
+#	MinimapIcon 1 Yellow Diamond
+#	PlayEffect Yellow 
 
-Show
-	BaseType = "Vial of Fate"
-	SetTextColor 170 158 130 255 # Currency
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Curr00.mp3" 100
-	MinimapIcon 2 Yellow Diamond
-	PlayEffect Yellow Temp
+#Show
+#	BaseType =
+#	SetTextColor 170 158 130 255 # Currency
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Curr00.mp3" 100
+#	MinimapIcon 2 Yellow Diamond
+#	PlayEffect Yellow Temp
 
 # Pick up always
-Show
-	BaseType = "Vial of Summoning" "Vial of the Ritual"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	BaseType =
+#	SetTextColor 170 158 130 255 # Currency
+#	SetFontSize 45
+#	DisableDropSound
 
 #-------------------------------------------------------------------------------
 # Subsection: Breach
@@ -1371,27 +1634,9 @@ Show
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
-Show
-	StackSize >= 15
-	BaseType = "Splinter of Chayula" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph"
-	SetTextColor 170 158 130 255 # Currency
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Curr00.mp3" 100
-	MinimapIcon 2 Yellow Diamond
-	PlayEffect Yellow Temp
-
 # Pick up always
 Show
 	BaseType = "Blessing of Esh" "Blessing of Tul" "Blessing of Xoph"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-
-# Pick up always
-Show
-	BaseType = "Splinter of Chayula" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1729,6 +1974,55 @@ Show
 # Section: Divination Cards
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: [Template] Divination Cards
+#-------------------------------------------------------------------------------
+
+# GG Cards
+#Show
+#	Class = "Divination Card"
+#	SetTextColor 30 144 255 255 # Divination Card
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Div02.mp3" 100
+#	MinimapIcon 0 Blue Square
+#	PlayEffect Blue 
+
+# Great Cards
+#Show
+#	Class = "Divination Card"
+#	SetTextColor 30 144 255 255 # Divination Card
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Div01.mp3" 100
+#	MinimapIcon 1 Blue Square
+#	PlayEffect Blue 
+
+# Good Cards
+#Show
+#	Class = "Divination Card"
+#	SetTextColor 30 144 255 255 # Divination Card
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Div00.mp3" 100
+#	MinimapIcon 2 Blue Square
+#	PlayEffect Blue Temp
+
+# Default Cards
+#Show
+#	Class = "Divination Card"
+#	SetTextColor 30 144 255 255 # Divination Card
+#	SetFontSize 45
+#	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: General
+#-------------------------------------------------------------------------------
+
 Hide
 	Class = "Divination Card"
 	BaseType = "The Demoness" "The Fox in the Brambles" "The Wolf's Shadow"
@@ -1827,19 +2121,9 @@ Show
 
 Show
 	Sockets = "6"
-	Height = 3
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 6 Hide
-
-Show
-	Sockets = "6"
-	Rarity <= Magic
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
 
 Show
 	SocketGroup >= "RGB"
@@ -1872,6 +2156,44 @@ Show
 #===============================================================================
 # Section: League Mod Rares
 #===============================================================================
+
+#-------------------------------------------------------------------------------
+# Subsection: [Template] - Special Bases
+#-------------------------------------------------------------------------------
+
+# Delve Mods
+#Show
+#	SetTextColor 100 150 200 200 # Special Rares
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base02.mp3" 100
+#	MinimapIcon 0 Grey UpsideDownHouse
+#	PlayEffect Grey 
+
+#Show
+#	SetTextColor 100 150 200 200 # Special Rares
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base01.mp3" 100
+#	MinimapIcon 1 Grey UpsideDownHouse
+#	PlayEffect Grey 
+
+#Show
+#	SetTextColor 100 150 200 200 # Special Rares
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base00.mp3" 100
+#	MinimapIcon 2 Grey UpsideDownHouse
+#	PlayEffect Grey Temp
+
+#Show
+#	SetTextColor 100 150 200 200 # Special Rares
+#	SetFontSize 45
+#	DisableDropSound
 
 #-------------------------------------------------------------------------------
 # Subsection: Veiled
@@ -1972,7 +2294,7 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
-# Subsection: Enchanted
+# Subsection: Lab Enchants
 #-------------------------------------------------------------------------------
 
 Show
@@ -2025,6 +2347,10 @@ Show
 	MinimapIcon 2 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
+#-------------------------------------------------------------------------------
+# Subsection: Bestiary Mods
+#-------------------------------------------------------------------------------
+
 # Bestiary Mods
 Show
 	HasExplicitMod = "of Farrul" "of Fenumus" "of Craiceann" "of Saqawal"
@@ -2036,9 +2362,13 @@ Show
 	MinimapIcon 2 Grey UpsideDownHouse
 	PlayEffect Grey Temp
 
+#-------------------------------------------------------------------------------
+# Subsection: Temple Mods
+#-------------------------------------------------------------------------------
+
 # Incursion Mods
 Show
-	HasExplicitMod = "Tacati's" "of Tacati" "Citaqualotl's" "of Citaqualotl" "Matatl's" "of Matatl" "Topotante's" "of Puhuarte" "Xopec's" "Guatelitzi's" "of Guatelitzi"
+	HasExplicitMod = "Tacati's" "of Tacati" "Topotante's" "of Puhuarte" "Guatelitzi's" "of Guatelitzi"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2046,6 +2376,17 @@ Show
 	CustomAlertSound "Base00.mp3" 100
 	MinimapIcon 2 Grey UpsideDownHouse
 	PlayEffect Grey Temp
+
+# Incursion Mods
+Show
+	HasExplicitMod = "Citaqualotl's" "of Citaqualotl" "Matatl's" "of Matatl" "Topotante's" "Xopec's"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Warbands Mods
+#-------------------------------------------------------------------------------
 
 # Warband Mods
 Show
@@ -2125,8 +2466,26 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
+# Subsection: Heist
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
 # Subsection: Misc
 #-------------------------------------------------------------------------------
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	BaseType = "Grasping Mail" "Sacrificial Garb"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
 
 # Over Qualitied
 Show
@@ -2189,6 +2548,51 @@ Show
 #===============================================================================
 # Section: Gems
 #===============================================================================
+
+#-------------------------------------------------------------------------------
+# Subsection: [Template] - Gems
+#-------------------------------------------------------------------------------
+
+#Show
+#	Class = "Gem"
+#	SetTextColor 27 162 155 255 # Gem
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Gem02.mp3" 100
+#	MinimapIcon 0 Green Circle
+#	PlayEffect Green 
+
+#Show
+#	Class = "Gem"
+#	SetTextColor 27 162 155 255 # Gem
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Gem01.mp3" 100
+#	MinimapIcon 1 Green Circle
+#	PlayEffect Green 
+
+#Show
+#	Class = "Gem"
+#	SetTextColor 27 162 155 255 # Gem
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Gem00.mp3" 100
+#	MinimapIcon 2 Green Circle
+#	PlayEffect Green Temp
+
+#Show
+#	Class = "Gem"
+#	SetTextColor 27 162 155 255 # Gem
+#	SetFontSize 45
+#	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: General
+#-------------------------------------------------------------------------------
 
 Show
 	Class = "Gem"
@@ -2334,6 +2738,10 @@ Show
 #===============================================================================
 # Section: Flask
 #===============================================================================
+
+#-------------------------------------------------------------------------------
+# Subsection: [Template] - Flask
+#-------------------------------------------------------------------------------
 
 # Craft for Profit
 Show
@@ -2503,6 +2911,10 @@ Show
 # Section: Bases
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: [Template] - Bases
+#-------------------------------------------------------------------------------
+
 Show
 	HasInfluence = "Elder" "Crusader" "Hunter" "Redeemer" "Shaper" "Warlord"
 	ItemLevel >= 86
@@ -2669,20 +3081,6 @@ Show
 	DisableDropSound
 	#BlockStrictness 6 Hide
 
-Show
-	BaseType = "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
-
-# 84 T1 Helmets
-Show
-	Corrupted = False
-	BaseType = "Grasping Mail" "Sacrificial Garb"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
-
 # 84 T1 Helmets
 #Show
 #	Corrupted = False
@@ -2814,14 +3212,6 @@ Show
 #	Corrupted = False
 #	ItemLevel >= 84
 #	BaseType = "Copper Kris" "Golden Kris" "Platinum Kris"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	BaseType = "Convoking Wand"
 #	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 #	SetFontSize 45
 #	DisableDropSound
@@ -3044,19 +3434,12 @@ Show
 Show
 	Class = "Amulets"
 	BaseType = "Talisman"
-	HasExplicitMod = "Rotund" "Virile" "Athlete's" "Indomitable" "Unassailable" "Incandescent" "Resplendent" "Dazzling"
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	Class = "Amulets"
-	BaseType = "Talisman"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
 
 #-------------------------------------------------------------------------------
-# Subsection: Corrupted
+# Subsection: Breach
 #-------------------------------------------------------------------------------
 
 # Corrupted Rares
@@ -3065,6 +3448,10 @@ Show
 	BaseType = "Breach Ring"
 	SetBorderColor 191 0 0 255
 	SetFontSize 45
+
+#-------------------------------------------------------------------------------
+# Subsection: Corrupted
+#-------------------------------------------------------------------------------
 
 # Corrupted Rares
 Show
@@ -3353,7 +3740,7 @@ Show
 	BaseType = "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Diamond Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet" "Unset Ring" "Amethyst Ring" "Iolite Ring"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 5 Hide
+	#BlockStrictness 6 Hide
 
 # T2 Rare Accessory
 Show
@@ -3361,7 +3748,7 @@ Show
 	BaseType = "Moonstone Ring" "Coral Ring" "Blue Pearl Amulet" "Seaglass Amulet" "Marble Amulet" "Gold Ring"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 4 Hide
 
 #-------------------------------------------------------------------------------
 # Subsection: Misc
