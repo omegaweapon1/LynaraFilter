@@ -2728,7 +2728,7 @@ Show
 
 Show
 	Class = "Gem"
-	BaseType = "Vaal Clarity" "Vaal Grace" "Vaal Haste"
+	BaseType = "Vaal Righteous Fire" "Vaal Molten Shell"
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
@@ -2738,16 +2738,25 @@ Show
 	Class = "Gem"
 	BaseType = "Vaal"
 	SetTextColor 27 162 155 255 # Gem
-	SetFontSize 30
+	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
 
-Show
+#-------------------------------------------------------------------------------
+# Subsection: Subsection Name
+#-------------------------------------------------------------------------------
+
+#Show
+#	Class = "Gem"
+#	SetTextColor 27 162 155 255 # Gem
+#	SetFontSize 30
+#	DisableDropSound
+
+Hide
 	Class = "Gem"
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 30
 	DisableDropSound
-	#BlockStrictness 1 Hide
 
 #===============================================================================
 # Section: Flask
@@ -2756,16 +2765,6 @@ Show
 #-------------------------------------------------------------------------------
 # Subsection: [Template] - Flask
 #-------------------------------------------------------------------------------
-
-# Craft for Profit
-Show
-	ItemLevel >= 84
-	BaseType = "Quartz Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask"
-	SetTextColor 255 192 203 255 # Flasks
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 5 Hide
 
 # Craft for Profit
 Show
@@ -2780,8 +2779,18 @@ Show
 # Craft for Profit
 Show
 	ItemLevel >= 84
+	BaseType = "Quartz Flask" "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Silver Flask"
+	SetTextColor 255 192 203 255 # Flasks
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 5 Hide
+
+# Craft for Profit
+Show
+	ItemLevel >= 82
 	Quality >= 10
-	BaseType = "Divine Life Flask" "Eternal Life Flask" "Eternal Mana Flask"
+	BaseType = "Divine Life Flask" "Eternal Mana Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2796,26 +2805,6 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
-
-# Craft for Profit
-Show
-	ItemLevel >= 70
-	Quality >= 10
-	BaseType = "Divine Life Flask" "Eternal Life Flask" "Eternal Mana Flask"
-	SetTextColor 255 192 203 255 # Flasks
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-# Bauble Recipe
-Show
-	Quality >= 13
-	BaseType = "Flask"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
 	#BlockStrictness 2 Hide
 
 Show
@@ -2827,86 +2816,14 @@ Show
 	#BlockStrictness 1 Hide
 
 Show
-	ItemLevel <= 6
-	BaseType = "Flask"
-	BaseType = "Small"
+	BaseType = "Eternal Mana Flask" "Eternal Life Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 1 Hide
 
 Show
-	ItemLevel <= 9
-	BaseType = "Flask"
-	BaseType = "Medium"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel <= 15
-	BaseType = "Flask"
-	BaseType = "Large"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel <= 21
-	BaseType = "Flask"
-	BaseType = "Greater"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel <= 27
-	BaseType = "Flask"
-	BaseType = "Grand"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel <= 33
-	BaseType = "Flask"
-	BaseType = "Giant"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel <= 39
-	BaseType = "Flask"
-	BaseType = "Colossal"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel <= 45
-	BaseType = "Flask"
-	BaseType = "Sacred"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel <= 53
-	BaseType = "Flask"
-	BaseType = "Hallowed"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	ItemLevel <= 63
-	BaseType = "Flask"
-	BaseType = "Sanctified"
-	SetTextColor 255 192 203 255 # Flasks
-	SetFontSize 45
-	DisableDropSound
-
-Show
+	ItemLevel <= 66
 	BaseType = "Flask"
 	BaseType = "Divine"
 	SetTextColor 255 192 203 255 # Flasks
@@ -2915,11 +2832,94 @@ Show
 	#BlockStrictness 1 Hide
 
 Show
-	BaseType = "Eternal Mana Flask" "Eternal Life Flask"
+	ItemLevel <= 61
+	BaseType = "Flask"
+	BaseType = "Sanctified"
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
+	#BlockStrictness 1 Hide
+
+Show
+	ItemLevel <= 51
+	BaseType = "Flask"
+	BaseType = "Hallowed"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	ItemLevel <= 43
+	BaseType = "Flask"
+	BaseType = "Sacred"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	ItemLevel <= 37
+	BaseType = "Flask"
+	BaseType = "Colossal"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	ItemLevel <= 31
+	BaseType = "Flask"
+	BaseType = "Giant"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	ItemLevel <= 25
+	BaseType = "Flask"
+	BaseType = "Grand"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 10 Hide
+
+Show
+	ItemLevel <= 19
+	BaseType = "Flask"
+	BaseType = "Greater"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	ItemLevel <= 13
+	BaseType = "Flask"
+	BaseType = "Large"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	ItemLevel <= 7
+	BaseType = "Flask"
+	BaseType = "Medium"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
+
+Show
+	ItemLevel <= 4
+	BaseType = "Flask"
+	BaseType = "Small"
+	SetTextColor 255 192 203 255 # Flasks
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 1 Hide
 
 #===============================================================================
 # Section: Bases
@@ -3454,23 +3454,23 @@ Show
 # Subsection: Talisman
 #-------------------------------------------------------------------------------
 
-Show
-	Class = "Amulets"
-	BaseType = "Talisman"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
+#Show
+#	Class = "Amulets"
+#	BaseType = "Talisman"
+#	SetFontSize 45
+#	DisableDropSound
+#	#BlockStrictness 3 Hide
 
 #-------------------------------------------------------------------------------
 # Subsection: Breach
 #-------------------------------------------------------------------------------
 
 # Corrupted Rares
-Show
-	Rarity = Rare
-	BaseType = "Breach Ring"
-	SetBorderColor 191 0 0 255
-	SetFontSize 45
+#Show
+#	Rarity = Rare
+#	BaseType = "Breach Ring"
+#	SetBorderColor 191 0 0 255
+#	SetFontSize 45
 
 #-------------------------------------------------------------------------------
 # Subsection: Corrupted
@@ -3493,21 +3493,6 @@ Show
 	Rarity = Rare
 	SetBorderColor 191 0 0 255
 	SetFontSize 45
-
-# Corrupted Rares
-Hide
-	Corrupted = True
-	Identified = True
-	Rarity = Rare
-	SetFontSize 30
-	#BlockStrictness 1 Hide
-
-# Corrupted Rares
-Show
-	Corrupted = False
-	Identified = True
-	Rarity = Rare
-	SetFontSize 30
 
 #-------------------------------------------------------------------------------
 # Subsection: Abyss Jewels
@@ -3545,6 +3530,188 @@ Show
 # Section: Rares
 #===============================================================================
 
+#-------------------------------------------------------------------------------
+# Subsection: Essence Rares
+#-------------------------------------------------------------------------------
+
+Show
+	Rarity = Rare
+	Class = "Ring"
+	HasExplicitMod >=4 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Emtombing" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet"
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Yellow Pentagon
+	PlayEffect Yellow 
+
+Show
+	Rarity = Rare
+	Class = "Ring"
+	HasExplicitMod >=3 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Emtombing" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Yellow Pentagon
+	PlayEffect Yellow Temp
+
+Show
+	Rarity = Rare
+	Class = "Ring"
+	HasExplicitMod >=2 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Emtombing" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet"
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Rare
+	Class = "Amulet"
+	HasExplicitMod >=4 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Virile" "Overpowering" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Athlete's" "Tempered" "Flaring" "Blasting" "Cremating" "Polar" "Entombing" "Discharging" "Electrocuting" "Devastating" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "of Melting" "of Dissolution" "of Ferocity" "of Destruction"
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Yellow Pentagon
+	PlayEffect Yellow 
+
+Show
+	Rarity = Rare
+	Class = "Amulet"
+	HasExplicitMod >=3 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Virile" "Overpowering" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Athlete's" "Tempered" "Flaring" "Blasting" "Cremating" "Polar" "Entombing" "Discharging" "Electrocuting" "Devastating" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "of Melting" "of Dissolution" "of Ferocity" "of Destruction"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Yellow Pentagon
+	PlayEffect Yellow Temp
+
+Show
+	Rarity = Rare
+	Class = "Amulet"
+	HasExplicitMod >=2 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Virile" "Overpowering" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Athlete's" "Tempered" "Flaring" "Blasting" "Cremating" "Polar" "Entombing" "Discharging" "Electrocuting" "Devastating" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "of Melting" "of Dissolution" "of Ferocity" "of Destruction"
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Rare
+	Class = "Belt"
+	HasExplicitMod >=4 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Virile" "Overpowering" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Athlete's" "Tempered" "Flaring" "Blasting" "Cremating" "Polar" "Entombing" "Discharging" "Electrocuting" "Devastating" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "of Melting" "of Dissolution" "of Ferocity" "of Destruction" "Fecund" "of the Godslayer"
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Yellow Pentagon
+	PlayEffect Yellow 
+
+Show
+	Rarity = Rare
+	Class = "Belt"
+	HasExplicitMod >=3 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Virile" "Overpowering" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Athlete's" "Tempered" "Flaring" "Blasting" "Cremating" "Polar" "Entombing" "Discharging" "Electrocuting" "Devastating" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "of Melting" "of Dissolution" "of Ferocity" "of Destruction" "Fecund" "of the Godslayer"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Yellow Pentagon
+	PlayEffect Yellow Temp
+
+Show
+	Rarity = Rare
+	Class = "Belt"
+	HasExplicitMod >=2 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Virile" "Overpowering" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Athlete's" "Tempered" "Flaring" "Blasting" "Cremating" "Polar" "Entombing" "Discharging" "Electrocuting" "Devastating" "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "of Melting" "of Dissolution" "of Ferocity" "of Destruction" "Fecund" "of the Godslayer"
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Rare
+	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
+	HasExplicitMod >=4 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Semptiternal" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator"
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Yellow Pentagon
+	PlayEffect Yellow 
+
+Show
+	Rarity = Rare
+	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
+	HasExplicitMod >=3 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Semptiternal" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Yellow Pentagon
+	PlayEffect Yellow Temp
+
+Show
+	Rarity = Rare
+	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
+	HasExplicitMod >=2 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Semptiternal" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator"
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Rare
+	Class = "One Hand Sword" "Two Hand Sword" "One Hand Axe" "Two Hand Axe" "Claw" "Dagger" "Warstaves" "One Hand Mace" "Two Hand Mace" "Bow"
+	HasExplicitMod >=4 "Essences" "of the Essence" "Flaring" "Tempered" "Carbonising" "Cremating" "Crystalising" "Entombing" "Vapourising" "Electrocuting" "Devastating" "Overpowering" "of Infamy" "of Celebration" "of Penetrating" "of Incision" "Tyrannical" "Merciless"
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Yellow Pentagon
+	PlayEffect Yellow 
+
+Show
+	Rarity = Rare
+	Class = "One Hand Sword" "Two Hand Sword" "One Hand Axe" "Two Hand Axe" "Claw" "Dagger" "Warstaves" "One Hand Mace" "Two Hand Mace" "Bow"
+	HasExplicitMod >=3 "Essences" "of the Essence" "Flaring" "Tempered" "Carbonising" "Cremating" "Crystalising" "Entombing" "Vapourising" "Electrocuting" "Devastating" "Overpowering" "of Infamy" "of Celebration" "of Penetrating" "of Incision" "Tyrannical" "Merciless"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Yellow Pentagon
+	PlayEffect Yellow Temp
+
+Show
+	Rarity = Rare
+	Class = "One Hand Sword" "Two Hand Sword" "One Hand Axe" "Two Hand Axe" "Claw" "Dagger" "Warstaves" "One Hand Mace" "Two Hand Mace" "Bow"
+	HasExplicitMod >=2 "Essences" "of the Essence" "Flaring" "Tempered" "Carbonising" "Cremating" "Crystalising" "Entombing" "Vapourising" "Electrocuting" "Devastating" "Overpowering" "of Infamy" "of Celebration" "of Penetrating" "of Incision" "Tyrannical" "Merciless"
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Rarity = Rare
+	Class = "Rune Dagger" "Sceptre" "Wand"
+	HasExplicitMod >=4 "Essences" "of the Essence" "Runic" "Incanter's" "Xoph's" "Pyroclastic" "Tul's" "Cryomancer's" "Esh's" "Ionising" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Lithomancer's" "Cremating" "Blasting" "Entombing" "Polar" "Electrocuting" "Discharging" "of Sortilege" "of Finesse" "of Ashes" "of Glaciation" "of Arcing" "of Melting" "of Dissolution" "of the Gelid" "of Heartstopping" "of the Zealous" "of the Fanatical"
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Yellow Pentagon
+	PlayEffect Yellow 
+
+Show
+	Rarity = Rare
+	Class = "Rune Dagger" "Sceptre" "Wand"
+	HasExplicitMod >=3 "Essences" "of the Essence" "Runic" "Incanter's" "Xoph's" "Pyroclastic" "Tul's" "Cryomancer's" "Esh's" "Ionising" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Lithomancer's" "Cremating" "Blasting" "Entombing" "Polar" "Electrocuting" "Discharging" "of Sortilege" "of Finesse" "of Ashes" "of Glaciation" "of Arcing" "of Melting" "of Dissolution" "of the Gelid" "of Heartstopping" "of the Zealous" "of the Fanatical"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Yellow Pentagon
+	PlayEffect Yellow Temp
+
+Show
+	Rarity = Rare
+	Class = "Rune Dagger" "Sceptre" "Wand"
+	HasExplicitMod >=2 "Essences" "of the Essence" "Runic" "Incanter's" "Xoph's" "Pyroclastic" "Tul's" "Cryomancer's" "Esh's" "Ionising" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Lithomancer's" "Cremating" "Blasting" "Entombing" "Polar" "Electrocuting" "Discharging" "of Sortilege" "of Finesse" "of Ashes" "of Glaciation" "of Arcing" "of Melting" "of Dissolution" "of the Gelid" "of Heartstopping" "of the Zealous" "of the Fanatical"
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Jewels
+#-------------------------------------------------------------------------------
+
 Show
 	Rarity = Rare
 	Class = "Jewel"
@@ -3560,31 +3727,16 @@ Show
 Show
 	Rarity = Magic
 	Class = "Jewel"
-	HasExplicitMod = "Vivid"
 	SetFontSize 45
 	DisableDropSound
-
-Show
-	Rarity = Magic
-	Class = "Jewel"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 1 Hide
 
 Show
 	Rarity = Magic
 	Class = "Abyss Jewel"
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
-
-# Tier 2 Rares
-Show
-	Rarity = Rare
-	BaseType = "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
+	#BlockStrictness 1 Hide
 
 #-------------------------------------------------------------------------------
 # Subsection: Boots
@@ -3674,6 +3826,14 @@ Show
 # Subsection: Shields
 #-------------------------------------------------------------------------------
 
+# Tier 2 Rares
+Show
+	Rarity = Rare
+	BaseType = "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
 # T1 Rare Bases
 Show
 	Rarity = Rare
@@ -3709,7 +3869,7 @@ Show
 # T1 Rare Bases
 Show
 	Rarity = Rare
-	BaseType = "Calling Wand" "Convening Wand" "Convoking Wand"
+	BaseType = "Convoking Wand" "Profane Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 4 Hide
@@ -3717,7 +3877,7 @@ Show
 # T1 Rare Bases
 Show
 	Rarity = Rare
-	BaseType = "Platinum Kris" "Imperial Claw" "Karui Chopper" "Convoking Wand" "Profane Wand" "Opal Wand" "Void Sceptre" "Opal Sceptre" "Copper Kris" "Golden Kris"
+	BaseType = "Platinum Kris" "Imperial Claw" "Karui Chopper" "Convoking Wand" "Copper Kris" "Golden Kris" "Calling Wand" "Convening Wand" "Pagan Wand" "Prophecy Wand"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 3 Hide
@@ -3760,7 +3920,7 @@ Show
 # T0 Rare Accessory
 Show
 	Rarity = Rare
-	BaseType = "Steel Ring" "Opal Ring" "Cerulean Ring" "Vermillion Ring" "Bone Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Cerulean Ring" "Vermillion Ring"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 6 Hide
@@ -3768,7 +3928,7 @@ Show
 # T1 Rare Accessory
 Show
 	Rarity = Rare
-	BaseType = "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Diamond Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet" "Unset Ring" "Amethyst Ring" "Iolite Ring"
+	BaseType = "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Diamond Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet" "Unset Ring" "Amethyst Ring" "Iolite Ring" "Bone Ring"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 6 Hide
@@ -3796,117 +3956,9 @@ Show
 Show
 	ItemLevel < 60
 	Rarity = Rare
-	SetFontSize 30
+	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 2 Hide
-
-#-------------------------------------------------------------------------------
-# Subsection: Chaos Recipe
-#-------------------------------------------------------------------------------
-
-#Show
-#	Identified = False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	Rarity = Rare
-#	Class = "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves"
-#	SetTextColor 255 255 0 255
-#	SetBackgroundColor 255 255 255 0
-#	SetBorderColor 128 0 128 255 # Vendor
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
-
-#Show
-#	Identified = False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	Rarity = Rare
-#	Class = "Body Armours"
-#	SetTextColor 255 255 0 255
-#	SetBackgroundColor 255 255 255 0
-#	SetBorderColor 128 0 128 255 # Vendor
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
-
-#Show
-#	Identified = False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	Rarity = Rare
-#	Class = "Helmets"
-#	SetTextColor 255 255 0 255
-#	SetBackgroundColor 255 255 255 0
-#	SetBorderColor 128 0 128 255 # Vendor
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
-
-#Show
-#	Identified = False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	Rarity = Rare
-#	Class = "Gloves"
-#	SetTextColor 255 255 0 255
-#	SetBackgroundColor 255 255 255 0
-#	SetBorderColor 128 0 128 255 # Vendor
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
-
-#Show
-#	Identified = False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	Rarity = Rare
-#	Class = "Boots"
-#	SetTextColor 255 255 0 255
-#	SetBackgroundColor 255 255 255 0
-#	SetBorderColor 128 0 128 255 # Vendor
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
-
-#Show
-#	Identified = False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	Rarity = Rare
-#	Class = "Amulets"
-#	SetTextColor 255 255 0 255
-#	SetBackgroundColor 255 255 255 0
-#	SetBorderColor 128 0 128 255 # Vendor
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
-
-#Show
-#	Identified = False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	Rarity = Rare
-#	Class = "Rings"
-#	SetTextColor 255 255 0 255
-#	SetBackgroundColor 255 255 255 0
-#	SetBorderColor 128 0 128 255
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
-
-#Show
-#	Identified = False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	Rarity = Rare
-#	Class = "Belts"
-#	SetTextColor 255 255 0 255
-#	SetBackgroundColor 255 255 255 0
-#	SetBorderColor 128 0 128 255
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
 
 #===============================================================================
 # Section: Chance Bases
@@ -4017,21 +4069,7 @@ Show
 #	DisableDropSound
 
 #===============================================================================
-# Section: Levelling
-#===============================================================================
-
-Show
-	ItemLevel <= 45
-	LinkedSockets = 3
-	SocketGroup = "BBB"
-	Class = "Wand" "Sceptre" "Rune Dagger"
-	SetTextColor 200 200 200 255
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 1 Hide
-
-#===============================================================================
-# Section: Magics
+# Section: Leveling
 #===============================================================================
 
 Show
