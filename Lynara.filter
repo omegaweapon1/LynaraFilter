@@ -3537,7 +3537,7 @@ Show
 Show
 	Rarity = Rare
 	Class = "Ring"
-	HasExplicitMod >=4 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Emtombing" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet"
+	HasExplicitMod >=4 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Entombing"
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
@@ -3548,7 +3548,7 @@ Show
 Show
 	Rarity = Rare
 	Class = "Ring"
-	HasExplicitMod >=3 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Emtombing" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet"
+	HasExplicitMod >=3 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Entombing"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
@@ -3559,7 +3559,7 @@ Show
 Show
 	Rarity = Rare
 	Class = "Ring"
-	HasExplicitMod >=2 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Emtombing" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet"
+	HasExplicitMod >=2 "Essences" "of the Essence" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Rotund" "Virile" "Unleashed" "Overpowering" "Annealed" "Cremating" "Electrocuting" "of Variegation" "of the Rainbow" "of the Titan" "of the Gods" "of the Phantom" "of the Wind" "of the Virtuoso" "of the Genius" "of the Comet" "Entombing"
 	SetFontSize 45
 	DisableDropSound
 
@@ -3624,7 +3624,7 @@ Show
 Show
 	Rarity = Rare
 	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
-	HasExplicitMod >=4 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Semptiternal" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator"
+	HasExplicitMod >=4 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator" "of the Sempiternal"
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
 	DisableDropSound
@@ -3635,7 +3635,7 @@ Show
 Show
 	Rarity = Rare
 	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
-	HasExplicitMod >=3 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Semptiternal" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator"
+	HasExplicitMod >=3 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator" "of the Sempiternal"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
@@ -3646,7 +3646,7 @@ Show
 Show
 	Rarity = Rare
 	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
-	HasExplicitMod >=2 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Semptiternal" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator"
+	HasExplicitMod >=2 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator" "of the Sempiternal"
 	SetFontSize 45
 	DisableDropSound
 
