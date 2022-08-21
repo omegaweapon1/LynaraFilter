@@ -1934,7 +1934,7 @@ Show
 
 Show
 	StackSize >= 10
-	BaseType = "Portal Scroll" "Scroll of Wisdom" "Transmutation Shard"
+	BaseType = "Portal Scroll" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1942,7 +1942,7 @@ Show
 
 Show
 	StackSize >= 7
-	BaseType = "Portal Scroll" "Scroll of Wisdom" "Transmutation Shard"
+	BaseType = "Portal Scroll" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1950,7 +1950,31 @@ Show
 
 Show
 	StackSize >= 4
-	BaseType = "Portal Scroll" "Scroll of Wisdom" "Transmutation Shard"
+	BaseType = "Portal Scroll" "Transmutation Shard"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	StackSize >= 30
+	BaseType = "Scroll of Wisdom"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+Show
+	StackSize >= 20
+	BaseType = "Scroll of Wisdom"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	StackSize >= 10
+	BaseType = "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -3744,6 +3768,7 @@ Show
 
 # T0 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Two-Toned Boots" "Fugitive Boots"
 	SetFontSize 45
@@ -3752,6 +3777,7 @@ Show
 
 # T1 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Assassin's Boots"
 	SetFontSize 45
@@ -3760,6 +3786,7 @@ Show
 
 # T2 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Vaal Greaves" "Stealth Boots" "Arcanist Slippers" "Hydrascale Boots" "Legion Boots" "Carnal Boots" "Ambush Boots"
 	SetFontSize 45
@@ -3772,6 +3799,7 @@ Show
 
 # T0 Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Apothecary's Gloves"
 	SetFontSize 45
@@ -3780,6 +3808,7 @@ Show
 
 # T1 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
 	SetFontSize 45
@@ -3788,6 +3817,7 @@ Show
 
 # T2 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Vaal Gauntlets" "Stealth Gloves" "Arcanist Gloves" "Hydrascale Gauntlets" "Legion Gloves" "Assassin's Mitts"
 	SetFontSize 45
@@ -3800,6 +3830,7 @@ Show
 
 # T0 Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Bone Helmet"
 	SetFontSize 45
@@ -3808,6 +3839,7 @@ Show
 
 # T1 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask"
 	SetFontSize 45
@@ -3816,6 +3848,7 @@ Show
 
 # T2 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Eternal Burgonet" "Sinner Tricorne" "Mind Cage" "Fluted Bascinet" "Magistrate Crown" "Harlequin Mask"
 	SetFontSize 45
@@ -3828,6 +3861,7 @@ Show
 
 # Tier 2 Rares
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
 	SetFontSize 45
@@ -3836,6 +3870,7 @@ Show
 
 # T1 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Colossal Tower Shield" "Ezomyte Tower Shield" "Lacquered Helmet" "Crusader Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Fossilised Spirit Shield"
 	SetFontSize 45
@@ -3844,6 +3879,7 @@ Show
 
 # T1 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Ivory Spirit Shield"
 	SetFontSize 45
@@ -3856,6 +3892,7 @@ Show
 
 # T1 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Triumphant Lamellar" "Saintly Chainmail" "Carnal Armour" "Sadist Garb"
 	SetFontSize 45
@@ -3868,6 +3905,7 @@ Show
 
 # T1 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Convoking Wand" "Profane Wand" "Opal Wand" "Opal Sceptre" "Void Sceptre"
 	SetFontSize 45
@@ -3876,6 +3914,7 @@ Show
 
 # T1 Rare Bases
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Platinum Kris" "Imperial Claw" "Karui Chopper" "Convoking Wand" "Copper Kris" "Golden Kris" "Calling Wand" "Convening Wand" "Pagan Wand" "Prophecy Wand"
 	SetFontSize 45
@@ -3886,8 +3925,8 @@ Show
 # Subsection: Belt
 #-------------------------------------------------------------------------------
 
-# T0 Rare Belts
 Show
+	Identified = False
 	Rarity = Rare
 	Class = "Belts"
 	BaseType = "Vanguard Belt" "Crystal Belt"
@@ -3895,8 +3934,8 @@ Show
 	DisableDropSound
 	#BlockStrictness 4 Hide
 
-# T2 Rare Belts
 Show
+	Identified = False
 	Rarity = Rare
 	Class = "Belts"
 	BaseType = "Rustic Sash" "Heavy Belt" "Leather Belt"
@@ -3906,6 +3945,7 @@ Show
 
 # Rare Belts
 Show
+	Identified = False
 	Rarity = Rare
 	Class = "Belts"
 	BaseType = "Cloth Belt" "Studded Belt" "Chain Belt"
@@ -3919,6 +3959,7 @@ Show
 
 # T0 Rare Accessory
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Steel Ring" "Opal Ring" "Cerulean Ring" "Vermillion Ring"
 	SetFontSize 45
@@ -3927,6 +3968,7 @@ Show
 
 # T1 Rare Accessory
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Two-Stone Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Diamond Ring" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Onyx Amulet" "Unset Ring" "Amethyst Ring" "Iolite Ring" "Bone Ring"
 	SetFontSize 45
@@ -3935,6 +3977,7 @@ Show
 
 # T2 Rare Accessory
 Show
+	Identified = False
 	Rarity = Rare
 	BaseType = "Moonstone Ring" "Coral Ring" "Blue Pearl Amulet" "Seaglass Amulet" "Marble Amulet" "Gold Ring"
 	SetFontSize 45
@@ -3947,6 +3990,7 @@ Show
 
 # Rare Rings/Amulets
 Show
+	Identified = False
 	Rarity = Rare
 	Class = "Rings" "Amulets"
 	SetFontSize 45
@@ -3954,6 +3998,7 @@ Show
 	#BlockStrictness 4 Hide
 
 Show
+	Identified = False
 	ItemLevel < 60
 	Rarity = Rare
 	SetFontSize 45
