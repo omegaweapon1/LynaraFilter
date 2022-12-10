@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Lynara
-# VERSION:       3.19
+# VERSION:       3.20
 # AUTHOR:        Lynara
 # CONTACT:       mitchoka@gmail.com
 # LINK:          https://grinding.zone/?page=filtershaper&loadfilter=https://raw.githubusercontent.com/omegaweapon1/LynaraFilter/master/Lynara.filter
@@ -160,8 +160,10 @@ Show
 # Subsection: League
 #-------------------------------------------------------------------------------
 
+#Show
+
 Show
-	BaseType = "Mirrored Tablet"
+	Class = "Sanctified Relic"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -171,7 +173,7 @@ Show
 	PlayEffect Purple Temp
 
 Show
-	BaseType = "Dusk Ring" "Penumbra Ring" "Gloam Ring" "Tenebrous Ring" "Shadowed Ring"
+	BaseType = "Relic"
 	SetTextColor 128 64 64 200 # Challenge League
 	SetFontSize 45
 	DisableDropSound
@@ -296,7 +298,7 @@ Show
 # Tier 1 Uniques
 Show
 	Rarity = Unique
-	BaseType = "Ornate Quiver" "Saint's Hauberk" "Rawhide Boots" "Crusader Boots" "Silk Gloves" "Prophecy Wand" "Wyrmscale Doublet" "Jewelled Foil" "Siege Axe" "Zodiac Leather" "Jingling Spirit Shield" "Ezomyte Tower Shield" "Greatwolf Talisman" "Ambush Mitts" "Carnal Boots" "Legion Gloves" "Glorious Plate" "Timeless Jewel" "Prismatic Jewel" "Ivory Watchstone"
+	BaseType = "Ornate Quiver" "Saint's Hauberk" "Rawhide Boots" "Crusader Boots" "Silk Gloves" "Prophecy Wand" "Wyrmscale Doublet" "Jewelled Foil" "Zodiac Leather" "Jingling Spirit Shield" "Ezomyte Tower Shield" "Greatwolf Talisman" "Ambush Mitts" "Carnal Boots" "Legion Gloves" "Glorious Plate" "Timeless Jewel" "Prismatic Jewel" "Ivory Watchstone"
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -321,6 +323,19 @@ Show
 # Tier 1 Uniques
 Show
 	BaseType = "Engraved Ultimatum" "Ultimatum Aspect"
+	SetTextColor 175 96 37 255 # Unique
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Uni02.mp3" 100
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown 
+
+# Tier 1 Uniques
+Show
+	Rarity = Unique
+	BaseType = "Slaughter Knife" "Karui Maul" "Siege Axe"
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -735,6 +750,9 @@ Show
 # Yellow Tier
 #Show
 #	Corrupted = Maps
+#	Corrupted = Maps
+#	Corrupted = Maps
+#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -958,6 +976,8 @@ Show
 #-------------------------------------------------------------------------------
 
 #Show
+#	BaseType = "Memory"
+#	HasExplicitMod = "of Harvest Beasts"
 #	SetTextColor 255 165 0 255 # Fragments
 #	SetBackgroundColor 255 255 255 255 # S Tier
 #	SetBorderColor 255 0 0 255 # S Tier
@@ -968,6 +988,8 @@ Show
 #	PlayEffect Brown 
 
 #Show
+#	BaseType = "Memory"
+#	HasExplicitMod = "of the Sacred Grove" "of Reverse Incursion" "of Chasms" "of the Pantheon" "of Grasping Hands"
 #	SetTextColor 255 165 0 255 # Fragments
 #	SetBorderColor 255 165 0 255 # A Tier
 #	SetFontSize 45
@@ -977,9 +999,27 @@ Show
 #	PlayEffect Brown 
 
 Show
-	BaseType = "Niko's Memory" "Alva's Memory" "Kirac's Memory" "Einhar's Memory"
+	BaseType = "Memory"
+	HasExplicitMod = "of Crystal Prisons" "of Cascading Fortunes" "of Survivor's Guilt" "of Phaaryl" "of Tormented Souls" "of Demonic Onslaught"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Frag00.mp3" 100
+	MinimapIcon 2 Brown Circle
+	PlayEffect Brown Temp
+
+Show
+	BaseType = "Memory"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 255 255 0
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	BaseType = "Memory"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 242 4 246 255 # Error
 	SetFontSize 45
 	DisableDropSound
 	CustomAlertSound "Frag00.mp3" 100
@@ -1302,7 +1342,6 @@ Show
 #-------------------------------------------------------------------------------
 
 #Show
-#	BaseType =
 #	SetTextColor 170 158 130 255 # Currency
 #	SetBackgroundColor 255 255 255 255 # S Tier
 #	SetBorderColor 255 0 0 255 # S Tier
@@ -1313,7 +1352,6 @@ Show
 #	PlayEffect Yellow 
 
 #Show
-#	BaseType =
 #	SetTextColor 170 158 130 255 # Currency
 #	SetBorderColor 255 165 0 255 # A Tier
 #	SetFontSize 45
@@ -1323,7 +1361,6 @@ Show
 #	PlayEffect Yellow 
 
 #Show
-#	BaseType =
 #	SetTextColor 170 158 130 255 # Currency
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -1334,7 +1371,6 @@ Show
 
 # Pick up always
 #Show
-#	BaseType =
 #	SetTextColor 170 158 130 255 # Currency
 #	SetBorderColor 255 255 255 0
 #	SetFontSize 45
@@ -1598,7 +1634,6 @@ Show
 	PlayEffect Yellow 
 
 #Show
-#	BaseType =
 #	SetTextColor 170 158 130 255 # Currency
 #	SetBorderColor 255 165 0 255 # A Tier
 #	SetFontSize 45
@@ -1608,7 +1643,6 @@ Show
 #	PlayEffect Yellow 
 
 #Show
-#	BaseType =
 #	SetTextColor 170 158 130 255 # Currency
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -1619,7 +1653,6 @@ Show
 
 # Pick up always
 #Show
-#	BaseType =
 #	SetTextColor 170 158 130 255 # Currency
 #	SetFontSize 45
 #	DisableDropSound
@@ -1832,7 +1865,7 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	BaseType = "Mirror Shard" "Awakener's Orb" "Tempering Orb" "Tailoring Orb" "Prime Regrading Lens" "Secondary Regrading Lens" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Sacred Orb" "Orb of Conflict" "Exceptional Eldritch" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Orb of Dominance" "Divine Orb"
+	BaseType = "Mirror Shard" "Awakener's Orb" "Tempering Orb" "Tailoring Orb" "Prime Regrading Lens" "Secondary Regrading Lens" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Sacred Orb" "Orb of Conflict" "Exceptional Eldritch" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Orb of Dominance" "Divine Orb" "Fracturing Orb" "Fracturing Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -2018,7 +2051,6 @@ Show
 
 # GG Cards
 #Show
-#	Class = "Divination Card"
 #	SetTextColor 30 144 255 255 # Divination Card
 #	SetBackgroundColor 255 255 255 255 # S Tier
 #	SetBorderColor 255 0 0 255 # S Tier
@@ -2030,7 +2062,6 @@ Show
 
 # Great Cards
 #Show
-#	Class = "Divination Card"
 #	SetTextColor 30 144 255 255 # Divination Card
 #	SetBorderColor 255 165 0 255 # A Tier
 #	SetFontSize 45
@@ -2041,7 +2072,6 @@ Show
 
 # Good Cards
 #Show
-#	Class = "Divination Card"
 #	SetTextColor 30 144 255 255 # Divination Card
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -2052,7 +2082,6 @@ Show
 
 # Default Cards
 #Show
-#	Class = "Divination Card"
 #	SetTextColor 30 144 255 255 # Divination Card
 #	SetFontSize 45
 #	DisableDropSound
@@ -2070,7 +2099,7 @@ Hide
 # GG Cards
 Show
 	Class = "Divination Card"
-	BaseType = "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "Desecrated Virtue" "Gift of Asenath" "House of Mirrors" "Love Through Ice" "Pride of the First Ones" "Succor of the Sinless" "The Apothecary" "The Cheater" "The Eternal War" "The Scout" "The Shieldbearer"
+	BaseType = "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "Desecrated Virtue" "Gift of Asenath" "House of Mirrors" "Love Through Ice" "Pride of the First Ones" "Succor of the Sinless" "The Apothecary" "The Cheater" "The Eternal War" "The Scout" "The Shieldbearer" "Divine Beauty"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -2107,7 +2136,7 @@ Show
 # Default Cards filtered in Yellow Maps
 Show
 	Class = "Divination Card"
-	BaseType = "A Mother's Parting Gift" "Boundless Realms" "Dark Temptation" "Rain Tempter" "The Hermit"
+	BaseType = "A Mother's Parting Gift" "Boundless Realms" "Rain Tempter" "The Hermit"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 45
 	DisableDropSound
@@ -2125,11 +2154,20 @@ Show
 # Default Cards Filtered in 16s
 Show
 	Class = "Divination Card"
-	BaseType = "The Easy Stroll" "The Gladiator" "The Scholar" "The Surveyor" "The Trial"
+	BaseType = "The Easy Stroll" "The Gladiator" "The Scholar" "The Surveyor" "The Trial" "Dark Temptation"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 5 Hide
+
+# Default Cards
+Show
+	Class = "Divination Card"
+	BaseType = "Man With Bear" "Alivia's Grace" "Auspicious Ambitions" "The Wedding Gift" "The Insane Cat" "Ever-Changing" "A Dusty Memory" "The Return of the Rat" "The Finishing Touch"
+	SetTextColor 30 144 255 255 # Divination Card
+	SetBorderColor 255 255 255 255
+	SetFontSize 45
+	DisableDropSound
 
 # Default Cards
 Show
@@ -2592,7 +2630,6 @@ Show
 #-------------------------------------------------------------------------------
 
 #Show
-#	Class = "Gem"
 #	SetTextColor 27 162 155 255 # Gem
 #	SetBackgroundColor 255 255 255 255 # S Tier
 #	SetBorderColor 255 0 0 255 # S Tier
@@ -2603,7 +2640,6 @@ Show
 #	PlayEffect Green 
 
 #Show
-#	Class = "Gem"
 #	SetTextColor 27 162 155 255 # Gem
 #	SetBorderColor 255 165 0 255 # A Tier
 #	SetFontSize 45
@@ -2613,7 +2649,6 @@ Show
 #	PlayEffect Green 
 
 #Show
-#	Class = "Gem"
 #	SetTextColor 27 162 155 255 # Gem
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -2623,7 +2658,6 @@ Show
 #	PlayEffect Green Temp
 
 #Show
-#	Class = "Gem"
 #	SetTextColor 27 162 155 255 # Gem
 #	SetFontSize 45
 #	DisableDropSound
@@ -2752,11 +2786,19 @@ Show
 
 Show
 	Class = "Gem"
-	BaseType = "Vaal Righteous Fire" "Vaal Molten Shell"
+	BaseType = "Vaal Righteous Fire" "Vaal Molten Shell" "Vaal Grace" "Vaal Haste"
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 2 Hide
+	#BlockStrictness 3 Hide
+
+Show
+	Class = "Gem"
+	BaseType = "Vaal Cleave" "Vaal Flicker Strike" "Vaal Cleave" "Vaal Volcanic Fissure" "Vaal Caustic Arrow" "Vaal Blade Flurry" "Vaal Venom Gyre" "Vaal Molten Strike" "Vaal Smite"
+	SetTextColor 27 162 155 255 # Gem
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
 
 Show
 	Class = "Gem"
@@ -2764,17 +2806,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 1 Hide
-
-#-------------------------------------------------------------------------------
-# Subsection: Subsection Name
-#-------------------------------------------------------------------------------
-
-#Show
-#	Class = "Gem"
-#	SetTextColor 27 162 155 255 # Gem
-#	SetFontSize 30
-#	DisableDropSound
+	#BlockStrictness 2 Hide
 
 Hide
 	Class = "Gem"
@@ -4098,10 +4130,18 @@ Show
 #	DisableDropSound
 
 # Headhunter
+#Show
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Riveted Boots"
+#	SetFontSize 45
+#	DisableDropSound
+
+# Headhunter
 Show
 	Corrupted = False
 	Rarity = Normal
-	BaseType = "Riveted Boots"
+	BaseType = "Spidersilk Robe"
 	SetFontSize 45
 	DisableDropSound
 
