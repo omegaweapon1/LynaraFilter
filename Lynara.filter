@@ -8,15 +8,15 @@
 # CONTACT:       mitchoka@gmail.com
 # LINK:          https://grinding.zone/?page=filtershaper&loadfilter=https://raw.githubusercontent.com/omegaweapon1/LynaraFilter/master/Lynara.filter
 #
-# Strictness 1:  Fresh Maps
-# Strictness 2:  Stable White Maps
-# Strictness 3:  Speed White Maps
-# Strictness 4:  Stable Yellow Maps
-# Strictness 5:  Speed Yellow Maps
-# Strictness 6:  Stable Red Maps
-# Strictness 7:  Speed Red Maps
-# Strictness 8:  Speed 16s
-# Strictness 9:  Turbo Juiced Red Maps
+# Strictness 1:  01 - Fresh Maps
+# Strictness 2:  02 - Stable White Maps
+# Strictness 3:  03 - Speed White Maps
+# Strictness 4:  04 - Stable Yellow Maps
+# Strictness 5:  05 - Speed Yellow Maps
+# Strictness 6:  06 - Stable Red Maps
+# Strictness 7:  07 - Speed Red Maps
+# Strictness 8:  08 - Speed 16s
+# Strictness 9:  09 - Turbo Juiced Red Maps
 # Default strictness: 0
 #
 # Created with Filter Master editor at https://grinding.zone
