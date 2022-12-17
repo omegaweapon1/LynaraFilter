@@ -839,6 +839,7 @@ Show
 # Yellow Tier
 #Show
 #	Corrupted = Maps
+#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -1953,7 +1954,7 @@ Show
 
 # Pick up always
 Show
-	BaseType = "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Harbinger's Shard" "Annulment Shard" "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Ancient Shard" "Orb of Alteration" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass"
+	BaseType = "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Harbinger's Shard" "Annulment Shard" "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Ancient Shard" "Orb of Alteration" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass" "Chromatic Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1961,7 +1962,7 @@ Show
 # Pick up always
 Show
 	StackSize >= 4
-	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Chromatic Orb" "Alteration Shard" "Orb of Transmutation" "Blacksmith's Whetstone"
+	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Alteration Shard" "Orb of Transmutation" "Blacksmith's Whetstone"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1969,7 +1970,7 @@ Show
 # Pick up always
 Show
 	StackSize >= 2
-	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Chromatic Orb" "Alteration Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Alteration Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -1977,7 +1978,7 @@ Show
 
 # Pick up always
 Show
-	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Chromatic Orb" "Alteration Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Alteration Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -2132,7 +2133,7 @@ Hide
 # GG Cards
 Show
 	Class = "Divination Card"
-	BaseType = "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "Desecrated Virtue" "Gift of Asenath" "House of Mirrors" "Love Through Ice" "Pride of the First Ones" "Succor of the Sinless" "The Apothecary" "The Cheater" "The Eternal War" "The Scout" "The Shieldbearer" "Divine Beauty"
+	BaseType = "Desecrated Virtue" "Gift of Asenath" "House of Mirrors" "Love Through Ice" "Pride of the First Ones" "Succor of the Sinless" "The Apothecary" "The Cheater" "The Eternal War" "The Shieldbearer" "Divine Beauty" "Brother's Stash"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -2145,7 +2146,7 @@ Show
 # Great Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Fate Worse Than Death" "A Modest Request" "A Note in the Wind" "A Stone Perfected" "Altered Perception" "Beauty Through Death" "Darker Half" "Deadly Joy" "Draped in Dreams" "Eternal Bonds" "Fateful Meeting" "Immortal Resolve" "Judging Voices" "Luminous Trove" "Peaceful Moments" "Terrible Secret of Space" "The Artist" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Bones" "The Demon" "The Destination" "The Doctor" "The Dragon's Heart" "The Eldritch Decay" "The Enlightened" "The Escape" "The Fiend" "The Greatest Intentions" "The Gulf" "The Hoarder" "The Hook" "The Long Con" "The Offspring" "The Price of Prescience" "The Prince of Darkness" "The Progeny of Lunaris" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "Wealth and Power" "Doryani's Epiphany" "Endless Night" "Choking Guilt" "The Price of Devotion" "The Insane Cat" "A Dusty Memory" "The Wedding Gift"
+	BaseType = "A Fate Worse Than Death" "A Modest Request" "A Note in the Wind" "A Stone Perfected" "Altered Perception" "Beauty Through Death" "Darker Half" "Deadly Joy" "Draped in Dreams" "Eternal Bonds" "Fateful Meeting" "Immortal Resolve" "Judging Voices" "Luminous Trove" "Peaceful Moments" "Terrible Secret of Space" "The Artist" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Bones" "The Demon" "The Destination" "The Doctor" "The Dragon's Heart" "The Eldritch Decay" "The Enlightened" "The Escape" "The Fiend" "The Greatest Intentions" "The Gulf" "The Hook" "The Long Con" "The Offspring" "The Price of Prescience" "The Prince of Darkness" "The Progeny of Lunaris" "The Samurai's Eye" "The Seeker" "Wealth and Power" "Doryani's Epiphany" "Endless Night" "Choking Guilt" "The Price of Devotion" "The Insane Cat" "A Dusty Memory" "The Wedding Gift"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -2157,7 +2158,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Familiar Call" "Acclimatisation" "Ambitious Obsession" "Boon of the First Ones" "Bowyer's Dream" "Broken Promises" "Brush, Paint and Palette" "Deathly Designs" "Dementophobia" "Dying Light" "Earth Drinker" "Home" "Humility" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Magnum Opus" "Mawr Blaidd" "Perfection" "Pride Before the Fall" "Remembrance" "Seven Years Bad Luck" "Society's Remorse" "The Academic" "The Avenger" "The Awakened" "The Bargain" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Emptiness" "The Ethereal" "The Eye of Terror" "The Immortal" "The Landing" "The Mad King" "The Magma Crab" "The Mind's Eyes" "The Offering" "The Pact" "The Polymath" "The Porcupine" "The Price of Loyalty" "The Price of Protection" "The Primordial" "The Rite of Elements" "The Sacrifice" "The Sephirot" "The Shortcut" "The Side Quest" "The Strategist" "The Sustenance" "The Void" "The Warlord" "The White Knight" "The Whiteout" "Unrequited Love" "Vanity" "Winter's Embrace" "The King's Heart" "The Nurse" "The Professor" "Broken Truce" "The Leviathan" "Gemcutter's Mercy" "Something Dark" "Auspicious Ambitions"
+	BaseType = "A Familiar Call" "Acclimatisation" "Ambitious Obsession" "Boon of the First Ones" "Bowyer's Dream" "Broken Promises" "Brush, Paint and Palette" "Deathly Designs" "Dementophobia" "Dying Light" "Earth Drinker" "Home" "Humility" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Magnum Opus" "Mawr Blaidd" "Perfection" "Pride Before the Fall" "Remembrance" "Seven Years Bad Luck" "Society's Remorse" "The Academic" "The Avenger" "The Awakened" "The Bargain" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Emptiness" "The Ethereal" "The Eye of Terror" "The Immortal" "The Landing" "The Mad King" "The Magma Crab" "The Mind's Eyes" "The Offering" "The Pact" "The Polymath" "The Porcupine" "The Price of Loyalty" "The Price of Protection" "The Primordial" "The Rite of Elements" "The Sacrifice" "The Sephirot" "The Shortcut" "The Side Quest" "The Strategist" "The Sustenance" "The Void" "The Warlord" "The White Knight" "The Whiteout" "Unrequited Love" "Vanity" "Winter's Embrace" "The King's Heart" "The Nurse" "The Professor" "Broken Truce" "The Leviathan" "Gemcutter's Mercy" "Something Dark" "Auspicious Ambitions" "The Hoarder" "The Saint's Treasure" "The Scout" "Alluring Bounty" "Abandoned Wealth"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2214,52 +2215,6 @@ Show
 	SetBorderColor 242 4 246 255 # Error
 	SetFontSize 45
 	DisableDropSound
-
-#===============================================================================
-# Section: Vendor Recipes
-#===============================================================================
-
-#-------------------------------------------------------------------------------
-# Subsection: Jeweller
-#-------------------------------------------------------------------------------
-
-Show
-	Sockets = "6"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-
-#-------------------------------------------------------------------------------
-# Subsection: Chrome
-#-------------------------------------------------------------------------------
-
-Show
-	SocketGroup >= "RGB"
-	Rarity <= Magic
-	Height = 3
-	Width = 1
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 4 Hide
-
-Show
-	SocketGroup >= "RGB"
-	Rarity <= Magic
-	Height = 2
-	Width = 2
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-Show
-	SocketGroup >= "RGB"
-	Rarity <= Magic
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
 
 #===============================================================================
 # Section: League Mod Rares
@@ -2601,63 +2556,6 @@ Show
 	Quality > 20
 	BaseType = "Vaal Regalia" "Titanium Spirit Shield" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots"
 	SetTextColor 100 150 200 200 # Special Rares
-	SetFontSize 45
-	DisableDropSound
-
-#===============================================================================
-# Section: Links
-#===============================================================================
-
-#-------------------------------------------------------------------------------
-# Subsection: 5L
-#-------------------------------------------------------------------------------
-
-Show
-	LinkedSockets = 5
-	Rarity <= Magic
-	Class = "Body Armours"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 5 Hide
-
-Show
-	LinkedSockets = 5
-	Rarity <= Magic
-	Class = "Two Hand" "Staves"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 3 Hide
-
-#-------------------------------------------------------------------------------
-# Subsection: 4L
-#-------------------------------------------------------------------------------
-
-# 4 Links - Sell for 4 Alts, or 2 Chance
-Show
-	ItemLevel <= 60
-	LinkedSockets = 4
-	Rarity = Normal
-	Height = 2
-	Width = 2
-	SetFontSize 45
-	DisableDropSound
-
-# 4 Links - Sell for 4 Alts, or 2 Chance
-Show
-	ItemLevel <= 50
-	LinkedSockets = 4
-	SetFontSize 45
-	DisableDropSound
-
-# Leveling Sockets
-Show
-	ItemLevel <= 25
-	Sockets = "4"
-	Rarity = Normal
-	Height = 2
-	Width = 2
 	SetFontSize 45
 	DisableDropSound
 
@@ -3778,6 +3676,105 @@ Show
 	CustomAlertSound "Base00.mp3" 100
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
+
+#===============================================================================
+# Section: Vendor Recipe
+#===============================================================================
+
+#-------------------------------------------------------------------------------
+# Subsection: Jewellers
+#-------------------------------------------------------------------------------
+
+Show
+	Sockets = "6"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Chromatics
+#-------------------------------------------------------------------------------
+
+Show
+	SocketGroup >= "RGB"
+	Rarity <= Magic
+	Height = 3
+	Width = 1
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+Show
+	SocketGroup >= "RGB"
+	Rarity <= Magic
+	Height = 2
+	Width = 2
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	SocketGroup >= "RGB"
+	Rarity <= Magic
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 5L
+#-------------------------------------------------------------------------------
+
+Show
+	LinkedSockets = 5
+	Rarity <= Magic
+	Class = "Body Armours"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 5 Hide
+
+Show
+	LinkedSockets = 5
+	Rarity <= Magic
+	Class = "Two Hand" "Staves"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 4L
+#-------------------------------------------------------------------------------
+
+# 4 Links - Sell for 4 Alts, or 2 Chance
+Show
+	ItemLevel <= 60
+	LinkedSockets = 4
+	Rarity = Normal
+	Height = 2
+	Width = 2
+	SetFontSize 45
+	DisableDropSound
+
+# 4 Links - Sell for 4 Alts, or 2 Chance
+Show
+	ItemLevel <= 50
+	LinkedSockets = 4
+	SetFontSize 45
+	DisableDropSound
+
+# Leveling Sockets
+Show
+	ItemLevel <= 25
+	Sockets = "4"
+	Rarity = Normal
+	Height = 2
+	Width = 2
+	SetFontSize 45
+	DisableDropSound
 
 #===============================================================================
 # Section: Rares
