@@ -840,6 +840,7 @@ Show
 #Show
 #	Corrupted = Maps
 #	Corrupted = Maps
+#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -2197,7 +2198,7 @@ Show
 # Default Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Dab of Ink" "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Azyran's Reward" "Baited Expectations" "Bijoux" "Blind Venture" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hope" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lysah's Respite" "Misery in Darkness" "Mitts" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Doppelganger" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endless Darkness" "The Endurance" "The Eye of the Dragon" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Gambler" "The Garish Power" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The One With All" "The Penitent" "The Puzzle" "The Queen" "The Rabbit's Foot" "The Realm" "The Skeleton" "The Soul" "The Spark and the Flame" "The Standoff" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Unexpected Prize" "The Union" "The Valkyrie" "The Vast" "The Visionary" "The Wilted Rose" "The Wolf" "The Wolf's Legacy" "The Wolven King's Bite" "The World Eater" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power" "The Patient" "Sambodhi's Wisdom" "Lucky Deck" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "Astral Protection" "Checkmate" "Lethean Temptation" "Alivia's Grace" "Dark Temptation" "Ever-Changing" "Man With Bear" "The Finishing Touch" "The Return of the Rat" "The Gladiator" "A Sea of Blue"
+	BaseType = "A Dab of Ink" "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Azyran's Reward" "Baited Expectations" "Bijoux" "Blind Venture" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hope" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lysah's Respite" "Misery in Darkness" "Mitts" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Doppelganger" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endless Darkness" "The Endurance" "The Eye of the Dragon" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Gambler" "The Garish Power" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The One With All" "The Penitent" "The Puzzle" "The Queen" "The Rabbit's Foot" "The Realm" "The Skeleton" "The Soul" "The Spark and the Flame" "The Standoff" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Unexpected Prize" "The Union" "The Valkyrie" "The Vast" "The Visionary" "The Wilted Rose" "The Wolf" "The Wolf's Legacy" "The Wolven King's Bite" "The World Eater" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power" "The Patient" "Sambodhi's Wisdom" "Lucky Deck" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "Astral Protection" "Checkmate" "Lethean Temptation" "Alivia's Grace" "Dark Temptation" "Ever-Changing" "Man With Bear" "The Finishing Touch" "The Return of the Rat" "The Gladiator" "A Sea of Blue" "A Dusty Memory"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 45
 	DisableDropSound
@@ -3465,13 +3466,13 @@ Show
 	DisableDropSound
 
 # Huck
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Tattered Cloak" "Golden Brooch" "Trarthan Flashpowder" "Standard Sharpening Stone"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Tattered Cloak" "Golden Brooch" "Trarthan Flashpowder" "Standard Sharpening Stone"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Karst
 Show
@@ -3519,13 +3520,13 @@ Show
 	DisableDropSound
 
 # Nenet
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Precise Arrowhead" "Thaumaturgical Sensing Charm"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Precise Arrowhead" "Thaumaturgical Sensing Charm"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Vinderi
 Show
@@ -3537,13 +3538,13 @@ Show
 	DisableDropSound
 
 # Gianna
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Regicide Disguise Kit" "Burst Band"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Regicide Disguise Kit" "Burst Band"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 Show
 	Class = "Heist"
@@ -4267,12 +4268,20 @@ Show
 #	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Gladiator Plate"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Gladiator Plate"
+	SetFontSize 45
+	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Rarity = Normal
+	BaseType = "Branded Kite Shield"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
 #Show
