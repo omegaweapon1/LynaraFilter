@@ -832,6 +832,7 @@ Show
 #	Corrupted = Maps
 #	Corrupted = Maps
 #	Corrupted = Maps
+#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -2590,7 +2591,7 @@ Show
 	DisableDropSound
 
 Show
-	Quality > 20
+	Quality = 30
 	BaseType = "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Coronal Maul" "Terror Maul" "Imperial Maul" "Meatgrinder" "Colossus Mallet" "Karui Maul" "Runic Hatchet" "Siege Axe" "Fleshripper" "Karui Chopper" "Vaal Axe" "Sundering Axe" "Tiger Hook" "Eternal Sword" "Corsair Sword" "Jewelled Foil" "Exquisite Blade" "Infernal Sword" "Lion Sword" "Vaal Greatsword" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Citadel Bow" "Thicket Bow" "Imperial Claw" "Ambusher" "Eclipse Staff" "Imperial Staff" "Lathi"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
