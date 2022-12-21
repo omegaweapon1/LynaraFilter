@@ -833,6 +833,7 @@ Show
 #	Corrupted = Maps
 #	Corrupted = Maps
 #	Corrupted = Maps
+#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -1967,7 +1968,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 8 Hide
+	#BlockStrictness 9 Hide
 
 # Pick up always
 Show
@@ -1975,7 +1976,7 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 7 Hide
+	#BlockStrictness 8 Hide
 
 # Pick up always
 Show
@@ -2374,6 +2375,13 @@ Show
 
 Show
 	FracturedItem = True
+	Class = "Life Flask" "Mana Flask" "Utility Flask" "Hybrid Flask"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	FracturedItem = True
 	Class = "Body Armour" "Helmet" "Shield" "Quiver" "Gloves" "Boots"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
@@ -2755,7 +2763,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 7 Hide
+	#BlockStrictness 8 Hide
 
 Show
 	Quality >= 1
@@ -2773,7 +2781,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 7 Hide
+	#BlockStrictness 9 Hide
 
 Show
 	Quality >= 14
@@ -2782,7 +2790,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 7 Hide
+	#BlockStrictness 9 Hide
 
 Show
 	Quality >= 14
@@ -2791,7 +2799,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 7 Hide
+	#BlockStrictness 9 Hide
 
 Show
 	Quality >= 14
@@ -2800,7 +2808,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 7 Hide
+	#BlockStrictness 9 Hide
 
 Show
 	Quality >= 14
@@ -2809,7 +2817,7 @@ Show
 	SetTextColor 27 162 155 255 # Gem
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 7 Hide
+	#BlockStrictness 9 Hide
 
 Show
 	Quality >= 10
@@ -3259,17 +3267,8 @@ Show
 
 Show
 	Corrupted = False
-	ItemLevel >= 84
-	BaseType = "Vaal Regalia" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Colossal Tower Shield"
-	BaseDefencePercentile >= 95
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
-
-Show
-	Corrupted = False
 	ItemLevel >= 86
-	BaseType = "Steel Ring" "Opal Ring" "Crystal Belt" "Cerulean Ring" "Vermillion Ring" "Convoking Wand" "Seaglass Amulet" "Fugitive Boots" "Artillery Quiver" "Apothecary's Gloves" "Iolite Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Crystal Belt" "Cerulean Ring" "Vermillion Ring" "Seaglass Amulet" "Fugitive Boots" "Artillery Quiver" "Apothecary's Gloves" "Iolite Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
@@ -3283,6 +3282,16 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 8 Hide
+
+Show
+	Corrupted = False
+	ItemLevel >= 84
+	BaseType = "Vaal Regalia" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Colossal Tower Shield"
+	BaseDefencePercentile >= 95
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 7 Hide
 
 # 84 T1 Helmets
 #Show
@@ -3485,76 +3494,76 @@ Show
 	PlayEffect Orange Temp
 
 # Broach
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Foliate Brooch"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Cloak
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Whisper-woven Cloak"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Huck
 #Show
 #	ItemLevel >= 81
 #	Class = "Heist"
-#	BaseType = "Tattered Cloak" "Golden Brooch" "Trarthan Flashpowder" "Standard Sharpening Stone"
+#	BaseType = "Foliate Brooch"
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
 #	DisableDropSound
 
-# Karst
+# Cloak
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Whisper-woven Cloak"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+
+# Huck
 Show
 	ItemLevel >= 81
 	Class = "Heist"
-	BaseType = "Precise Arrowhead" "Master Lockpick"
+	BaseType = "Tattered Cloak" "Golden Brooch" "Trarthan Flashpowder" "Flanged Arrowhead" "Fragmenting Arrowhead"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
+
+# Karst
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Precise Arrowhead" "Master Lockpick"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Tibbs
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Obsidian Sharpening Stone" "Steel Bracers"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Obsidian Sharpening Stone" "Steel Bracers"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Isla
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Burst Band" "Thaumetic Blowtorch"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Burst Band" "Thaumetic Blowtorch"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Tullina
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Obsidian Sharpening Stone" "Silkweave Sole"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Obsidian Sharpening Stone" "Silkweave Sole"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Niles
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Burst Band" "Thaumaturgical Ward"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Burst Band" "Thaumaturgical Ward"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Nenet
 #Show
@@ -3566,13 +3575,13 @@ Show
 #	DisableDropSound
 
 # Vinderi
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Obsidian Sharpening Stone" "Thaumetic Flashpowder"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	ItemLevel >= 81
+#	Class = "Heist"
+#	BaseType = "Obsidian Sharpening Stone" "Thaumetic Flashpowder"
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
 
 # Gianna
 #Show
