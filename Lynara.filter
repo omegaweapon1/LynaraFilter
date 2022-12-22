@@ -834,6 +834,7 @@ Show
 #	Corrupted = Maps
 #	Corrupted = Maps
 #	Corrupted = Maps
+#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -2375,7 +2376,14 @@ Show
 
 Show
 	FracturedItem = True
-	Class = "Life Flask" "Mana Flask" "Utility Flask" "Hybrid Flask"
+	Class = "Utility Flask"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	FracturedItem = True
+	BaseType = "Divine Life Flask" "Eternal Mana Flask"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
@@ -2403,7 +2411,7 @@ Show
 
 Show
 	FracturedItem = True
-	Class = "One Hand Axe" "One Hand Mace" "One Hand Sword" "Dagger" "Staves" "Two Hand Axe" "Two Hand Mace" "Two Hand Sword"
+	Class = "One Hand Axe" "One Hand Mace" "One Hand Sword" "Dagger" "Staves" "Two Hand Axe" "Two Hand Mace" "Two Hand Sword" "Claw" "Flask"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
@@ -2599,6 +2607,7 @@ Show
 	DisableDropSound
 
 Show
+	ItemLevel >= 84
 	Quality = 30
 	BaseType = "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Coronal Maul" "Terror Maul" "Imperial Maul" "Meatgrinder" "Colossus Mallet" "Karui Maul" "Runic Hatchet" "Siege Axe" "Fleshripper" "Karui Chopper" "Vaal Axe" "Sundering Axe" "Tiger Hook" "Eternal Sword" "Corsair Sword" "Jewelled Foil" "Exquisite Blade" "Infernal Sword" "Lion Sword" "Vaal Greatsword" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Citadel Bow" "Thicket Bow" "Imperial Claw" "Ambusher" "Eclipse Staff" "Imperial Staff" "Lathi"
 	SetTextColor 100 150 200 200 # Special Rares
@@ -3126,10 +3135,47 @@ Show
 # Subsection: [Template] - Bases
 #-------------------------------------------------------------------------------
 
+#Show
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBackgroundColor 255 255 255 255 # S Tier
+#	SetBorderColor 255 0 0 255 # S Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base02.mp3" 100
+#	MinimapIcon 0 Red Triangle
+#	PlayEffect Red 
+
+#Show
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base01.mp3" 100
+#	MinimapIcon 1 Red Triangle
+#	PlayEffect Red 
+
+#Show
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base00.mp3" 100
+#	MinimapIcon 2 Red Triangle
+#	PlayEffect Red Temp
+
+#Show
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: Shaper
+#-------------------------------------------------------------------------------
+
 Show
-	HasInfluence = "Elder" "Crusader" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 86
-	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather" "Sadist Garb" "Vaal Regalia" "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar"
+	HasInfluence = "Shaper"
+	ItemLevel >= 83
+	BaseType = "Archon Kite Shield" "Crusader Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Supreme Spiked Shield" "Mirrored Spiked Shield"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -3140,35 +3186,9 @@ Show
 	PlayEffect Red 
 
 Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 86
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Base02.mp3" 100
-	MinimapIcon 0 Red Triangle
-	PlayEffect Red 
-
-Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 86
-	BaseType = "Siege Axe" "Fleshripper" "Vaal Axe" "Maraketh Bow" "Harbinger Bow" "Citadel Bow" "Coronal Maul" "Imperial Maul" "Colossus Mallet" "Tiger Hook" "Jewelled Foil" "Exquisite Blade" "Convoking Wand" "Opal Wand" "Colossal Tower Shield" "Titanium Spirit Shield" "Karui Chopper" "Imperial Claw"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBackgroundColor 255 255 255 255 # S Tier
-	SetBorderColor 255 0 0 255 # S Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Base02.mp3" 100
-	MinimapIcon 0 Red Triangle
-	PlayEffect Red 
-
-Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 84
-	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather" "Sadist Garb" "Vaal Regalia" "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar"
+	HasInfluence = "Shaper"
+	ItemLevel >= 83
+	BaseType = "Cardinal Round Shield" "Pinnacle Tower Shield" "Opal Ring" "Profane Wand" "Vermillion Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -3178,45 +3198,9 @@ Show
 	PlayEffect Red 
 
 Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 84
-	BaseType = "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring" "Grasping Mail" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Base01.mp3" 100
-	MinimapIcon 1 Red Triangle
-	PlayEffect Red 
-
-Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 84
-	BaseType = "Siege Axe" "Fleshripper" "Vaal Axe" "Maraketh Bow" "Harbinger Bow" "Citadel Bow" "Coronal Maul" "Imperial Maul" "Colossus Mallet" "Tiger Hook" "Jewelled Foil" "Exquisite Blade" "Convoking Wand" "Opal Wand" "Colossal Tower Shield" "Titanium Spirit Shield" "Karui Chopper" "Imperial Claw"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Base01.mp3" 100
-	MinimapIcon 1 Red Triangle
-	PlayEffect Red 
-
-Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 84
-	BaseType = "Two-Stone Ring" "Jade Amulet" "Lapis Amulet" "Amber Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Diamond Ring" "Moonstone Ring" "Amethyst Ring" "Leather Belt" "Rustic Sash"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Base01.mp3" 100
-	MinimapIcon 1 Red Triangle
-	PlayEffect Red 
-
-Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 80
-	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Bone Helmet" "Deicide Mask" "Royal Burgonet" "Titan Gauntlets" "Sorcerer Gloves" "Murder Mitts" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Boots" "Slink Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather" "Sadist Garb" "Vaal Regalia" "Carnal Armour" "Saintly Chainmail" "Triumphant Lamellar"
+	HasInfluence = "Shaper"
+	ItemLevel >= 83
+	BaseType = "Ruby Ring" "Amethyst Ring" "Topaz Ring" "Sapphire Ring"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -3225,10 +3209,193 @@ Show
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
+#-------------------------------------------------------------------------------
+# Subsection: Elder
+#-------------------------------------------------------------------------------
+
 Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
+	HasInfluence = "Elder"
+	ItemLevel >= 83
+	BaseType = "Opal Ring" "Bone Helmet" "Vermillion Ring" "Royal Burgonet" "Steel Ring" "Spiked Gloves" "Iolite Ring" "Leather Belt" "Heavy Belt" "Rustic Sash" "Praetor Crown"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base02.mp3" 100
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red 
+
+Show
+	HasInfluence = "Elder"
 	ItemLevel >= 84
-	BaseType = "Siege Axe" "Fleshripper" "Vaal Axe" "Maraketh Bow" "Harbinger Bow" "Citadel Bow" "Coronal Maul" "Imperial Maul" "Colossus Mallet" "Tiger Hook" "Jewelled Foil" "Exquisite Blade" "Convoking Wand" "Opal Wand" "Colossal Tower Shield" "Titanium Spirit Shield" "Karui Chopper" "Imperial Claw"
+	BaseType = "Karui Chopper" "Citadel Bow"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base01.mp3" 100
+	MinimapIcon 1 Red Triangle
+	PlayEffect Red 
+
+#Show
+#	HasInfluence = "Elder"
+#	ItemLevel >= 83
+#	BaseType =
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base00.mp3" 100
+#	MinimapIcon 2 Red Triangle
+#	PlayEffect Red Temp
+
+#-------------------------------------------------------------------------------
+# Subsection: Crusader
+#-------------------------------------------------------------------------------
+
+Show
+	HasInfluence = "Crusader"
+	ItemLevel >= 85
+	BaseType = "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "Saintly Chainmail" "Sadist Garb" "Glorious Plate" "Assassin's Garb" "Occultist's Vestment" "Carnal Armour"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base02.mp3" 100
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red 
+
+Show
+	HasInfluence = "Crusader"
+	ItemLevel >= 85
+	Class = "Body Armour"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 7 Hide
+
+Show
+	HasInfluence = "Crusader"
+	ItemLevel >= 83
+	BaseType = "Opal Ring" "Crystal Belt" "Vermillion Ring" "Moonstone Ring"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base02.mp3" 100
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red 
+
+#Show
+#	HasInfluence = "Crusader"
+#	ItemLevel >= 83
+#	BaseType =
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base01.mp3" 100
+#	MinimapIcon 1 Red Triangle
+#	PlayEffect Red 
+
+#Show
+#	HasInfluence = "Crusader"
+#	ItemLevel >= 83
+#	BaseType =
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base00.mp3" 100
+#	MinimapIcon 2 Red Triangle
+#	PlayEffect Red Temp
+
+#-------------------------------------------------------------------------------
+# Subsection: Hunter
+#-------------------------------------------------------------------------------
+
+Show
+	HasInfluence = "Hunter"
+	ItemLevel >= 83
+	BaseType = "Iolite Ring" "Spiked Gloves" "Apothecary's Gloves" "Gripped Gloves" "Fugitive Boots" "Broadhead Arrow Quiver" "Amethyst Ring"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base02.mp3" 100
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red 
+
+Show
+	HasInfluence = "Hunter"
+	ItemLevel >= 83
+	Class = "Boots"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 7 Hide
+
+#Show
+#	HasInfluence = "Hunter"
+#	ItemLevel >= 83
+#	BaseType =
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base01.mp3" 100
+#	MinimapIcon 1 Red Triangle
+#	PlayEffect Red 
+
+#Show
+#	HasInfluence = "Hunter"
+#	ItemLevel >= 83
+#	BaseType =
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base00.mp3" 100
+#	MinimapIcon 2 Red Triangle
+#	PlayEffect Red Temp
+
+#-------------------------------------------------------------------------------
+# Subsection: Redeemer
+#-------------------------------------------------------------------------------
+
+Show
+	HasInfluence = "Redeemer"
+	ItemLevel >= 83
+	BaseType = "Opal Ring" "Fugitive Boots" "Two-Toned Boots" "Vile Arrow Quiver" "Steel Ring" "Profane Wand"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base02.mp3" 100
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red 
+
+#Show
+#	HasInfluence = "Redeemer"
+#	ItemLevel >= 83
+#	BaseType =
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base01.mp3" 100
+#	MinimapIcon 1 Red Triangle
+#	PlayEffect Red 
+
+Show
+	HasInfluence = "Redeemer"
+	ItemLevel >= 83
+	BaseType = "Colossal Tower Shield" "Pinnacle Tower Shield" "Ezomyte Tower Shield" "Crusader Buckler" "Supreme Spiked Shield" "Mirrored Spiked Shield"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -3237,17 +3404,75 @@ Show
 	MinimapIcon 2 Red Triangle
 	PlayEffect Red Temp
 
+#-------------------------------------------------------------------------------
+# Subsection: Warlord
+#-------------------------------------------------------------------------------
+
 Show
-	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	ItemLevel >= 80
-	BaseType = "Two-Stone Ring" "Jade Amulet" "Lapis Amulet" "Amber Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Diamond Ring" "Moonstone Ring" "Amethyst Ring" "Leather Belt" "Rustic Sash"
+	HasInfluence = "Warlord"
+	ItemLevel >= 83
+	BaseType = "Opal Ring" "Steel Ring" "Vermillion Ring" "Spiked Gloves" "Apothecary's Gloves"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 0 128 0 255
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "Base00.mp3" 100
-	MinimapIcon 2 Red Triangle
-	PlayEffect Red Temp
+	CustomAlertSound "Base02.mp3" 100
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red 
+
+#Show
+#	HasInfluence = "Warlord"
+#	ItemLevel >= 83
+#	BaseType =
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 255 165 0 255 # A Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base01.mp3" 100
+#	MinimapIcon 1 Red Triangle
+#	PlayEffect Red 
+
+#Show
+#	HasInfluence = "Warlord"
+#	ItemLevel >= 83
+#	BaseType = "Colossal Tower Shield" "Pinnacle Tower Shield" "Ezomyte Tower Shield" "Crusader Buckler" "Supreme Spiked Shield" "Mirrored Spiked Shield"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base00.mp3" 100
+#	MinimapIcon 2 Red Triangle
+#	PlayEffect Red Temp
+
+#-------------------------------------------------------------------------------
+# Subsection: General
+#-------------------------------------------------------------------------------
+
+Show
+	HasInfluence = "Shaper" "Elder" "Crusader" "Redeemer" "Hunter" "Warlord"
+	ItemLevel >= 83
+	BaseType = "Two-Toned Boots" "Fugitive Boots" "Apothecary's Gloves" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	HasInfluence = "Shaper" "Elder" "Crusader" "Redeemer" "Hunter" "Warlord"
+	ItemLevel >= 83
+	BaseType = "Titan Greaves" "Titan Gauntlets" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Dragonscale Boots" "Dragonscale Gauntlets" "Crusader Boots" "Crusader Gloves" "Murder Boots" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Pig-Faced Bascinet" "Praetor Crown" "Deicide Mask"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	HasInfluence = "Shaper" "Elder" "Crusader" "Redeemer" "Hunter" "Warlord"
+	ItemLevel >= 83
+	Class = "Gloves" "Helmet" "Boots"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 8 Hide
 
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
@@ -3263,7 +3488,7 @@ Show
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 8 Hide
+	#BlockStrictness 6 Hide
 
 Show
 	Corrupted = False
