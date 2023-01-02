@@ -860,6 +860,7 @@ Show
 #	Corrupted = Maps
 #	Corrupted = Maps
 #	Corrupted = Maps
+#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -2255,7 +2256,7 @@ Show
 # Default Cards Filtered in 16s
 Show
 	Class = "Divination Card"
-	BaseType = "Blind Venture" "Dark Temptation" "Dialla's Subjugation" "Dying Anguish" "Hope" "Lost Worlds" "The Coming Storm" "The Easy Stroll" "The Gladiator" "The Mountain" "The One With All" "The Puzzle" "The Scholar" "The Skeleton" "The Surveyor" "The Trial" "The Unexpected Prize" "The Visionary" "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow" "0."
+	BaseType = "Blind Venture" "Dark Temptation" "Dialla's Subjugation" "Dying Anguish" "Hope" "Lost Worlds" "The Coming Storm" "The Easy Stroll" "The Gladiator" "The Mountain" "The One With All" "The Puzzle" "The Scholar" "The Skeleton" "The Surveyor" "The Trial" "The Unexpected Prize" "The Visionary" "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 45
 	DisableDropSound
