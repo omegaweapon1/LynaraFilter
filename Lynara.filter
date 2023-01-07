@@ -861,6 +861,9 @@ Show
 #	Corrupted = Maps
 #	Corrupted = Maps
 #	Corrupted = Maps
+#	Corrupted = Maps
+#	Corrupted = Maps
+#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -2256,7 +2259,7 @@ Show
 # Default Cards Filtered in 16s
 Show
 	Class = "Divination Card"
-	BaseType = "Blind Venture" "Dark Temptation" "Dialla's Subjugation" "Dying Anguish" "Hope" "Lost Worlds" "The Coming Storm" "The Easy Stroll" "The Gladiator" "The Mountain" "The One With All" "The Puzzle" "The Scholar" "The Skeleton" "The Surveyor" "The Trial" "The Unexpected Prize" "The Visionary" "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow"
+	BaseType = "Blind Venture" "Dark Temptation" "Dialla's Subjugation" "Dying Anguish" "Hope" "Lost Worlds" "The Coming Storm" "The Easy Stroll" "The Gladiator" "The Mountain" "The One With All" "The Puzzle" "The Scholar" "The Skeleton" "The Surveyor" "The Trial" "The Unexpected Prize" "The Visionary" "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow" "The Realm"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 45
 	DisableDropSound
@@ -2265,7 +2268,7 @@ Show
 # Default Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Dab of Ink" "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Baited Expectations" "Bijoux" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lysah's Respite" "Misery in Darkness" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endurance" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Gambler" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The Penitent" "The Queen" "The Rabbit's Foot" "The Realm" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Union" "The Valkyrie" "The Vast" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power" "Sambodhi's Wisdom" "Lucky Deck" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "Astral Protection" "Checkmate" "Alivia's Grace" "Ever-Changing" "Man With Bear" "The Finishing Touch" "The Return of the Rat" "The Gladiator" "A Sea of Blue" "A Dusty Memory" "Loyalty" "The Risk" "The Scavenger" "The Twilight Moon" "Society's Remorse" "The Rite of Elements" "The King's Heart" "Pride Before the Fall" "Acclimatisation" "The Formless Sea"
+	BaseType = "A Dab of Ink" "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Baited Expectations" "Bijoux" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lysah's Respite" "Misery in Darkness" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endurance" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Gambler" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The Penitent" "The Queen" "The Rabbit's Foot" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Union" "The Valkyrie" "The Vast" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power" "Sambodhi's Wisdom" "Lucky Deck" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "Astral Protection" "Checkmate" "Alivia's Grace" "Ever-Changing" "Man With Bear" "The Finishing Touch" "The Return of the Rat" "The Gladiator" "A Sea of Blue" "A Dusty Memory" "Loyalty" "The Risk" "The Scavenger" "The Twilight Moon" "Society's Remorse" "The Rite of Elements" "The King's Heart" "Pride Before the Fall" "Acclimatisation" "The Formless Sea"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetFontSize 45
 	DisableDropSound
@@ -2446,7 +2449,18 @@ Show
 
 Show
 	FracturedItem = True
-	Class = "Amulet" "Ring" "Jewel" "Abyss Jewel" "Belt"
+	Class = "Jewel" "Abyss Jewel"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Grey UpsideDownHouse
+	PlayEffect Grey Temp
+
+Show
+	FracturedItem = True
+	BaseType = "Jade Amulet" "Lapis Amulet" "Amber Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Coral Ring" "Unset Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring" "Diamond Ring" "Two-Stone Ring" "Moonstone Ring" "Bone Ring" "Amethyst Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Rustic Sash" "Leather Belt" "Heavy Belt" "Vanguard Belt" "Crystal Belt"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2482,7 +2496,35 @@ Show
 
 Show
 	FracturedItem = True
-	Class = "Body Armour" "Helmet" "Shield" "Quiver" "Gloves" "Boots"
+	BaseType = "Glorious Plate" "Gladiator Plate" "Astral Plate" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Elegant Ringmail" "Carnal Armour" "Sadist Garb" "Blood Raiment"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	FracturedItem = True
+	BaseType = "Spiked Gloves" "Titan Gauntlets" "Vaal Gauntlets" "Gripped Gloves" "Slink Gloves" "Stealth Gloves" "Fingerless Silk Gloves" "Sorcerer Gloves" "Arcanist Gloves" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Apothecary's Gloves" "Crusader Gloves" "Legion Gloves" "Murder Mitts" "Assassin's Mitts"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	FracturedItem = True
+	BaseType = "Eternal Burgonet" "Royal Burgonet" "Lion Pelt" "Sinner Tricorne" "Hubris Circlet" "Mind Cage" "Nightmare Bascinet" "Pig-Faced Bascinet" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Deicide Mask" "Vaal Mask"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	FracturedItem = True
+	BaseType = "Titan Greaves" "Vaal Greaves" "Slink Boots" "Stealth Boots" "Sorcerer Boots" "Arcanist Slippers" "Two-Toned Boots" "Dragonscale Boots" "Hydrascale Boots" "Crusader Boots" "Legion Boots" "Fugitive Boots" "Murder Boots" "Assassin's Boots"
+	SetTextColor 100 150 200 200 # Special Rares
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	FracturedItem = True
+	BaseType = "Pinnacle Tower Shield" "Colossal Tower Shield" "Crusader Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Mirrored Spiked Shield"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
@@ -2503,7 +2545,7 @@ Show
 
 Show
 	FracturedItem = True
-	Class = "One Hand Axe" "One Hand Mace" "One Hand Sword" "Dagger" "Staves" "Two Hand Axe" "Two Hand Mace" "Two Hand Sword" "Claw" "Flask" "Bow"
+	Class = "One Hand Axe" "One Hand Mace" "One Hand Sword" "Dagger" "Staves" "Two Hand Axe" "Two Hand Mace" "Two Hand Sword" "Claw" "Flask" "Bow" "Amulet" "Ring" "Belt" "Body Armour" "Helmet" "Shield" "Gloves" "Quiver" "Boots"
 	SetTextColor 100 150 200 200 # Special Rares
 	SetFontSize 45
 	DisableDropSound
@@ -2562,15 +2604,15 @@ Show
 #-------------------------------------------------------------------------------
 
 # Bestiary Mods
-Show
-	HasExplicitMod = "of Farrul" "of Fenumus" "of Craiceann" "of Saqawal"
-	SetTextColor 100 150 200 200 # Special Rares
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Base00.mp3" 100
-	MinimapIcon 2 Grey UpsideDownHouse
-	PlayEffect Grey Temp
+#Show
+#	HasExplicitMod = "of Farrul" "of Fenumus" "of Craiceann" "of Saqawal"
+#	SetTextColor 100 150 200 200 # Special Rares
+#	SetBorderColor 0 128 0 255 # B Tier
+#	SetFontSize 45
+#	DisableDropSound
+#	CustomAlertSound "Base00.mp3" 100
+#	MinimapIcon 2 Grey UpsideDownHouse
+#	PlayEffect Grey Temp
 
 #-------------------------------------------------------------------------------
 # Subsection: Temple Mods
@@ -3448,6 +3490,18 @@ Show
 
 Show
 	HasInfluence = "Hunter"
+	ItemLevel >= 80
+	BaseType = "Sharktooth Arrow Quiver" "Feathered Arrow Quiver" "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Artillery Quiver"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Red Triangle
+	PlayEffect Red Temp
+
+Show
+	HasInfluence = "Hunter"
 	ItemLevel >= 83
 	Class = "Boots"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
@@ -3652,13 +3706,13 @@ Show
 #	DisableDropSound
 
 # 84 T1 Helmets
-Show
-	Corrupted = False
-	ItemLevel >= 84
-	BaseType = "Carved Wand"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	ItemLevel >= 84
+#	BaseType = "Carved Wand"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 #Show
 #	Corrupted = False
@@ -4066,6 +4120,19 @@ Show
 
 Show
 	ItemLevel >= 84
+	Rarity = Magic
+	Class = "Abyss Jewel"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Red Triangle
+	PlayEffect Red Temp
+	#BlockStrictness 9 Hide
+
+Show
+	ItemLevel >= 84
 	Class = "Abyss Jewel"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
@@ -4271,7 +4338,7 @@ Show
 
 Show
 	Rarity = Rare
-	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
+	Class = "Helmet" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
 	HasExplicitMod >=4 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator" "of the Sempiternal"
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -4282,7 +4349,7 @@ Show
 
 Show
 	Rarity = Rare
-	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
+	Class = "Helmet" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
 	HasExplicitMod >=3 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator" "of the Sempiternal"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -4293,7 +4360,7 @@ Show
 
 Show
 	Rarity = Rare
-	Class = "Helmet" "Body Armour" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
+	Class = "Helmet" "Gloves" "Boots" "Belt" "Ring" "Amulet" "Shield"
 	HasExplicitMod >=2 "Essences" "of the Essence" "Virile" "Athlete's" "of the Magma" "of Tzteosh" "of the Ice" "of Haast" "of the Lightning" "of Ephij" "of Exile" "of Bameth" "Fecund" "Vigorous" "Rapturous" "Prime" "of Abjuration" "of Nullification" "of the Rainbow" "of the Span" "of the Sentinel" "of the Citadel" "of the Solar Storm" "of the Mammoth" "of the Lightning Rod" "of Harmony" "of the Deathless" "of the Barricade" "of the Bastion" "of the Protector" "of the Conservator" "of the Sempiternal"
 	SetFontSize 45
 	DisableDropSound
@@ -4633,124 +4700,40 @@ Show
 #===============================================================================
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Granite Flask"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Sapphire Flask"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Zodiac Leather"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Glorious Plate"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
 Show
 	Corrupted = False
+	Mirrored = False
 	Rarity = Normal
 	BaseType = "Gladiator Plate"
 	SetFontSize 45
 	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Branded Kite Shield"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Mirrored = False
+	Rarity = Normal
+	BaseType = "Branded Kite Shield"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Ezomyte Dagger"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Mirrored = False
+	Rarity = Normal
+	BaseType = "Prophecy Wand"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Solaris Circlet"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Lacquered Garb"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Prophecy Wand"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Unset Ring"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Paua Amulet"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Riveted Boots"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Spidersilk Robe"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Rarity = Normal
-#	BaseType = "Soldier Boots"
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Mirrored = False
+	Rarity = Normal
+	BaseType = "Serpentscale Gauntlets"
+	SetFontSize 45
+	DisableDropSound
 
 #===============================================================================
 # Section: Leveling
