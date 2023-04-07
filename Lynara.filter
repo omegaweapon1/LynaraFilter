@@ -199,6 +199,11 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
+Show
+	SetTextColor 128 64 64 200 # Challenge League
+	SetFontSize 45
+	DisableDropSound
+
 #===============================================================================
 # Section: 6L
 #===============================================================================
@@ -867,6 +872,7 @@ Show
 
 # Yellow Tier
 #Show
+#	Corrupted = Maps
 #	Corrupted = Maps
 #	Corrupted = Maps
 #	Corrupted = Maps
@@ -2208,7 +2214,7 @@ Show
 # Great Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Fate Worse Than Death" "A Modest Request" "A Note in the Wind" "A Stone Perfected" "Altered Perception" "Brother's Stash" "Choking Guilt" "Darker Half" "Deadly Joy" "Doryani's Epiphany" "Draped in Dreams" "Endless Night" "Fateful Meeting" "Gift of Asenath" "Immortal Resolve" "Judging Voices" "Luminous Trove" "Peaceful Moments" "Remembrance" "Terrible Secret of Space" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Bones" "The Destination" "The Eldritch Decay" "The Enlightened" "The Escape" "The Garish Power" "The Gulf" "The Hook" "The Last Supper" "The Long Con" "The Mad King" "The Mind's Eyes" "The Nurse" "The Offering" "The Offspring" "The Price of Prescience" "The Prince of Darkness" "The Progeny of Lunaris" "The Samurai's Eye" "The White Knight" "The Whiteout"
+	BaseType = "A Fate Worse Than Death" "A Modest Request" "A Note in the Wind" "A Stone Perfected" "Altered Perception" "Brother's Stash" "Choking Guilt" "Darker Half" "Deadly Joy" "Doryani's Epiphany" "Draped in Dreams" "Endless Night" "Fateful Meeting" "Gift of Asenath" "Immortal Resolve" "Judging Voices" "Luminous Trove" "Peaceful Moments" "Remembrance" "Terrible Secret of Space" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Bones" "The Destination" "The Eldritch Decay" "The Enlightened" "The Escape" "The Garish Power" "The Gulf" "The Hook" "The Last Supper" "The Long Con" "The Mad King" "The Mind's Eyes" "The Nurse" "The Offering" "The Offspring" "The Price of Prescience" "The Prince of Darkness" "The Progeny of Lunaris" "The Rusted Bard" "The Samurai's Eye" "The White Knight" "The Whiteout"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -2259,8 +2265,16 @@ Show
 # Default Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Dab of Ink" "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Baited Expectations" "Bijoux" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lysah's Respite" "Misery in Darkness" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endurance" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Gambler" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The Penitent" "The Queen" "The Rabbit's Foot" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Union" "The Valkyrie" "The Vast" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power" "Sambodhi's Wisdom" "Lucky Deck" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "Astral Protection" "Checkmate" "Alivia's Grace" "Ever-Changing" "Man With Bear" "The Finishing Touch" "The Return of the Rat" "The Gladiator" "A Sea of Blue" "A Dusty Memory" "Loyalty" "The Risk" "The Scavenger" "The Twilight Moon" "Society's Remorse" "The Rite of Elements" "The King's Heart" "Pride Before the Fall" "Acclimatisation" "The Formless Sea"
+	BaseType = "A Dab of Ink" "A Dusty Memory" "A Sea of Blue" "Acclimatisation" "Akil's Prophecy" "Alivia's Grace" "Alone in the Darkness" "Arrogance of the Vaal" "Astral Protection" "Azure Rage" "Baited Expectations" "Bijoux" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Checkmate" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Ever-Changing" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Loyalty" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Man With Bear" "Misery in Darkness" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Pride Before the Fall" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Sambodhi's Wisdom" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "Society's Remorse" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endurance" "The Enforcer" "The Finishing Touch" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Formless Sea" "The Forward Gaze" "The Fox" "The Gambler" "The Gladiator" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The King's Heart" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The Penitent" "The Queen" "The Rabbit's Foot" "The Return of the Rat" "The Risk" "The Rite of Elements" "The Scavenger" "The Shepherd's Sandals" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Twilight Moon" "The Undaunted" "The Undisputed" "The Union" "The Valkyrie" "The Vast" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power"
 	SetTextColor 30 144 255 255 # Divination Card
+	SetFontSize 45
+	DisableDropSound
+
+# Default Cards
+Show
+	BaseType = "A Chilling Wind" "Matryoshka" "Poisoned Faith" "Soul Quenched"
+	SetTextColor 30 144 255 255 # Divination Card
+	SetBorderColor 242 4 246 255 # Error
 	SetFontSize 45
 	DisableDropSound
 
@@ -3680,40 +3694,6 @@ Show
 	#BlockStrictness 7 Hide
 
 # 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	BaseType = "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 84
-#	BaseType = "Opal Sceptre"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 84
-#	BaseType = "Carved Wand"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-#Show
-#	Corrupted = False
-#	ItemLevel >= 86
-#	BaseType = "Bone Ring"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
 Show
 	Corrupted = False
 	Mirrored = False
@@ -3721,117 +3701,17 @@ Show
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 8 Hide
 
 # 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 85
-#	BaseType = "Imperial Claw"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 84
-#	BaseType = "Imperial Claw"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 5 Hide
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 75
-#	BaseType = "Imperial Claw"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 2 Hide
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	BaseType = "Imperial Claw"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-#	#BlockStrictness 1 Hide
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 84
-#	BaseType = "Colossal Tower Shield"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 85
-#	BaseType = "Astral Plate"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 84
-#	BaseType = "Karui Chopper"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 84
-#	BaseType = "Opal Wand"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel = 83
-#	BaseType = "Exquisite Blade"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel = 83
-#	BaseType = "Imbued Wand"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 84
-#	BaseType = "Two-Toned Boots"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
-
-# 84 T1 Helmets
-#Show
-#	Corrupted = False
-#	ItemLevel >= 84
-#	BaseType = "Copper Kris" "Golden Kris" "Platinum Kris"
-#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	Corrupted = False
+	Mirrored = False
+	ItemLevel = 83
+	BaseType = "Despot Axe"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
 
 #===============================================================================
 # Section: Special Rares
@@ -4683,6 +4563,20 @@ Show
 	Identified = False
 	ItemLevel < 60
 	Rarity = Rare
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	ItemLevel < 70
+	BaseType = "Convening Wand"
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	ItemLevel < 50
+	BaseType = "Calling Wand"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 2 Hide
