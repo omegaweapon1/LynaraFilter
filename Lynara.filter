@@ -199,10 +199,10 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-Show
-	SetTextColor 128 64 64 200 # Challenge League
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	SetTextColor 128 64 64 200 # Challenge League
+#	SetFontSize 45
+#	DisableDropSound
 
 #===============================================================================
 # Section: 6L
@@ -357,7 +357,7 @@ Show
 
 # Tier 1 Uniques
 Show
-	BaseType = "Vaal Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key"
+	BaseType = "Reliquary Key"
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -872,23 +872,6 @@ Show
 
 # Yellow Tier
 #Show
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
-#	Corrupted = Maps
 #	SetTextColor 184 218 242 255 # Maps
 #	SetBorderColor 0 128 0 255 # B Tier
 #	SetFontSize 45
@@ -957,7 +940,6 @@ Show
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 8 Hide
 
 #-------------------------------------------------------------------------------
 # Subsection: Yellows
@@ -971,7 +953,6 @@ Show
 	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 6 Hide
 
 #-------------------------------------------------------------------------------
 # Subsection: Whites
@@ -985,7 +966,6 @@ Show
 	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
 
 # White Corrupted Maps
 Show
@@ -1625,13 +1605,12 @@ Show
 	MinimapIcon 2 Yellow Diamond
 	PlayEffect Yellow Temp
 
-Show
+Hide
 	BaseType = "Primal Incubator"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 255 255 255 0
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
 
 # Pick up always
 Show
@@ -1737,7 +1716,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Blessing of Uul-Netol"
+	BaseType = "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1747,11 +1726,11 @@ Show
 	PlayEffect Yellow Temp
 
 # Pick up always
-Show
-	BaseType = "Blessing of Esh" "Blessing of Tul" "Blessing of Xoph"
-	SetTextColor 170 158 130 255 # Currency
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	BaseType = "Blessing of Esh" "Blessing of Tul" "Blessing of Xoph"
+#	SetTextColor 170 158 130 255 # Currency
+#	SetFontSize 45
+#	DisableDropSound
 
 #-------------------------------------------------------------------------------
 # Subsection: Expedition
@@ -1951,7 +1930,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Awakened Sextant" "Harbinger's Orb" "Delirium Orb" "Instilling Orb" "Enkindling Orb" "Lesser Eldritch" "Exalted Shard"
+	BaseType = "Awakened Sextant" "Delirium Orb" "Exalted Shard" "Harbinger's Orb" "Instilling Orb" "Lesser Eldritch"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -1976,6 +1955,50 @@ Show
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+
+Show
+	StackSize >= 30
+	BaseType = "Orb of Transmutation" "Portal Scroll" "Scroll of Wisdom"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	StackSize >= 20
+	BaseType = "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	StackSize >= 10
+	BaseType = "Chromatic Orb" "Jeweller's Orb" "Orb of Alteration"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	StackSize >= 5
+	BaseType = "Cartographer's Chisel" "Orb of Alchemy" "Orb of Fusing"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
 
 Show
 	BaseType = "Blighted Scouting Report" "Comprehensive Scouting Report" "Delirious Scouting Report" "Influenced Scouting Report" "Operative's Scouting Report" "Otherworldly Scouting Report"
@@ -1993,27 +2016,24 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
+# Pick up always
 Show
-	StackSize >= 20
-	BaseType = "Scroll of Wisdom" "Portal Scroll"
+	BaseType = "Ancient Shard" "Annulment Shard" "Blessed Orb" "Chaos Orb" "Charged Compass" "Enkindling Orb" "Gemcutter's Prism" "Glassblower's Bauble" "Harbinger's Shard" "Orb of Alchemy" "Orb of Fusing" "Orb of Regret" "Orb of Scouring" "Orb of Unmaking" "Regal Orb" "Surveyor's Compass" "Vaal Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 
 Show
-	StackSize >= 20
-	Class = "Stackable Currency"
+	StackSize >= 8
+	BaseType = "Chromatic Orb"
 	SetTextColor 170 158 130 255 # Currency
-	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-	CustomAlertSound "Curr00.mp3" 100
-	MinimapIcon 2 Yellow Diamond
-	PlayEffect Yellow Temp
 
 # Pick up always
 Show
-	BaseType = "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Gemcutter's Prism" "Harbinger's Shard" "Annulment Shard" "Blessed Orb" "Orb of Fusing" "Orb of Scouring" "Ancient Shard" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass"
+	StackSize >= 4
+	BaseType = "Engineer's Orb" "Orb of Binding"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -2021,71 +2041,114 @@ Show
 # Pick up always
 Show
 	StackSize >= 2
-	BaseType = "Orb of Alchemy" "Cartographer's Chisel" "Orb of Alteration" "Chromatic Orb"
+	BaseType = "Cartographer's Chisel" "Orb of Horizons"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Subsection: 07
+#-------------------------------------------------------------------------------
 
 # Pick up always
 Show
-	BaseType = "Orb of Alchemy" "Cartographer's Chisel" "Orb of Alteration" "Chromatic Orb"
+	BaseType = "Cartographer's Chisel" "Orb of Horizons"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 9 Hide
+	#BlockStrictness 7 Hide
 
-# Pick up always
+Show
+	StackSize >= 32
+	BaseType = "Armourer's Scrap" "Orb of Augmentation" "Orb of Transmutation"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 7 Hide
+
+Show
+	StackSize >= 16
+	BaseType = "Blacksmith's Whetstone"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 7 Hide
+
 Show
 	StackSize >= 4
-	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Orb of Transmutation" "Blacksmith's Whetstone"
+	BaseType = "Chromatic Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 7 Hide
 
 # Pick up always
 Show
 	StackSize >= 2
-	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	BaseType = "Engineer's Orb" "Orb of Binding"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 9 Hide
+	#BlockStrictness 7 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 06
+#-------------------------------------------------------------------------------
 
 # Pick up always
 Show
-	BaseType = "Glassblower's Bauble" "Orb of Binding" "Orb of Horizons" "Engineer's Orb" "Jeweller's Orb" "Orb of Chance" "Orb of Transmutation" "Blacksmith's Whetstone" "Armourer's Scrap"
+	BaseType = "Engineer's Orb" "Orb of Binding"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 8 Hide
+	#BlockStrictness 6 Hide
 
-# Pick up always
 Show
-	StackSize >= 5
-	BaseType = "Chaos Shard" "Alchemy Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Orb of Augmentation" "Alteration Shard"
+	StackSize >= 16
+	BaseType = "Armourer's Scrap" "Orb of Augmentation" "Orb of Transmutation"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 4 Hide
+	#BlockStrictness 6 Hide
 
-# Pick up always
 Show
-	BaseType = "Chaos Shard" "Alchemy Shard" "Regal Shard" "Binding Shard" "Horizon Shard" "Engineer's Shard" "Orb of Augmentation" "Alteration Shard"
+	StackSize >= 8
+	BaseType = "Blacksmith's Whetstone"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 3 Hide
+	#BlockStrictness 6 Hide
 
 Show
-	StackSize >= 10
-	BaseType = "Portal Scroll" "Transmutation Shard"
+	StackSize >= 2
+	BaseType = "Chromatic Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 6 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 05
+#-------------------------------------------------------------------------------
 
 Show
-	StackSize >= 7
-	BaseType = "Portal Scroll" "Transmutation Shard"
+	BaseType = "Chromatic Orb"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 5 Hide
+
+Show
+	StackSize >= 32
+	BaseType = "Portal Scroll" "Scroll of Wisdom"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 5 Hide
+
+Show
+	StackSize >= 8
+	BaseType = "Armourer's Scrap" "Orb of Augmentation" "Orb of Transmutation"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -2093,29 +2156,123 @@ Show
 
 Show
 	StackSize >= 4
-	BaseType = "Portal Scroll" "Transmutation Shard"
+	BaseType = "Blacksmith's Whetstone"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 5 Hide
+
+Show
+	StackSize >= 2
+	BaseType = "Alchemy Shard" "Binding Shard" "Chaos Shard" "Engineer's Shard" "Horizon Shard" "Jeweller's Orb" "Orb of Alteration" "Orb of Chance" "Regal Shard"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 5 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 04
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Alchemy Shard" "Binding Shard" "Chaos Shard" "Engineer's Shard" "Horizon Shard" "Jeweller's Orb" "Orb of Alteration" "Orb of Chance" "Regal Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 4 Hide
 
 Show
-	StackSize >= 10
-	BaseType = "Scroll of Wisdom"
+	StackSize >= 16
+	BaseType = "Portal Scroll" "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 7 Hide
+	#BlockStrictness 4 Hide
 
 Show
-	BaseType = "Portal Scroll"
+	StackSize >= 4
+	BaseType = "Armourer's Scrap" "Orb of Augmentation" "Orb of Transmutation"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 4 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 03
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Blacksmith's Whetstone"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	StackSize >= 20
+	BaseType = "Alteration Shard"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	StackSize >= 8
+	BaseType = "Portal Scroll" "Scroll of Wisdom"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+Show
+	StackSize >= 2
+	BaseType = "Armourer's Scrap" "Orb of Augmentation" "Orb of Transmutation"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 02
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Armourer's Scrap" "Orb of Augmentation" "Orb of Transmutation"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 2 Hide
 
 Show
-	BaseType = "Scroll of Wisdom" "Transmutation Shard"
+	StackSize >= 20
+	BaseType = "Transmutation Shard"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	StackSize >= 10
+	BaseType = "Alteration Shard"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+Show
+	StackSize >= 4
+	BaseType = "Portal Scroll" "Scroll of Wisdom"
+	SetTextColor 170 158 130 255 # Currency
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 2 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 01
+#-------------------------------------------------------------------------------
+
+Show
+	BaseType = "Alteration Shard" "Portal Scroll" "Scroll of Wisdom" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -2214,7 +2371,7 @@ Show
 # Great Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Fate Worse Than Death" "A Modest Request" "A Note in the Wind" "A Stone Perfected" "Altered Perception" "Brother's Stash" "Choking Guilt" "Darker Half" "Deadly Joy" "Doryani's Epiphany" "Draped in Dreams" "Endless Night" "Fateful Meeting" "Gift of Asenath" "Immortal Resolve" "Judging Voices" "Luminous Trove" "Peaceful Moments" "Remembrance" "Terrible Secret of Space" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Bones" "The Destination" "The Eldritch Decay" "The Enlightened" "The Escape" "The Garish Power" "The Gulf" "The Hook" "The Last Supper" "The Long Con" "The Mad King" "The Mind's Eyes" "The Nurse" "The Offering" "The Offspring" "The Price of Prescience" "The Prince of Darkness" "The Progeny of Lunaris" "The Rusted Bard" "The Samurai's Eye" "The White Knight" "The Whiteout"
+	BaseType = "A Fate Worse Than Death" "A Modest Request" "A Note in the Wind" "A Stone Perfected" "Altered Perception" "Brother's Stash" "Choking Guilt" "Darker Half" "Deadly Joy" "Doryani's Epiphany" "Draped in Dreams" "Endless Night" "Fateful Meeting" "Gift of Asenath" "Immortal Resolve" "Judging Voices" "Luminous Trove" "Peaceful Moments" "Remembrance" "Terrible Secret of Space" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Bones" "The Destination" "The Eldritch Decay" "The Enlightened" "The Escape" "The Garish Power" "The Gulf" "The Hook" "The Last Supper" "The Long Con" "The Mad King" "The Mind's Eyes" "The Nurse" "The Offering" "The Offspring" "The Price of Prescience" "The Prince of Darkness" "The Progeny of Lunaris" "The Samurai's Eye" "The White Knight" "The Whiteout"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -2265,16 +2422,8 @@ Show
 # Default Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Dab of Ink" "A Dusty Memory" "A Sea of Blue" "Acclimatisation" "Akil's Prophecy" "Alivia's Grace" "Alone in the Darkness" "Arrogance of the Vaal" "Astral Protection" "Azure Rage" "Baited Expectations" "Bijoux" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Checkmate" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Ever-Changing" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Loyalty" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Man With Bear" "Misery in Darkness" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Pride Before the Fall" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Sambodhi's Wisdom" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "Society's Remorse" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endurance" "The Enforcer" "The Finishing Touch" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Formless Sea" "The Forward Gaze" "The Fox" "The Gambler" "The Gladiator" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The King's Heart" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The Penitent" "The Queen" "The Rabbit's Foot" "The Return of the Rat" "The Risk" "The Rite of Elements" "The Scavenger" "The Shepherd's Sandals" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Twilight Moon" "The Undaunted" "The Undisputed" "The Union" "The Valkyrie" "The Vast" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power"
+	BaseType = "A Dab of Ink" "Akil's Prophecy" "Alone in the Darkness" "Arrogance of the Vaal" "Baited Expectations" "Bijoux" "Boon of Justice" "Brotherhood in Exile" "Buried Treasure" "Burning Blood" "Cameria's Cut" "Chaotic Disposition" "Chasing Risk" "Costly Curio" "Council of Cats" "Coveted Possession" "Cursed Words" "Dark Dreams" "Demigod's Wager" "Desperate Crusade" "Disdain" "Divine Justice" "Duality" "Emperor of Purity" "Emperor's Luck" "Etched in Blood" "Further Invention" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Guardian's Challenge" "Harmony of Souls" "Haunting Shadows" "Her Mask" "Heterochromia" "Hubris" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lysah's Respite" "Misery in Darkness" "Monochrome" "More is Never Enough" "No Traces" "Nook's Crown" "Parasitic Passengers" "Prejudice" "Prometheus' Armoury" "Rebirth and Renewal" "Reckless Ambition" "Sambodhi's Vow" "Scholar of the Seas" "Shard of Fate" "Silence and Frost" "The Admirer" "The Aesthete" "The Bear Woman" "The Betrayal" "The Blessing of Moosh" "The Breach" "The Brittle Emperor" "The Cache" "The Cacophony" "The Calling" "The Card Sharp" "The Cartographer" "The Cataclysm" "The Catch" "The Celestial Stone" "The Damned" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dreamer" "The Dreamland" "The Dungeon Master" "The Encroaching Darkness" "The Endurance" "The Fishmonger" "The Fool" "The Forgotten Treasure" "The Forward Gaze" "The Fox" "The Gambler" "The Hale Heart" "The Heroic Shot" "The Hive of Knowledge" "The Hunger" "The Innocent" "The Inventor" "The Journalist" "The Journey" "The Life Thief" "The Lion" "The Master" "The Master Artisan" "The Messenger" "The Obscured" "The Old Man" "The One That Got Away" "The Penitent" "The Queen" "The Rabbit's Foot" "The Summoner" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tireless Extractor" "The Transformation" "The Tumbleweed" "The Undaunted" "The Undisputed" "The Union" "The Valkyrie" "The Vast" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" "Treasure Hunter" "Unchained" "Underground Forest" "Vinia's Token" "Void of the Elements" "Volatile Power" "Sambodhi's Wisdom" "Lucky Deck" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "Astral Protection" "Checkmate" "Alivia's Grace" "Ever-Changing" "Man With Bear" "The Finishing Touch" "The Return of the Rat" "The Gladiator" "A Sea of Blue" "A Dusty Memory" "Loyalty" "The Risk" "The Scavenger" "The Twilight Moon" "Society's Remorse" "The Rite of Elements" "The King's Heart" "Pride Before the Fall" "Acclimatisation" "The Formless Sea"
 	SetTextColor 30 144 255 255 # Divination Card
-	SetFontSize 45
-	DisableDropSound
-
-# Default Cards
-Show
-	BaseType = "A Chilling Wind" "Matryoshka" "Poisoned Faith" "Soul Quenched"
-	SetTextColor 30 144 255 255 # Divination Card
-	SetBorderColor 242 4 246 255 # Error
 	SetFontSize 45
 	DisableDropSound
 
@@ -2581,7 +2730,7 @@ Show
 # Subsection: Lab Enchants
 #-------------------------------------------------------------------------------
 
-#Show
+#Hide
 #	AnyEnchantment = True
 #	Class = "Gloves"
 #	SetTextColor 100 150 200 200 # Special Rares
@@ -2589,7 +2738,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 3 Hide
 
-#Show
+#Hide
 #	AnyEnchantment = True
 #	Class = "Boots"
 #	SetTextColor 100 150 200 200 # Special Rares
@@ -3185,7 +3334,7 @@ Show
 	#BlockStrictness 2 Hide
 
 Show
-	BaseType = "Eternal Mana Flask" "Eternal Life Flask"
+	BaseType = "Divine Life Flask" "Eternal Life Flask" "Eternal Mana Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
 	DisableDropSound
@@ -3252,7 +3401,7 @@ Show
 	SetTextColor 255 192 203 255 # Flasks
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 10 Hide
+	#BlockStrictness 1 Hide
 
 Show
 	ItemLevel <= 19
@@ -3694,21 +3843,76 @@ Show
 	#BlockStrictness 7 Hide
 
 # 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	BaseType = "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	Mirrored = False
+#	ItemLevel >= 80
+#	BaseType = "Convoking Wand"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
+
 Show
 	Corrupted = False
 	Mirrored = False
-	BaseType = "Convoking Wand"
+	ItemLevel >= 82
+	BaseType = "Spine Bow"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 8 Hide
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	Mirrored = False
+#	ItemLevel = 83
+#	BaseType = "Despot Axe"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 # 84 T1 Helmets
 Show
 	Corrupted = False
 	Mirrored = False
-	ItemLevel = 83
-	BaseType = "Despot Axe"
+	ItemLevel = 84
+	BaseType = "Opal Sceptre" "Void Sceptre"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	Mirrored = False
+	BaseType = "Short Bow"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+
+# 84 T1 Helmets
+#Show
+#	Corrupted = False
+#	Mirrored = False
+#	ItemLevel >= 80
+#	BaseType = "Grove Bow"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
+
+# 84 T1 Helmets
+Show
+	Corrupted = False
+	Mirrored = False
+	BaseType = "Carved Wand"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
@@ -3749,7 +3953,7 @@ Show
 Show
 	ItemLevel >= 83
 	Class = "Heist"
-	BaseType = "Precise Arrowhead" "Obsidian Sharpening Stone" "Burst Band"
+	BaseType = "Flanged Arrowhead" "Fragmenting Arrowhead" "Hollowpoint Arrowhead" "Precise Arrowhead"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
@@ -3770,22 +3974,22 @@ Show
 	PlayEffect Orange Temp
 
 # Broach
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Foliate Brooch"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Foliate Brooch"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Cloak
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Whisper-woven Cloak"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Whisper-woven Cloak"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Huck
 Show
@@ -3797,80 +4001,80 @@ Show
 	DisableDropSound
 
 # Karst
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Precise Arrowhead" "Master Lockpick"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Master Lockpick"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Tibbs
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Obsidian Sharpening Stone" "Steel Bracers"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Steel Bracers"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Isla
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Burst Band" "Thaumetic Blowtorch"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Thaumetic Blowtorch"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Tullina
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Obsidian Sharpening Stone" "Silkweave Sole"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Silkweave Sole"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Niles
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Burst Band" "Thaumaturgical Ward"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Thaumaturgical Ward"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Nenet
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Precise Arrowhead" "Thaumaturgical Sensing Charm"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Thaumaturgical Sensing Charm"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Vinderi
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Obsidian Sharpening Stone" "Thaumetic Flashpowder"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Thaumetic Flashpowder"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 # Gianna
-#Show
-#	ItemLevel >= 81
-#	Class = "Heist"
-#	BaseType = "Regicide Disguise Kit" "Burst Band"
-#	SetBorderColor 0 128 0 255 # B Tier
-#	SetFontSize 45
-#	DisableDropSound
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Regicide Disguise Kit"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
 
 Show
 	Class = "Heist"
-	BaseType = "Master Lockpick" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Thaumaturgical Ward" "Grandmaster Keyring" "Silkweave Sole" "Regicide Disguise Kit" "Thaumetic Blowtorch" "Trarthan Flashpowder" "Obsidian Sharpening Stone" "Standard Sharpening Stone" "Precise Arrowhead" "Burst Band" "Whisper-woven Cloak" "Tattered Cloak" "Foliate Brooch" "Golden Brooch"
+	BaseType = "Burst Band" "Foliate Brooch" "Golden Brooch" "Grandmaster Keyring" "Master Lockpick" "Obsidian Sharpening Stone" "Precise Arrowhead" "Regicide Disguise Kit" "Silkweave Sole" "Standard Sharpening Stone" "Steel Bracers" "Tattered Cloak" "Thaumaturgical Sensing Charm" "Thaumaturgical Ward" "Thaumetic Blowtorch" "Thaumetic Flashpowder" "Trarthan Flashpowder" "Whisper-woven Cloak"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 5 Hide
@@ -3928,7 +4132,7 @@ Show
 # Subsection: Talisman
 #-------------------------------------------------------------------------------
 
-#Show
+#Hide
 #	Class = "Amulets"
 #	BaseType = "Talisman"
 #	SetFontSize 45
@@ -4563,20 +4767,6 @@ Show
 	Identified = False
 	ItemLevel < 60
 	Rarity = Rare
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
-
-Show
-	ItemLevel < 70
-	BaseType = "Convening Wand"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 2 Hide
-
-Show
-	ItemLevel < 50
-	BaseType = "Calling Wand"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 2 Hide
