@@ -3378,6 +3378,16 @@ Show
 
 # Craft for Profit
 Show
+	ItemLevel >= 80
+	BaseType = "Amethyst Flask" "Basalt Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Topaz Flask"
+	SetTextColor 255 192 203 255 # Flasks
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 8 Hide
+
+# Craft for Profit
+Show
 	ItemLevel >= 70
 	BaseType = "Amethyst Flask" "Basalt Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Topaz Flask"
 	SetTextColor 255 192 203 255 # Flasks
@@ -4855,13 +4865,13 @@ Show
 	DisableDropSound
 
 # Headhunter
-Show
-	Corrupted = False
-	Mirrored = False
-	Rarity = Normal
-	BaseType = "Ezomyte Dagger"
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Mirrored = False
+#	Rarity = Normal
+#	BaseType = "Ezomyte Dagger"
+#	SetFontSize 45
+#	DisableDropSound
 
 # Headhunter
 Show
