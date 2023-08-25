@@ -1113,7 +1113,6 @@ Show
 	DisableDropSound
 
 Show
-	Class =
 	BaseType = "Memory"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 242 4 246 255 # Error
@@ -2463,7 +2462,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Dusty Memory" "A Familiar Call" "Abandoned Wealth" "Alluring Bounty" "Ambitious Obsession" "Auspicious Ambitions" "Azyran's Reward" "Boon of the First Ones" "Bowyer's Dream" "Broken Promises" "Broken Truce" "Brush, Paint and Palette" "Deathly Designs" "Dementophobia" "Dying Light" "Earth Drinker" "Gemcutter's Mercy" "Home" "Humility" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Magnum Opus" "Mawr Blaidd" "Perfection" "Something Dark" "The Academic" "The Avenger" "The Awakened" "The Bargain" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Emptiness" "The Ethereal" "The Eye of Terror" "The Eye of the Dragon" "The Hoarder" "The Immortal" "The Landing" "The Magma Crab" "The Pact" "The Patient" "The Polymath" "The Porcupine" "The Price of Loyalty" "The Price of Protection" "The Primordial" "The Professor" "The Sacrifice" "The Saint's Treasure" "The Scout" "The Seeker" "The Shortcut" "The Side Quest" "The Spark and the Flame" "The Strategist" "The Void" "The Warlord" "Vanity" "Winter's Embrace" "`"
+	BaseType = "A Dusty Memory" "A Familiar Call" "Abandoned Wealth" "Alluring Bounty" "Ambitious Obsession" "Auspicious Ambitions" "Azyran's Reward" "Boon of the First Ones" "Bowyer's Dream" "Broken Promises" "Broken Truce" "Brush, Paint and Palette" "Deathly Designs" "Dementophobia" "Dying Light" "Earth Drinker" "Gemcutter's Mercy" "Home" "Humility" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Magnum Opus" "Mawr Blaidd" "Perfection" "Something Dark" "The Academic" "The Avenger" "The Awakened" "The Bargain" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Emptiness" "The Ethereal" "The Eye of Terror" "The Eye of the Dragon" "The Hoarder" "The Immortal" "The Landing" "The Magma Crab" "The Pact" "The Patient" "The Polymath" "The Porcupine" "The Price of Loyalty" "The Price of Protection" "The Primordial" "The Professor" "The Sacrifice" "The Saint's Treasure" "The Scout" "The Seeker" "The Shortcut" "The Side Quest" "The Spark and the Flame" "The Strategist" "The Void" "The Warlord" "Vanity" "Winter's Embrace"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
