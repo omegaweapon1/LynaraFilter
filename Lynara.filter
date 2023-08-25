@@ -443,7 +443,20 @@ Show
 	MapTier >= 15
 	Rarity = Unique
 	Class = "Map"
-	BaseType = "Cursed Crypt" "Temple" "Harbinger" "Shore"
+	BaseType = "Cursed Crypt" "Harbinger" "Shore" "Temple"
+	SetTextColor 175 96 37 255 # Unique
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Uni01.mp3" 100
+	MinimapIcon 1 Brown Star
+	PlayEffect Brown 
+
+# T2 Uniques
+Show
+	Rarity = Unique
+	Class = "Map"
+	BaseType = "Cursed Crypt" "Harbinger" "Maze" "Museum"
 	SetTextColor 175 96 37 255 # Unique
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -1091,7 +1104,16 @@ Show
 #	SetFontSize 45
 #	DisableDropSound
 
+# Default Cards
 Show
+	Class = "Divination Card"
+	BaseType = "A Dusty Memory"
+	SetTextColor 30 144 255 255 # Divination Card
+	SetFontSize 45
+	DisableDropSound
+
+Show
+	Class =
 	BaseType = "Memory"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 242 4 246 255 # Error
@@ -1186,6 +1208,17 @@ Show
 
 Show
 	BaseType = "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Purification" "Fragment of Constriction" "Fragment of the Chimera" "Fragment of the Hydra" "Fragment of the Minotaur" "Fragment of the Phoenix" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest"
+	SetTextColor 255 165 0 255 # Fragments
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Frag01.mp3" 100
+	MinimapIcon 1 Brown Circle
+	PlayEffect Brown 
+
+Show
+	StackSize >= 5
+	BaseType = "Crescent Splinter"
 	SetTextColor 255 165 0 255 # Fragments
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -2430,7 +2463,7 @@ Show
 # Good Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Familiar Call" "Abandoned Wealth" "Alluring Bounty" "Ambitious Obsession" "Auspicious Ambitions" "Azyran's Reward" "Boon of the First Ones" "Bowyer's Dream" "Broken Promises" "Broken Truce" "Brush, Paint and Palette" "Deathly Designs" "Dementophobia" "Dying Light" "Earth Drinker" "Gemcutter's Mercy" "Home" "Humility" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Magnum Opus" "Mawr Blaidd" "Perfection" "Something Dark" "The Academic" "The Avenger" "The Awakened" "The Bargain" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Emptiness" "The Ethereal" "The Eye of Terror" "The Eye of the Dragon" "The Hoarder" "The Immortal" "The Landing" "The Magma Crab" "The Pact" "The Patient" "The Polymath" "The Porcupine" "The Price of Loyalty" "The Price of Protection" "The Primordial" "The Professor" "The Sacrifice" "The Saint's Treasure" "The Scout" "The Seeker" "The Shortcut" "The Side Quest" "The Spark and the Flame" "The Strategist" "The Void" "The Warlord" "Vanity" "Winter's Embrace"
+	BaseType = "A Dusty Memory" "A Familiar Call" "Abandoned Wealth" "Alluring Bounty" "Ambitious Obsession" "Auspicious Ambitions" "Azyran's Reward" "Boon of the First Ones" "Bowyer's Dream" "Broken Promises" "Broken Truce" "Brush, Paint and Palette" "Deathly Designs" "Dementophobia" "Dying Light" "Earth Drinker" "Gemcutter's Mercy" "Home" "Humility" "Hunter's Reward" "Imperfect Memories" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Magnum Opus" "Mawr Blaidd" "Perfection" "Something Dark" "The Academic" "The Avenger" "The Awakened" "The Bargain" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Emptiness" "The Ethereal" "The Eye of Terror" "The Eye of the Dragon" "The Hoarder" "The Immortal" "The Landing" "The Magma Crab" "The Pact" "The Patient" "The Polymath" "The Porcupine" "The Price of Loyalty" "The Price of Protection" "The Primordial" "The Professor" "The Sacrifice" "The Saint's Treasure" "The Scout" "The Seeker" "The Shortcut" "The Side Quest" "The Spark and the Flame" "The Strategist" "The Void" "The Warlord" "Vanity" "Winter's Embrace" "`"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2791,7 +2824,7 @@ Show
 # Subsection: Lab Enchants
 #-------------------------------------------------------------------------------
 
-#Hide
+#Show
 #	AnyEnchantment = True
 #	Class = "Gloves"
 #	SetTextColor 100 150 200 200 # Special Rares
@@ -2799,7 +2832,7 @@ Show
 #	DisableDropSound
 #	#BlockStrictness 3 Hide
 
-#Hide
+#Show
 #	AnyEnchantment = True
 #	Class = "Boots"
 #	SetTextColor 100 150 200 200 # Special Rares
@@ -3348,17 +3381,7 @@ Hide
 # Craft for Profit
 Show
 	ItemLevel >= 84
-	BaseType = "Basalt Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quicksilver Flask" "Stibnite Flask"
-	SetTextColor 255 192 203 255 # Flasks
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 9 Hide
-
-# Craft for Profit
-Show
-	ItemLevel >= 84
-	BaseType = "Amethyst Flask" "Quartz Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Topaz Flask"
+	BaseType = "Amethyst Flask" "Basalt Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quartz Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Topaz Flask"
 	SetTextColor 255 192 203 255 # Flasks
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -3897,16 +3920,16 @@ Show
 Show
 	Corrupted = False
 	ItemLevel >= 86
-	BaseType = "Lion Pelt" "Nightmare Bascinet" "Hubris Circlet" "Praetor Crown" "Deicide Mask" "Royal Burgonet"
+	BaseType = "Deicide Mask" "Hubris Circlet" "Lion Pelt" "Nightmare Bascinet" "Pig-Faced Bascinet" "Praetor Crown" "Royal Burgonet" "Two-Toned Boots"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
-	#BlockStrictness 8 Hide
+	#BlockStrictness 9 Hide
 
 Show
 	Corrupted = False
 	ItemLevel >= 84
-	BaseType = "Vaal Regalia" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Colossal Tower Shield"
+	BaseType = "Colossal Tower Shield" "Hubris Circlet" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia"
 	BaseDefencePercentile >= 95
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
@@ -3922,14 +3945,14 @@ Show
 #	DisableDropSound
 
 # 84 T1 Helmets
-Show
-	Corrupted = False
-	Mirrored = False
-	ItemLevel >= 85
-	BaseType = "Convoking Wand"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetFontSize 45
-	DisableDropSound
+#Show
+#	Corrupted = False
+#	Mirrored = False
+#	ItemLevel >= 85
+#	BaseType = "Convoking Wand"
+#	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+#	SetFontSize 45
+#	DisableDropSound
 
 #Show
 #	Corrupted = False
@@ -3998,7 +4021,7 @@ Show
 
 # Cloak
 Show
-	ItemLevel >= 83
+	ItemLevel >= 81
 	Class = "Heist"
 	BaseType = "Whisper-woven Cloak"
 	SetBorderColor 0 128 0 255 # B Tier
@@ -4010,7 +4033,7 @@ Show
 
 # Cloak
 Show
-	ItemLevel >= 83
+	ItemLevel >= 81
 	Class = "Heist"
 	BaseType = "Foliate Brooch"
 	SetBorderColor 0 128 0 255 # B Tier
@@ -4022,9 +4045,9 @@ Show
 
 # Cloak
 Show
-	ItemLevel >= 83
+	ItemLevel >= 81
 	Class = "Heist"
-	BaseType = "Flanged Arrowhead" "Fragmenting Arrowhead" "Hollowpoint Arrowhead" "Precise Arrowhead"
+	BaseType = "Arrowhead"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
@@ -4034,9 +4057,33 @@ Show
 
 # Cloak
 Show
-	ItemLevel >= 83
+	ItemLevel >= 81
 	Class = "Heist"
-	BaseType = "Master Lockpick" "Steel Bracers" "Thaumetic Blowtorch" "Silkweave Sole" "Thaumaturgical Ward" "Thaumaturgical Sensing Charm" "Thaumetic Flashpowder" "Regicide Disguise Kit"
+	BaseType = "Sharpening Stone"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Orange Cross
+	PlayEffect Orange Temp
+
+# Cloak
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Aggregator Charm" "Burst Band" "Conduit Line" "Focal Stone"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Orange Cross
+	PlayEffect Orange Temp
+
+# Cloak
+Show
+	ItemLevel >= 81
+	Class = "Heist"
+	BaseType = "Master Lockpick" "Regicide Disguise Kit" "Silkweave Sole" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumaturgical Ward" "Thaumetic Blowtorch" "Thaumetic Flashpowder"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
@@ -4071,84 +4118,13 @@ Show
 	SetFontSize 45
 	DisableDropSound
 
-# Karst
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Master Lockpick"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Tibbs
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Steel Bracers"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Isla
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Thaumetic Blowtorch"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Tullina
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Silkweave Sole"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Niles
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Thaumaturgical Ward"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Nenet
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Thaumaturgical Sensing Charm"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
-# Vinderi
-Show
-	ItemLevel >= 81
-	Class = "Heist"
-	BaseType = "Thaumetic Flashpowder"
-	SetBorderColor 0 128 0 255 # B Tier
-	SetFontSize 45
-	DisableDropSound
-
 # Gianna
 Show
 	ItemLevel >= 81
 	Class = "Heist"
-	BaseType = "Regicide Disguise Kit"
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
-
-Show
-	Class = "Heist"
-	BaseType = "Burst Band" "Foliate Brooch" "Golden Brooch" "Grandmaster Keyring" "Master Lockpick" "Obsidian Sharpening Stone" "Precise Arrowhead" "Regicide Disguise Kit" "Silkweave Sole" "Standard Sharpening Stone" "Steel Bracers" "Tattered Cloak" "Thaumaturgical Sensing Charm" "Thaumaturgical Ward" "Thaumetic Blowtorch" "Thaumetic Flashpowder" "Trarthan Flashpowder" "Whisper-woven Cloak"
-	SetFontSize 45
-	DisableDropSound
-	#BlockStrictness 5 Hide
 
 Show
 	Class = "Heist"
@@ -4170,16 +4146,6 @@ Show
 	ItemLevel >= 80
 	BaseType = "Runic Crown" "Runic Gauntlets" "Runic Sabatons"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
-	SetBorderColor 255 165 0 255 # A Tier
-	SetFontSize 45
-	DisableDropSound
-	CustomAlertSound "Base01.mp3" 100
-	MinimapIcon 1 Red Triangle
-	PlayEffect Red 
-
-Show
-	BaseType = "Runic Crown" "Runic Gauntlets" "Runic Sabatons"
-	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
 	DisableDropSound
@@ -4188,16 +4154,24 @@ Show
 	PlayEffect Red Temp
 
 Show
-	BaseType = "Runic Gages" "Runic Sollerets" "Runic Crest"
+	BaseType = "Runic Crown" "Runic Gauntlets" "Runic Sabatons"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+
+Show
+	BaseType = "Runic Crest" "Runic Gages" "Runic Sollerets"
+	SetTextColor 208 32 144 255 # Shaper / Elder / Base
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 7 Hide
 
 Show
 	BaseType = "Runic Gloves" "Runic Greaves" "Runic Helm"
 	SetTextColor 208 32 144 255 # Shaper / Elder / Base
 	SetFontSize 45
 	DisableDropSound
+	#BlockStrictness 5 Hide
 
 #-------------------------------------------------------------------------------
 # Subsection: Talisman
@@ -4233,6 +4207,16 @@ Show
 	Class = "Jewel"
 	SetFontSize 45
 	DisableDropSound
+
+# Corrupted Rares
+Show
+	Corrupted = True
+	CorruptedMods > 1
+	Identified = True
+	Rarity = Rare
+	SetBorderColor 191 0 0 255
+	SetFontSize 45
+	#BlockStrictness 8 Hide
 
 # Corrupted Rares
 Show
@@ -4571,6 +4555,20 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
+# Subsection: +1 Gems
+#-------------------------------------------------------------------------------
+
+Show
+	Rarity = Rare
+	HasExplicitMod = "Vulcanist's" "Rimedweller's" "Stormbrewer's" "Behemoth's" "Provocateur's" "Exalter's" "Magister's" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Lithomancer's" "Mad Lord's" "Martinet's"
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Base00.mp3" 100
+	MinimapIcon 2 Yellow Pentagon
+	PlayEffect Yellow Temp
+
+#-------------------------------------------------------------------------------
 # Subsection: Jewels
 #-------------------------------------------------------------------------------
 
@@ -4825,7 +4823,7 @@ Show
 Show
 	Identified = False
 	Rarity = Rare
-	BaseType = "Moonstone Ring" "Coral Ring" "Blue Pearl Amulet" "Seaglass Amulet" "Marble Amulet" "Gold Ring"
+	BaseType = "Blue Pearl Amulet" "Coral Ring" "Gold Ring" "Marble Amulet" "Moonstone Ring" "Seaglass Amulet"
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 7 Hide
@@ -4856,6 +4854,15 @@ Show
 #===============================================================================
 
 # Headhunter
+Hide
+	Corrupted = False
+	Mirrored = False
+	Rarity = Normal
+	BaseType = "Fingerless Silk Gloves"
+	SetFontSize 45
+	DisableDropSound
+
+# Headhunter
 Show
 	Corrupted = False
 	Mirrored = False
@@ -4872,6 +4879,15 @@ Show
 #	BaseType = "Ezomyte Dagger"
 #	SetFontSize 45
 #	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Mirrored = False
+	Rarity = Normal
+	BaseType = "Amethyst Ring"
+	SetFontSize 45
+	DisableDropSound
 
 # Headhunter
 Show
@@ -4926,7 +4942,6 @@ Show
 	ItemLevel <= 60
 	LinkedSockets = 4
 	SocketGroup >= "GGGG" "GGRR"
-	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
@@ -4934,7 +4949,6 @@ Show
 Show
 	ItemLevel <= 55
 	Sockets = "4"
-	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
@@ -4943,7 +4957,6 @@ Show
 	ItemLevel <= 40
 	LinkedSockets = 3
 	SocketGroup >= "GGG" "GGR"
-	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
@@ -4951,7 +4964,6 @@ Show
 Show
 	ItemLevel <= 35
 	LinkedSockets = 3
-	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
@@ -4959,7 +4971,6 @@ Show
 Show
 	ItemLevel <= 20
 	Sockets = "3"
-	SetTextColor 200 200 200 255
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 1 Hide
