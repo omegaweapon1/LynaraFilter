@@ -270,6 +270,37 @@ Show
 	PlayEffect Yellow Temp
 
 #===============================================================================
+# Section: Chance Bases
+#===============================================================================
+
+# Headhunter
+Hide
+	Corrupted = False
+	Mirrored = False
+	Rarity = Normal
+	BaseType = "Fingerless Silk Gloves"
+	SetFontSize 45
+	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Mirrored = False
+	Rarity = Normal
+	BaseType = "Silk Gloves"
+	SetFontSize 45
+	DisableDropSound
+
+# Headhunter
+Show
+	Corrupted = False
+	Mirrored = False
+	Rarity = Normal
+	BaseType = "Sapphire Flask"
+	SetFontSize 45
+	DisableDropSound
+
+#===============================================================================
 # Section: Uniques
 #===============================================================================
 
@@ -347,6 +378,20 @@ Show
 Show
 	Rarity = Unique
 	BaseType = "Crusader Boots" "Ezomyte Tower Shield" "Gladiator Plate" "Greatwolf Talisman" "Ivory Watchstone" "Jewelled Foil" "Jingling Spirit Shield" "Karui Maul" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Siege Axe" "Silk Gloves" "Timeless Jewel" "Wyrmscale Doublet"
+	SetTextColor 175 96 37 255 # Unique
+	SetBackgroundColor 255 255 255 255 # S Tier
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Uni02.mp3" 100
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown 
+
+# Tier 1 Uniques
+Show
+	Corrupted = False
+	Rarity = Unique
+	BaseType = "Jewel"
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -495,6 +540,36 @@ Show
 	Rarity = Unique
 	Class = "Maps" "Piece"
 	SetTextColor 175 96 37 255 # Unique
+	SetFontSize 45
+	DisableDropSound
+
+# T2 Uniques
+Show
+	CorruptedMods > 1
+	Rarity = Unique
+	SetTextColor 175 96 37 255 # Unique
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Uni00.mp3" 100
+	MinimapIcon 2 Brown Star
+	PlayEffect Brown Temp
+
+# Catch All Uniques
+Show
+	CorruptedMods > 0
+	Rarity = Unique
+	SetTextColor 175 96 37 255 # Unique
+	SetBorderColor 255 0 0 255 # S Tier
+	SetFontSize 45
+	DisableDropSound
+
+# Catch All Uniques
+Show
+	Corrupted = True
+	Rarity = Unique
+	SetTextColor 175 96 37 255 # Unique
+	SetBorderColor 255 0 0 255 # S Tier
 	SetFontSize 45
 	DisableDropSound
 
@@ -1609,6 +1684,15 @@ Show
 
 # Pick up always
 Show
+	BaseType = "Clear Oil"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 255 255 0
+	SetFontSize 45
+	DisableDropSound
+	#BlockStrictness 3 Hide
+
+# Pick up always
+Show
 	Class = "Stackable Currency"
 	BaseType = "Oil"
 	SetTextColor 170 158 130 255 # Currency
@@ -1988,7 +2072,7 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	BaseType = "Awakener's Orb" "Crusader's Exalted Orb" "Divine Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch" "Fracturing Orb" "Hunter's Exalted Orb" "Mirror Shard" "Orb of Conflict" "Orb of Dominance" "Prime Regrading Lens" "Redeemer's Exalted Orb" "Sacred Orb" "Secondary Regrading Lens" "Tailoring Orb" "Tempering Orb" "Warlord's Exalted Orb"
+	BaseType = "Awakener's Orb" "Crusader's Exalted Orb" "Divine Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch" "Fracturing Orb" "Hunter's Exalted Orb" "Mirror Shard" "Orb of Conflict" "Orb of Dominance" "Prime Regrading Lens" "Redeemer's Exalted Orb" "Secondary Regrading Lens" "Tailoring Orb" "Tempering Orb" "Warlord's Exalted Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetBackgroundColor 255 255 255 255 # S Tier
 	SetBorderColor 255 0 0 255 # S Tier
@@ -1999,7 +2083,7 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Elevated Sextant" "Ancient Orb" "Orb of Annulment" "Veiled Chaos Orb" "Grand Eldritch" "Greater Eldritch" "Exalted Orb" "Tainted Blessing" "Fracturing Shard"
+	BaseType = "Ancient Orb" "Elevated Sextant" "Exalted Orb" "Fracturing Shard" "Grand Eldritch" "Greater Eldritch" "Orb of Annulment" "Sacred Orb" "Tainted Blessing" "Veiled Chaos Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -2009,7 +2093,18 @@ Show
 	PlayEffect Yellow 
 
 Show
-	BaseType = "Awakened Sextant" "Delirium Orb" "Exalted Shard" "Harbinger's Orb" "Instilling Orb" "Lesser Eldritch"
+	StackSize >= 3
+	BaseType = "Awakened Sextant" "Delirium Orb" "Harbinger's Orb" "Instilling Orb" "Lesser Eldritch"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 255 165 0 255 # A Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr01.mp3" 100
+	MinimapIcon 1 Yellow Diamond
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Awakened Sextant" "Delirium Orb" "Harbinger's Orb" "Instilling Orb" "Lesser Eldritch"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2036,8 +2131,8 @@ Show
 	DisableDropSound
 
 Show
-	StackSize >= 30
-	BaseType = "Orb of Transmutation" "Portal Scroll" "Scroll of Wisdom"
+	StackSize >= 20
+	BaseType = "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2047,8 +2142,8 @@ Show
 	PlayEffect Yellow Temp
 
 Show
-	StackSize >= 20
-	BaseType = "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation"
+	StackSize >= 15
+	BaseType = "Armourer's Scrap" "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2059,7 +2154,18 @@ Show
 
 Show
 	StackSize >= 10
-	BaseType = "Chromatic Orb" "Jeweller's Orb" "Orb of Alteration"
+	BaseType = "Blacksmith's Whetstone" "Orb of Chance"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	StackSize >= 7
+	BaseType = "Cartographer's Chisel" "Chromatic Orb" "Jeweller's Orb" "Orb of Alchemy" "Orb of Alteration" "Orb of Horizons"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2070,7 +2176,18 @@ Show
 
 Show
 	StackSize >= 5
-	BaseType = "Cartographer's Chisel" "Orb of Alchemy" "Orb of Fusing"
+	BaseType = "Ancient Shard" "Annulment Shard" "Blessed Orb" "Enkindling Orb" "Exalted Shard" "Orb of Scouring"
+	SetTextColor 170 158 130 255 # Currency
+	SetBorderColor 0 128 0 255 # B Tier
+	SetFontSize 45
+	DisableDropSound
+	CustomAlertSound "Curr00.mp3" 100
+	MinimapIcon 2 Yellow Diamond
+	PlayEffect Yellow Temp
+
+Show
+	StackSize >= 3
+	BaseType = "Chaos Orb" "Gemcutter's Prism" "Glassblower's Bauble" "Orb of Fusing" "Orb of Regret" "Orb of Unmaking" "Regal Orb" "Vaal Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetBorderColor 0 128 0 255 # B Tier
 	SetFontSize 45
@@ -2097,7 +2214,7 @@ Show
 
 # Pick up always
 Show
-	BaseType = "Ancient Shard" "Annulment Shard" "Blessed Orb" "Chaos Orb" "Charged Compass" "Enkindling Orb" "Gemcutter's Prism" "Glassblower's Bauble" "Harbinger's Shard" "Orb of Alchemy" "Orb of Fusing" "Orb of Regret" "Orb of Scouring" "Orb of Unmaking" "Regal Orb" "Surveyor's Compass" "Vaal Orb"
+	BaseType = "Ancient Shard" "Annulment Shard" "Blessed Orb" "Chaos Orb" "Charged Compass" "Enkindling Orb" "Exalted Shard" "Gemcutter's Prism" "Glassblower's Bauble" "Harbinger's Shard" "Orb of Alchemy" "Orb of Fusing" "Orb of Regret" "Orb of Scouring" "Orb of Unmaking" "Regal Orb" "Surveyor's Compass" "Vaal Orb"
 	SetTextColor 170 158 130 255 # Currency
 	SetFontSize 45
 	DisableDropSound
@@ -2450,7 +2567,7 @@ Show
 # Great Cards
 Show
 	Class = "Divination Card"
-	BaseType = "A Chilling Wind" "A Fate Worse Than Death" "A Modest Request" "A Note in the Wind" "A Stone Perfected" "Altered Perception" "Brother's Stash" "Choking Guilt" "Darker Half" "Deadly Joy" "Doryani's Epiphany" "Draped in Dreams" "Endless Night" "Fateful Meeting" "Gift of Asenath" "Immortal Resolve" "Judging Voices" "Luminous Trove" "Peaceful Moments" "Remembrance" "Terrible Secret of Space" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Bones" "The Destination" "The Eldritch Decay" "The Enlightened" "The Escape" "The Fortunate" "The Garish Power" "The Gulf" "The Hook" "The Last Supper" "The Long Con" "The Mad King" "The Mind's Eyes" "The Nurse" "The Offering" "The Offspring" "The Price of Prescience" "The Prince of Darkness" "The Progeny of Lunaris" "The Samurai's Eye" "The White Knight" "The Whiteout"
+	BaseType = "A Chilling Wind" "A Fate Worse Than Death" "A Modest Request" "A Note in the Wind" "A Stone Perfected" "Altered Perception" "Brother's Stash" "Choking Guilt" "Darker Half" "Deadly Joy" "Doryani's Epiphany" "Draped in Dreams" "Endless Night" "Fateful Meeting" "Gift of Asenath" "Immortal Resolve" "Judging Voices" "Luminous Trove" "Peaceful Moments" "Remembrance" "Terrible Secret of Space" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Bones" "The Destination" "The Eldritch Decay" "The Enlightened" "The Escape" "The Fortunate" "The Garish Power" "The Gulf" "The Hook" "The Last Supper" "The Long Con" "The Mad King" "The Mind's Eyes" "The Nurse" "The Offering" "The Offspring" "The Price of Prescience" "The Prince of Darkness" "The Progeny of Lunaris" "The Rusted Bard" "The Samurai's Eye" "The White Knight" "The Whiteout"
 	SetTextColor 30 144 255 255 # Divination Card
 	SetBorderColor 255 165 0 255 # A Tier
 	SetFontSize 45
@@ -4847,91 +4964,6 @@ Show
 	SetFontSize 45
 	DisableDropSound
 	#BlockStrictness 2 Hide
-
-#===============================================================================
-# Section: Chance Bases
-#===============================================================================
-
-# Headhunter
-Hide
-	Corrupted = False
-	Mirrored = False
-	Rarity = Normal
-	BaseType = "Fingerless Silk Gloves"
-	SetFontSize 45
-	DisableDropSound
-
-# Headhunter
-Show
-	Corrupted = False
-	Mirrored = False
-	Rarity = Normal
-	BaseType = "Silk Gloves"
-	SetFontSize 45
-	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Mirrored = False
-#	Rarity = Normal
-#	BaseType = "Ezomyte Dagger"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-Show
-	Corrupted = False
-	Mirrored = False
-	Rarity = Normal
-	BaseType = "Amethyst Ring"
-	SetFontSize 45
-	DisableDropSound
-
-# Headhunter
-Show
-	Corrupted = False
-	Mirrored = False
-	Rarity = Normal
-	BaseType = "Sapphire Flask"
-	SetFontSize 45
-	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Mirrored = False
-#	Rarity = Normal
-#	BaseType = "Gladiator Plate"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Mirrored = False
-#	Rarity = Normal
-#	BaseType = "Branded Kite Shield"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Mirrored = False
-#	Rarity = Normal
-#	BaseType = "Prophecy Wand"
-#	SetFontSize 45
-#	DisableDropSound
-
-# Headhunter
-#Show
-#	Corrupted = False
-#	Mirrored = False
-#	Rarity = Normal
-#	BaseType = "Serpentscale Gauntlets"
-#	SetFontSize 45
-#	DisableDropSound
 
 #===============================================================================
 # Section: Leveling
